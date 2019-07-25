@@ -1,4 +1,2 @@
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{REQUEST_URI} !(.*)views 
-RewriteRule ^(.*)$ views/$1 [L]
+RewriteEngine On
+RewriteRule ^/views/(.*)$ http://acnolan.tech/$1 [L,R=301]
