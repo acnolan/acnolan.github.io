@@ -1,5 +1,4 @@
 RewriteEngine On
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^((?!views/).*)$ views/$1 [L,NC]
+RewriteRule ^([A-Za-z]+)/$ views/$1.html [L]
