@@ -4,4 +4,4 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /gallery/$1 [L]
+RewriteRule ^(.*)$ /views/$1 [L]
