@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /views/
+
+RewriteCond %{DOCUMENT_ROOT}/views/$1\.html -f [NC]
+RewriteRule ^(.+?)/?$ $1.html [L]
