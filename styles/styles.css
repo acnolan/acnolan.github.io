@@ -1,3 +1,4 @@
+/*Homepage styles (and other pages)*/
 .rounded-image{
     border-radius: 50%;
 }
@@ -48,11 +49,19 @@ html{
     padding: 5px 10px;    
 }
 
+.btn.btn-row:hover{
+    background: linear-gradient(lightgrey,slategrey);
+}
+
 .btn.big-btn{
-    background: linear-gradient(navy,blue);
-    background-color: blue;
+    background: linear-gradient(navy,rgb(37, 37, 253));
+    background-color: rgb(37, 37, 253);
     color: white;
     padding: 5px 25px; 
+}
+
+.btn.big-btn:hover{
+    background: linear-gradient(rgb(37, 37, 253),navy);
 }
 
 .footer{
@@ -65,6 +74,8 @@ html{
     justify-content: center;
     align-items: center;
 }
+
+/*Website Icons*/
 
 .fa{
     padding: 10px;
@@ -89,4 +100,66 @@ html{
 .fa-stack-overflow{
     background: #f48024;
     color: white;
+}
+
+.fa-github:hover{
+    background: #76678d;
+}
+
+.fa-linkedin:hover{
+    background: rgb(34, 130, 182);
+}
+
+.fa-stack-overflow:hover{
+    background: #eb9045;
+}
+
+.social-media-links{
+    height: 60px;
+}
+
+.social-media-link{
+    width:60px;
+    height:60px;
+    display: inline-block;
+}
+
+/*Flip Card Styles*/
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;    
+}
+
+.card-front{
+    background-color: green;
+    color: black;
+}
+.card-back{
+    background-color: orange;
+    color: black;
+    transform: rotateY(180deg);
 }
