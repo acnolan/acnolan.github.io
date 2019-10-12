@@ -1,90 +1,69 @@
-/*Homepage styles (and other pages)*/
+body{
+    color: #606c76;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.6;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.purpleText{
+    color: #711ca7;
+}
+
+.content{
+    margin: 0 auto;
+    max-width: 112.0rem;
+    padding: 0 2.0rem;
+    position: relative;
+    width: 100%;
+}
+
+.header{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: grey;
+    background: linear-gradient(darkgrey, grey);
+    position: fixed;
+    top: 0;
+    margin-left: -8px;
+    z-index: 10;
+}
+
+.header h1{
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.linkBlock{
+    float: right;
+    display: inline;
+    text-align: right;
+    padding-top: 3px;
+}
+
 .rounded-image{
     border-radius: 50%;
 }
 
-html{
-    height: 100%;
-    min-height: 100%;
-    width:100%;
-}
-
-.homepage{
-    background: radial-gradient(#6dd5ed, #083f4b);
-    background-repeat: no-repeat;    
-    margin:0px;
-}
-
-.homepage-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align:center;
-    color: white;
-}
-
-.homepage-center div{
-    margin-bottom: 15px;
-}
-
-.homepage-center h1{
-    margin:0;
-}
-
-.homepage-center h3{
-    margin:0;
-}
-
-.btn{
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn.btn-row{
-    background: linear-gradient(slategrey,lightgrey);
-    background-color: slategray;
-    color: black;
-    padding: 5px 10px;    
-}
-
-.btn.btn-row:hover{
-    background: linear-gradient(lightgrey,slategrey);
-}
-
-.btn.big-btn{
-    background: linear-gradient(navy,rgb(37, 37, 253));
-    background-color: rgb(37, 37, 253);
-    color: white;
-    padding: 5px 25px; 
-}
-
-.btn.big-btn:hover{
-    background: linear-gradient(rgb(37, 37, 253),navy);
-}
-
-.footer{
-    position: absolute;
-    bottom: 5px;
-    background-color: darkslategrey;
-    width:100vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Website Icons*/
-
 .fa{
-    padding: 10px;
-    font-size: 30px;
-    width: 30px;
+    padding: 6px;
+    font-size: 20px;
+    width: 20px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    border-radius: 25px;
+    border-radius: 5px;
+    float: right;
 }
 
 .fa-github{
@@ -97,8 +76,8 @@ html{
     color: white;
 }
 
-.fa-stack-overflow{
-    background: #f48024;
+.fa-envelope{
+    background: #363434;
     color: white;
 }
 
@@ -110,56 +89,19 @@ html{
     background: rgb(34, 130, 182);
 }
 
-.fa-stack-overflow:hover{
-    background: #eb9045;
+.fa-envelope:hover{
+    background: #4b4848;
 }
 
-.social-media-links{
-    height: 60px;
+#email{
+    text-decoration: none;
+    border-radius: 5px;
+    background: linear-gradient(grey,darkgrey(37, 37, 253));
+    background-color: grey;
+    color: white;
+    padding: 10px 35px; 
 }
 
-.social-media-link{
-    width:60px;
-    height:60px;
-    display: inline-block;
-}
-
-/*Flip Card Styles*/
-.flip-card{
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-}
-
-.flip-card-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner{
-    transform: rotateY(180deg);
-}
-
-.card-front, .card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;    
-}
-
-.card-front{
-    background-color: green;
-    color: black;
-}
-.card-back{
-    background-color: orange;
-    color: black;
-    transform: rotateY(180deg);
+#email:hover{
+    background: linear-gradient(darkgrey,grey);
 }
