@@ -51,6 +51,15 @@ html{
     padding-top: 3px;
 }
 
+@media (max-width: 700px){
+    .linkBlock{
+        display: none;
+    }
+    .purpleText{
+        font-size: 24px;
+    }
+}
+
 .rounded-image{
     border-radius: 50%;
 }
