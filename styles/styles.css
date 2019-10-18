@@ -116,5 +116,8 @@ html{
 }
 
 .title-link{
-    
+    color: #606c76;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: .01em;
+    line-height: 1.6;
 }
