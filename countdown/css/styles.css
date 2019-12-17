@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+body, html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+body{
+    background-image: url('../images/sunset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.text-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(0,0,0,0.5);
+}
+
+.padding-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 20px;
+    margin: 10px;
+    outline: 1px solid white;
+}
+
+#heart1, #heart2, #heart3{
+    transition: transform .1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url('../images/christmas.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #heart1, #heart2, #heart3{
+        display: none;
+    }
+    .center{
+        display: block;
+    }
+  }
