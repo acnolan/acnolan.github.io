@@ -19,7 +19,7 @@ var x = setInterval(function(){
         seconds = "0"+seconds;
     }
 
-    document.getElementById("timearea").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds!";
+    document.getElementById("timearea").innerHTML = days + " days " + hours + " hours " + minutes + " minutes and " + seconds + " seconds!";
 
     if (difference < 0){
         clearInterval(x);
