@@ -1,0 +1,4 @@
+User-agent: *
+
+Disallow: /countdown/*
+Disallow: /countdown.html
