@@ -1,6 +1,6 @@
 /*Timer Stuff*/
 
-var countDownDate = new Date("Mar 15, 2020 18:00:00").getTime();
+var countDownDate = new Date("Nov 01, 2019 18:00:00").getTime();
 
 var x = setInterval(function(){
     var now = new Date().getTime();
@@ -23,7 +23,8 @@ var x = setInterval(function(){
 
     if (difference < 0){
         clearInterval(x);
-        document.getElementById("timearea").innerHTML = "right now!";
+        // document.getElementById("timearea").innerHTML = "right now!";
+        document.getElementById("timearea").innerHTML = "Someday, but even if we are far away, I love you everyday!";
         document.getElementById("message").style.display = "none";
     }
 }, 1000);
