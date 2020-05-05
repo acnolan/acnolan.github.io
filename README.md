@@ -1,2 +1,4 @@
 # acnolan.github.io
-Personal Website
+This is my personal website currently hosting my resume.
+
+In the future I hope to host and link projects here as well as host blogs discussing my opinions on things.
