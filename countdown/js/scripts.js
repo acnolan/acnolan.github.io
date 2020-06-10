@@ -85,3 +85,22 @@ function followMouse(){
     heart3.style.left = heart3x + "px";
     heart3.style.top = heart3y + "px";
 }
+
+/** Heart explosion **/
+function heartExplosion(){
+    for(i=0;i<15;i++){
+        let heart = document.createElement('img');
+        heart.src = "./images/heart.png";
+        heart.style.width = "32px";
+        heart.style.height = "32px";
+        heart.style.position = "absolute";
+        let randomX = Math.floor(Math.random() * 180 - 90)
+        let randomY = Math.floor(Math.random() * 180 - 90)
+        heart.style.left = mouseX + randomX + "px";
+        heart.style.top = mouseY + randomY +  "px";
+        heart.style.pointerEvents = "none";
+        let randomFade = (Math.random() * 3 + 1);
+        heart.style.animation = "fadeout "+randomFade+"s linear forwards";
+        document.body.appendChild(heart);
+    }
+}

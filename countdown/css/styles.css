@@ -49,10 +49,42 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    pointer-events: none;
 }
 
 .mobile-only{
     display: none;
+}
+
+/*Heart Explosion*/
+#smile1, #smile2{
+    position: absolute;
+    cursor: pointer;
+}
+
+#smile1:active, #smile2:active{
+    opacity: 0.7;
+}
+
+#smile1{
+    top: 64px;
+    left: 64px;
+}
+
+#smile2{
+    top: 64px;
+    right: 64px;
+}
+
+
+@-webkit-keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+  
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 @media screen and (max-width: 480px) {
@@ -62,8 +94,15 @@ body{
         background-size: cover;
     }
 
-    #heart1, #heart2, #heart3{
+    #heart1, #heart2, #heart3, #smile2{
         display: none;
+    }
+
+    #smile1{
+        bottom: 32px;
+        top: auto;
+        left: 50%;
+        margin-left: -64px;
     }
     
     .center{
