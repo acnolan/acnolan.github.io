@@ -102,16 +102,18 @@ html{
     background: #4b4848;
 }
 
-#email{
+
+#email, .mylinks{
     text-decoration: none;
     border-radius: 5px;
     background: linear-gradient(grey,darkgrey(37, 37, 253));
     background-color: grey;
     color: white;
     padding: 10px 35px; 
+    box-sizing: border-box;
 }
 
-#email:hover{
+#email:hover, .mylinks:hover{
     background: linear-gradient(darkgrey,grey);
 }
 
