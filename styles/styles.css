@@ -20,7 +20,7 @@ html{
     max-width: 112.0rem;
     padding: 0 2.0rem;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .header{
@@ -122,4 +122,15 @@ html{
     font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     letter-spacing: .01em;
     line-height: 1.6;
+}
+
+.justify-p p{
+    text-align: justify;
+}
+
+.justify-p h2{
+    margin-bottom: 0;
+}
+.justify-p h4{
+    margin: 0;
 }

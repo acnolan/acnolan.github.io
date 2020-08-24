@@ -1,0 +1,12 @@
+.pdf-holder{
+    width: 800px;
+    height:1100px;
+}
+
+@media (max-width: 850px){
+    .pdf-holder{
+        width: 400px;
+        height: 550px;
+        display: none;
+    }
+}
