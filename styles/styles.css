@@ -120,4 +120,36 @@ html{
     font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     letter-spacing: .01em;
     line-height: 1.6;
+<<<<<<< Updated upstream
+=======
+}
+
+.justify-p p{
+    text-align: justify;
+}
+
+.justify-p h2{
+    margin-bottom: 0;
+}
+.justify-p h4{
+    margin: 0;
+}
+
+h2 a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#email{
+    background-color: #711ca7;
+}
+#email:hover{
+    background-color: #b597c9;
+}
+
+@media (min-width: 700px){
+    #email{
+        font-size: 1.5em;
+    }
+>>>>>>> Stashed changes
 }
