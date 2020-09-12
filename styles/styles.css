@@ -52,7 +52,7 @@ html{
 }
 
 @media (max-width: 700px){
-    .linkBlock{
+    .fa-github, .fa-linkedin, .fa-envelope{
         display: none;
     }
     .purpleText{
@@ -90,6 +90,11 @@ html{
     color: white;
 }
 
+.fa-home{
+    color: white;
+    background: #711ca7;
+}
+
 .fa-github:hover{
     background: #76678d;
 }
@@ -102,6 +107,9 @@ html{
     background: #4b4848;
 }
 
+.fa-home:hover{
+    background: #b597c9;
+}
 
 #email, .mylinks{
     text-decoration: none;
@@ -113,7 +121,7 @@ html{
     box-sizing: border-box;
 }
 
-#email:hover, .mylinks:hover{
+.mylinks:hover{
     background: linear-gradient(darkgrey,grey);
 }
 
@@ -133,4 +141,9 @@ html{
 }
 .justify-p h4{
     margin: 0;
+}
+
+h2 a{
+    color: inherit;
+    text-decoration: inherit;
 }

@@ -1,0 +1,36 @@
+/** Styles for the homepage on mobile devices **/
+.buttonrow{
+    text-align:center; 
+    margin-top:20px;
+}
+
+#email{
+    background-color: #711ca7;
+}
+#email:hover{
+    background-color: #b597c9;
+}
+
+@media (min-width: 700px){
+    #email{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 700px){
+    .buttonrow{
+        display: flex;
+        flex-direction: column;
+    }
+    .buttonrow a{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    div img{
+        width: 128px;
+        height: 128px;
+    }
+    h2{
+        font-size: 15px;
+    }
+}
