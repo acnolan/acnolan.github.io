@@ -125,3 +125,19 @@ body{
         display: block;
     }
   }
+
+  /**Christmas Stuff**/
+  #christmasbutton{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: green;
+    background: linear-gradient(red,green);
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px; 
+    box-sizing: border-box;
+  }
+
+  #christmasbutton:hover{
+    background: linear-gradient(green,red);
+  }

@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>The 12 Days of Cutesmas</title>
+    <meta name="description" content="A short story about cutie Christmas">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./images/tree.ico">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./ChristmasStyles.css">
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="./ChristmasScripts.js" defer></script>
+    <script src="./snowstorm.js" defer></script>
+</head>
+
+<body>
+    <!-- New line characters actually affect whitespace! https://stackoverflow.com/questions/5078239/how-do-i-remove-the-space-between-inline-inline-block-elements-->
+    <h1><span class="r">T</span><span class="g">h</span><span class="r">e </span><span class="g">1</span><span class="r">2 </span><span class="g">D</span><span class="r">a</span><span class="g">y</span><span class="r">s </span><span class="g">o</span"><span class="r">f </span><span class="g">C</span><span class="r">u</span><span class="g">t</span><span class="r">e</span><span class="g">s</span><span class="r">m</span><span class="g">a</span><span class="r">s</span></h1>
+    <h2>By Andrew Nolan</h2>
+    <h3>Inspired by the famous English Christmas Carol</h3>
+    <div id="slidingZone">
+        <div id="openingLine"></div>
+        <div id="twelve">
+            <p>12 kitties drumming</p>
+            <img style="-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="./images/done/cat2.gif" width="100px" height="300px">
+            <img style="-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="./images/done/cat3.gif" width="100px" height="300px">
+            <img style="-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="./images/done/cat2.gif" width="100px" height="300px">
+            <img style="-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="./images/done/cat3.gif" width="100px" height="300px">
+            <img style="-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="./images/done/cat2.gif" width="100px" height="300px">
+            <img src="./images/done/cat1.gif" width="100px" height="300px">
+            <img style="-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="./images/done/cat1.gif" width="100px" height="300px">
+            <img src="./images/done/cat3.gif" width="100px" height="300px">
+            <img src="./images/done/cat2.gif" width="100px" height="300px">
+            <img src="./images/done/cat3.gif" width="100px" height="300px">
+            <img src="./images/done/cat2.gif" width="100px" height="300px">
+            <img src="./images/done/cat3.gif" width="100px" height="300px">
+        </div>
+        <div id="eleven">
+            <p>11 cuties piping (these ones play music!)</p>
+            <img id="pipe1" onclick="playMusicNote(event, './music/do.wav')" src="./images/done/piper12.JPG"
+                width="200px" height="300px">
+            <img id="pipe2" onclick="playMusicNote(event, './music/re.wav')" src="./images/done/piper34.JPG"
+                width="200px" height="300px">
+            <img id="pipe3" onclick="playMusicNote(event, './music/mi.wav')" src="./images/done/piper56.JPG"
+                width="200px" height="300px">
+            <img id="pipe4" onclick="playMusicNote(event, './music/fa.wav')" src="./images/done/piper78.PNG"
+                width="200px" height="300px">
+            <img id="pipe5" onclick="playMusicNote(event, './music/so.wav')" src="./images/done/piper90.PNG"
+                width="200px" height="300px">
+            <img id="pipe6" onclick="playMusicNote(event, './music/ti.wav')" src="./images/done/piper11.JPG"
+                width="200px" height="300px">
+        </div>
+        <div id="ten">
+            <p>10 cuties leaping</p>
+            <img src="./images/done/leaping.jpg" width="1000px" height="300px">
+        </div>
+        <div id="nine">
+            <p>9 cuties dancing (actually it's only 2 but we can pretend)</p>
+            <video width="400" height="300" controls>
+                <source src="./images/done/dancing.mp4" type="video/mp4">
+                Your browser doesn't support video :'^(
+            </video>
+        </div>
+        <div id="eight">
+            <p>8 milks of cuties</p>
+            <img src="./images/done/milk.jpg" width="1000px">
+        </div>
+        <div id="seven">
+            <p>At least 7 swoobies swimming</p>
+            <img src="./images/done/swans.jpg" height="400px">
+        </div>
+        <div id="six">
+            <p>6 cuties laying (on a bed or hammock)</p>
+            <img src="./images/done/laying.jpg" width="1000px" height="400px">
+        </div>
+        <div id="five">
+            <p>5 GOLDEN CUTIES</p>
+            <img src="./images/done/gold1.JPG" width="200px" height="300px">
+            <img src="./images/done/gold2.PNG" width="200px" height="300px">
+            <img src="./images/done/gold3.JPG" width="200px" height="300px">
+            <img src="./images/done/gold4.PNG" width="200px" height="300px">
+            <img src="./images/done/gold5.JPEG" width="200px" height="300px">
+        </div>
+        <div id="four">
+            <p>4 calls to cutie</p>
+            <img src="./images/done/calling.png" width="450px" height="275px">
+        </div>
+        <div id="three">
+            <p>3 French cuties</p>
+            <img src="./images/done/french.JPG" width="300px" height="400px">
+        </div>
+        <div id="two">
+            <p>2 cutie doves</p>
+            <img src="./images/done/doves.jpg" height="400px">
+        </div>
+        <div id="oneS">
+            <p>A pair of cuties in a pear tree!</p>
+            <img src="./images/done/peartree.jpg" alt="Cutie in a pear tree" width="200px" height="300px">
+        </div>
+        <div id="one">
+            <p>And a couple of cuties in a pear tree!</p>
+            <img src="./images/done/peartree.jpg" alt="Cutie in a pear tree" width="200px" height="300px">
+        </div>
+        <div id="finalLine"></div>
+    </div>
+    <audio id="audio" controls autoplay loop style="margin-top: 5px;">
+        <source src="./music/12daysjazz.mp3" type="audio/mpeg">
+      Your browser does not support music :'^(
+    </audio>
+</body>
+
+</html>
