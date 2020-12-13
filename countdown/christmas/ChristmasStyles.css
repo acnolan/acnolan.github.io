@@ -1,0 +1,47 @@
+html{
+    background-color: black;
+    color: White;
+    text-align: center;
+}
+
+#one, #oneS, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve{
+    display: none;
+}
+
+#MerryChristmas{
+    color: green
+}
+
+#slidingZone{
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    height:60vh
+}
+
+#pipe1, #pipe2, #pipe3, #pipe4, #pipe5, #pipe6{
+    cursor: pointer;
+}
+
+.r{
+    color: red;
+}
+
+.g{
+    color: green;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+@-webkit-keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+  
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
