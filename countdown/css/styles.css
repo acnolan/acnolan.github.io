@@ -121,6 +121,10 @@ body{
         margin-bottom: 0;
     }
 
+    #smile1, #smile2{
+        display:none;
+    }
+    
     .mobile-only{
         display: block;
     }
