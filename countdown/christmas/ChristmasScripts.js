@@ -4,7 +4,6 @@ let now = new Date();
 let month = now.getMonth();
 let day = now.getDate();
 
-day=25
 if(month === 11){
     document.getElementById("finalLine").innerHTML="<h3>Come back tomorrow for more!</h3>";
     if(day >= 25){
