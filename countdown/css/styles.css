@@ -121,7 +121,27 @@ body{
         margin-bottom: 0;
     }
 
+    #smile1, #smile2{
+        display:none;
+    }
+    
     .mobile-only{
         display: block;
     }
+  }
+
+  /**Christmas Stuff**/
+  #christmasbutton{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: green;
+    background: linear-gradient(red,green);
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px; 
+    box-sizing: border-box;
+  }
+
+  #christmasbutton:hover{
+    background: linear-gradient(green,red);
   }
