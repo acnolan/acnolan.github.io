@@ -367,7 +367,12 @@ var snowStorm = (function(window, document) {
     this.active = 1;
     this.fontSize = (10+(this.type/5)*10);
     this.o = document.createElement('div');
-    this.o.innerHTML = storm.snowCharacter;
+    let snowType = Math.floor((Math.random()*2))
+    if(snowType===0){
+      this.o.innerHTML = 'M';
+    }else{
+      this.o.innerHTML = "A";
+    }
     if (storm.className) {
       this.o.setAttribute('class', storm.className);
     }
