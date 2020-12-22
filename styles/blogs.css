@@ -1,0 +1,61 @@
+/** Blog List Styles **/
+#blogStuff{
+    display: flex;
+}
+
+#blogList{
+    width: 66%;
+    border-right: solid 1px grey;
+}
+
+.blogListEntry{
+    /* border-bottom: solid 1px lightgrey;
+    border-top: solid 1px lightgrey; */
+    border: solid 1px lightgrey;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 95%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.blogTitleLine, .blogDateLine{
+    display: inline-block;
+    border-bottom: 2px dotted lightgray;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.blogDateLine{
+    float: right;
+    text-align: right;
+}
+
+.blogDescription{
+    margin-top: 0;
+}
+
+#blogFilter{
+    width: 34%;
+    padding-left: 10px;
+}
+
+
+/** Blog Post Styles **/
+#filterBox{
+    border: solid 1px lightgrey;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#filterBox>h3{
+    border-bottom: 2px dotted lightgray;
+}
+
+#filterBox>p{
+    margin-top:0;
+    margin-bottom:5px;
+}
