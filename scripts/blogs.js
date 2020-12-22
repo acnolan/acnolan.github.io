@@ -4,7 +4,7 @@ let blogData = {
         [
             {
                 "Title": "Hello World!",
-                "Date": "12/21/2020",
+                "Date": "12/22/2020",
                 "Tags": ["Misc"],
                 "Description": "The first every entry to my blogs",
                 "Url": "./blogs/HelloWorld.html"
@@ -13,6 +13,7 @@ let blogData = {
 }
 
 updateSort();
+
 
 // Create the list of blog posts
 function generatePosts() {
