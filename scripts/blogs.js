@@ -1,19 +1,15 @@
 // The data, temporarily stored here, should be moved to .json file
-let blogData = {
-    "posts":
-        [
-            {
-                "Title": "Hello World!",
-                "Date": "12/22/2020",
-                "Tags": ["Misc"],
-                "Description": "The first every entry to my blogs",
-                "Url": "./blogs/HelloWorld.html"
-            }
-        ]
-}
+let blogData = {};
 
-updateSort();
 
+
+// Get the blog
+fetch('https://acnolan.tech/blogs/blogData.json')
+  .then(res => res.json())
+  .then(json => {
+    blogData = json;
+    updateSort();
+})
 
 // Create the list of blog posts
 function generatePosts() {
