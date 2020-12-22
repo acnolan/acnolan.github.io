@@ -13,20 +13,22 @@
     <!-- my stuff -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta name="description" content="Hi, I'm Andrew Nolan. I'm a student, developer, and a pretty cool guy! Check out my website!!">
-    <meta name="keywords" content="Andrew Nolan, Andrew Nolan WPI, web dev, Computer Science, acnolan, Andrew Nolan MathWorks, Andrew Nolan Computer Science">
+    <meta name="description" content="This is the home page of the blog section of Andrew Nolan's website">
+    <meta name="keywords" content="Andrew Nolan, Andrew Nolan WPI, web dev, Computer Science, acnolan, Andrew Nolan MathWorks, Andrew Nolan Computer Science, blog, blogs, Andrew Nolan blogs, movies">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='icon' href='./images/favicon.ico'>
-    <title>Andrew Nolan</title>
+    <title>Andrew Nolan's Blog</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="./styles/homepagemobile.css">
+    <link rel="stylesheet" type="text/css" href="./styles/blogs.css">
+    <script defer src="./scripts/blogs.js"></script>
 </head>
 
 <body class="homepage">
     <div class="header">
         <div class="content">
-            <h1><a href="./index.html" style="text-decoration: none;color:white">Andrew Nolan</a></h1>
+            <h1><a href="./index.html" style="text-decoration: none;color:white">Andrew Nolan's Blog</a></h1>
             <div class="linkBlock">
+                <a href="./index.html" aria-label="home" class="fa fa-home"></a>
                 <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"
                     class="fa fa-github"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"
@@ -38,18 +40,29 @@
     </div>
     <div class="content">
         <br>
-        <h1 class="purpleText" style="text-align:center; margin-bottom: 0;">Andrew Nolan</h1>
-        <h2 style="text-align:center; margin-top:0;">Student, Programmer, Pretty Cool Guy</h2>
-        <div style="text-align:center">
-            <img class="rounded-image" alt="A super cool picture of me" width=240 height=240 src="./images/homepage.jpg">
+        <h1 class="purpleText">Blogs</h1>
+        <div id="blogStuff">
+            <div id="blogList">
+                <!-- Added dynamically in JS -->
+            </div>
+            <div id="blogFilter">
+                <div id="filterBox">
+                    <h3>Filter</h3>
+                    <strong>Sort by:</strong>
+                    <select id="sortby" onchange="updateSort()">
+                        <option value="0">Newest First</option>
+                        <option value="1">Oldest First</option>
+                    </select>
+                    <br><br>
+                    <strong>Tags:</strong>
+                    <p><input id="coding" type="checkbox" onchange="generatePosts()" checked>Coding</p>
+                    <p><input id="movies" type="checkbox" onchange="generatePosts()" checked>Movies</p>
+                    <p><input id="misc" type="checkbox" onchange="generatePosts()" checked>Miscellaneous</p>
+                    <br><br>
+                </div>
+            </div>
         </div>
-        <div class="buttonrow">
-            <!-- <a class="mylinks" href="resume.html">Resume</a> -->
-            <a class="mylinks" href="blogs.html">Blogs</a>
-            <a class="mylinks" href="work.html">Work Experience</a>
-            <a class="mylinks" href="projects.html">Projects</a>
-            <a class="mylinks" href="about.html">About Me</a>
-        </div>
+        <br><br>
         <div style="text-align:center; margin-top:20px">
             <a id="email" href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!">Contact
                 Me!</a>
