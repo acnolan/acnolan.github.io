@@ -78,3 +78,29 @@
 #blogTitle{
     display: inline-block;
 }
+
+@media (max-width: 700px){
+    #backButton{
+        margin-top: 20px;
+        width: fit-content;
+        padding: 5px 15px;
+    }
+
+    #blogStuff{
+        display: block;
+    }
+
+    #blogList{
+        width: 100%;
+        border: none;
+    }
+
+    #blogFilter{
+        width: 100%;
+        padding: 0;
+    }
+
+    .blogListEntry, #filterBox{
+        width: initial;
+    }
+}
