@@ -1,0 +1,73 @@
+    body {
+        margin: 0;
+    }
+    
+    .beanx, .beany, .beanx2, .beany2{
+        width:190px;
+        height:102px;
+        position: absolute;
+    }
+    
+    .sproutx, .sprouty, .sproutx2, .sprouty2{
+        width:150px;
+        height:137px;
+        position: absolute;
+    }
+  
+    .sproutx{
+        animation: sx 2s linear infinite alternate;
+    }
+    
+    .beanx {
+        animation: bx 6s linear infinite alternate;
+    }
+    
+    .sprouty{
+        animation: sy 5s linear infinite alternate;
+    }
+    
+    .beany {
+        animation: by 2s linear infinite alternate;
+    }
+
+    .sproutx2{
+        animation: sx 2s linear infinite alternate;
+    }
+
+    .beanx2 {
+    animation: bx 5s linear infinite alternate;
+    }
+
+    .sprouty2 {
+        animation: sy 3s linear infinite alternate;
+    }
+
+    .beany2 {
+    animation: by 4s linear infinite alternate;
+    }
+  
+    @keyframes sx {
+        100% {
+        transform: translateX( calc(100vw - 225px) );
+        
+        }
+    }
+    
+    @keyframes bx {
+        100% {
+            transform: translateX( calc(100vw - 285px) );
+    
+        }
+        }
+    
+    @keyframes sy {
+        100% {
+        transform: translateY( calc(100vh - 137px) );
+        }
+    }
+    
+    @keyframes by {
+        100% {
+            transform: translateY( calc(100vh - 102px) );
+        }
+    }
