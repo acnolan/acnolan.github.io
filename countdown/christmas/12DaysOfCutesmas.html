@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>The 12 Days of C̵u̵t̵e̵s̵m̵a̵s̵ Catsmas</title>
+    <title>The 12 Days of Cutesmas</title>
     <meta name="description" content="A short story about cutie Christmas">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,24 +21,25 @@
 
 <body>
     <!--Cats-->
-    <div class="sproutx">
+    <div id="sprout1" class="sproutx">
         <img src="./images/sprout.png" class="sprouty">
     </div>
     
-    <div class="beanx">
+    <div id="bean1" class="beanx">
         <img src="./images/bean.png"  class="beany">
     </div>
-    <div class="sproutx2">
+    <div id="sprout2" class="sproutx2">
         <img src="./images/sprout.png" class="sprouty2">
     </div>
     
-    <div class="beanx2">
+    <div id="bean2" class="beanx2">
         <img src="./images/bean.png"  class="beany2">
     </div>
 
     <!-- New line characters actually affect whitespace! https://stackoverflow.com/questions/5078239/how-do-i-remove-the-space-between-inline-inline-block-elements-->
-    <h1><s><span class="r">T</span><span class="g">h</span><span class="r">e </span><span class="g">1</span><span class="r">2 </span><span class="g">D</span><span class="r">a</span><span class="g">y</span><span class="r">s </span><span class="g">o</span"><span class="r">f </span><span class="g">C</span><span class="r">u</span><span class="g">t</span><span class="r">e</span><span class="g">s</span><span class="r">m</span><span class="g">a</span><span class="r">s</span></s></h1>
-    <h1><span class="r">T</span><span class="g">h</span><span class="r">e </span><span class="g">1</span><span class="r">2 </span><span class="g">D</span><span class="r">a</span><span class="g">y</span><span class="r">s </span><span class="g">o</span"><span class="r">f </span><span class="g">C</span><span class="r">a</span><span class="g">t</span><span class="r">s</span><span class="g">m</span><span class="r">a</span><span class="g">s</span></h1>
+    <h1 id="normalTitle"><span class="r">T</span><span class="g">h</span><span class="r">e </span><span class="g">1</span><span class="r">2 </span><span class="g">D</span><span class="r">a</span><span class="g">y</span><span class="r">s </span><span class="g">o</span"><span class="r">f </span><span class="g">C</span><span class="r">u</span><span class="g">t</span><span class="r">e</span><span class="g">s</span><span class="r">m</span><span class="g">a</span><span class="r">s</span></h1>
+    <h1 id="crossedTitle"><s><span class="r">T</span><span class="g">h</span><span class="r">e </span><span class="g">1</span><span class="r">2 </span><span class="g">D</span><span class="r">a</span><span class="g">y</span><span class="r">s </span><span class="g">o</span"><span class="r">f </span><span class="g">C</span><span class="r">u</span><span class="g">t</span><span class="r">e</span><span class="g">s</span><span class="r">m</span><span class="g">a</span><span class="r">s</span></s></h1>
+    <h1 id="catsmasTitle"><span class="r">T</span><span class="g">h</span><span class="r">e </span><span class="g">1</span><span class="r">2 </span><span class="g">D</span><span class="r">a</span><span class="g">y</span><span class="r">s </span><span class="g">o</span"><span class="r">f </span><span class="g">C</span><span class="r">a</span><span class="g">t</span><span class="r">s</span><span class="g">m</span><span class="r">a</span><span class="g">s</span></h1>
     <h2>By Andrew Nolan</h2>
     <h3>Inspired by the famous English Christmas Carol</h3>    
     <div id="slidingZone">
@@ -126,8 +127,12 @@
         </div>
         <div id="finalLine"></div>
     </div>
-    <audio id="audio" controls autoplay loop style="margin-top: 5px;">
+    <audio id="cataudio" controls autoplay loop style="margin-top: 5px;">
         <source src="./music/12dayscats.mp3" type="audio/mpeg">
+      Your browser does not support music :'^(
+    </audio>
+    <audio id="audio" controls autoplay loop style="margin-top: 5px;">
+        <source src="./music/12daysjazz.mp3" type="audio/mpeg">
       Your browser does not support music :'^(
     </audio>
 </body>

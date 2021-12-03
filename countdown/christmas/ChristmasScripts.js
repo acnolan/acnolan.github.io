@@ -79,6 +79,18 @@ function displayImages(idArray){
     idArray.forEach(id => {
         document.getElementById(id).style.display="block";
     });
+
+    // Show the catsmas stuff
+    document.getElementById("sprout1").style.display="block";
+    document.getElementById("sprout2").style.display="block";
+    document.getElementById("bean1").style.display="block";
+    document.getElementById("bean2").style.display="block";
+    document.getElementById("catsmasTitle").style.display="block";
+    document.getElementById("cataudio").style.display="inline";
+    document.getElementById("audio").style.display="none";
+    document.getElementById("crossedTitle").style.display="block";
+    document.getElementById("normalTitle").style.display="none";
+    document.title = "The 12 Days of C̵u̵t̵e̵s̵m̵a̵s̵ Catsmas";
 }
 
 /** Play Music **/
