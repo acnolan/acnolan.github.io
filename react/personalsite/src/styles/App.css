@@ -102,7 +102,11 @@ html{
   background: #b597c9;
 }
 
-#email, .mylinks{
+.mylinks{
+  margin: 0 2px 0 2px;
+}
+
+.mylinks{
   text-decoration: none;
   border-radius: 5px;
   background: linear-gradient(grey,darkgrey(37, 37, 253));
@@ -139,21 +143,8 @@ h2 a{
   text-decoration: inherit;
 }
 
-#email{
-  background-color: #711ca7;
-}
-#email:hover{
-  background-color: #b597c9;
-}
-
 .mobile-only{
   display: none;
-}
-
-@media (min-width: 700px){
-  #email{
-      font-size: 1.5em;
-  }
 }
 
 @media (max-width: 700px){

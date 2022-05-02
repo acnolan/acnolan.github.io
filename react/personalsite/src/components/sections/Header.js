@@ -1,9 +1,16 @@
-const Header = () => {
+const Header = (props) => {
+    const {currentPage, isHomePage} = props;
     return(
         <div className="header">
             <div className="content">
                 <h1>
-                    <a>Andrew Nolan</a>
+                <a href="/"
+                className="desktop-only"
+                style={{'textDecoration': 'none',
+                    'color':'white'}}
+                >      
+                    {currentPage}
+                </a>
                 </h1>
                 <div className="linkBlock">
                     <a 

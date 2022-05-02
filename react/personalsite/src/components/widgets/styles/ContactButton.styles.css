@@ -1,0 +1,24 @@
+.contactButtonDiv { 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.email{
+    text-decoration: none;
+    border-radius: 5px;
+    background: linear-gradient(grey,darkgrey(37, 37, 253));
+    background-color: #711ca7;
+    color: white;
+    padding: 10px 35px; 
+    box-sizing: border-box;
+}
+
+.email:hover{
+background-color: #b597c9;
+}
+
+@media (min-width: 700px){
+    .email{
+        font-size: 1.5em;
+    }
+}
