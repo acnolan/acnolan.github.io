@@ -1,5 +1,7 @@
+import './styles/ProjectContent.styles.css';
+
 const ProjectContent = (props) => {
-    const {title, link, dates, content, isLeftAlign} = props;
+    const {title, link, dates, location, content, isLeftAlign} = props;
 
     const buildTitle = () => {
         return(
@@ -9,9 +11,12 @@ const ProjectContent = (props) => {
     }
 
     const buildParagraphs = () => {
-        return content.map(c => {
+        return content.map((c, index) => {
             return(
-                <p dangerouslySetInnerHTML={c} />
+                <p
+                    key = {title + 'paragraph' + index}
+                    dangerouslySetInnerHTML = {{ __html: c }} 
+                />
             );
         });
     }
@@ -20,7 +25,7 @@ const ProjectContent = (props) => {
         <>
             <div className={isLeftAlign ? "" : "alignRight"}>
                 {buildTitle()}
-                <h3>{dates}</h3>
+                <h3>{dates + ", " + location}</h3>
                 {buildParagraphs()}
             </div>
             <br/>

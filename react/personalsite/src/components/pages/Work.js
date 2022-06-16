@@ -1,9 +1,9 @@
+import Helmet from 'react-helmet';
 import ContactButton from '../widgets/ContactButton';
 import ProjectContent from '../widgets/ProjectContent';
+import content from '../../resources/Data/work.json';
 
 const Work = () => {
-
-    let content = [];
 
     const buildParagraphs = () => {
         return content.map((c,index) => {
@@ -12,6 +12,7 @@ const Work = () => {
                     title = {c.title}
                     link = {c.link}
                     dates = {c.dates}
+                    location = {c.location}
                     content = {c.content}
                     isLeftAlign = {index % 2 === 0}
                 />
@@ -21,6 +22,9 @@ const Work = () => {
 
     return (
         <div class="content justify-p">
+            <Helmet>
+                <title>{"Andrew Nolan"}</title>
+            </Helmet>
             <br/>
             <h1 className="purpleText">Work Experience</h1>
             <p>

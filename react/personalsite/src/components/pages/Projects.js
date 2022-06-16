@@ -1,17 +1,19 @@
 import Helmet from 'react-helmet';
-import ProjectContent from '../sections/ProjectContent';
+import ProjectContent from '../widgets/ProjectContent';
 import ContactButton from '../widgets/ContactButton';
+import content from '../../resources/Data/projects.json';
 
 const Projects = () => {
-    let content = [];
 
     const buildParagraphs = () => {
         return content.map((c,index) => {
             return(
                 <ProjectContent
+                    key = {c.title}
                     title = {c.title}
                     link = {c.link}
                     dates = {c.dates}
+                    location = {c.location}
                     content = {c.content}
                     isLeftAlign = {index % 2 === 0}
                 />

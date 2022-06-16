@@ -13,9 +13,18 @@ const Header = (props) => {
                 </a>
                 </h1>
                 <div className="linkBlock">
+                    {!isHomePage && 
+                        <a 
+                            href="./" 
+                            aria-label="home" 
+                            className="fa fa-home">
+                        </a>
+                    }
                     <a 
                         target="_blank" 
-                        href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"
+                        href="https://github.com/acnolan" 
+                        rel="noopener noreferrer" 
+                        aria-label="github"
                         className="fa fa-github"></a>
                     <a 
                         target="_blank" 
