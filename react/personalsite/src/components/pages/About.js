@@ -1,7 +1,7 @@
 import Helmet from 'react-helmet';
-import favorites from '../../resources/Data/favorites.json';
+import favorites from '../../resources/data/favorites.json';
 import FlipTileRow from '../sections/FlipTileRow';
-import './Styles/flipcard.css';
+import './styles/flipcard.css';
 
 const About = () => {
 
@@ -17,6 +17,7 @@ const About = () => {
                     </>
                 );
             }
+            return null;
         });
     }
 

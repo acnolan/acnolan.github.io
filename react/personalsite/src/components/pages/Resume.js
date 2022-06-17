@@ -1,4 +1,6 @@
 import Helmet from 'react-helmet';
+import ContactButton from '../widgets/ContactButton';
+import './styles/resume.css';
 
 const Resume = () => {
     return (
@@ -18,6 +20,19 @@ const Resume = () => {
                     Download
                 </a>
             </div>
+            <div style={{"text-align":"center"}}>
+                <object 
+                    class="pdf-holder" 
+                    data="./data/AndrewNolan_Resume_2021.pdf" 
+                    type="application/pdf"
+                    width="100%" 
+                    height="100%">
+                    <p>
+                        Your web browser doesn't have a PDF plugin. Instead you can <a href="./data/AndrewNolan_Resume_2021.pdf" download>click here to download the PDF file.</a>
+                    </p>
+                </object>
+            </div>
+            <ContactButton/>
         </div>
     );
 }

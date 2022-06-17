@@ -1,7 +1,7 @@
 import Helmet from 'react-helmet';
 import ProjectContent from '../widgets/ProjectContent';
 import ContactButton from '../widgets/ContactButton';
-import content from '../../resources/Data/projects.json';
+import content from '../../resources/data/projects.json';
 
 const Projects = () => {
 

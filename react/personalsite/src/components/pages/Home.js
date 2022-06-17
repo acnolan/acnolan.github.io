@@ -1,6 +1,6 @@
 import Helmet from 'react-helmet';
 import ContactButton from '../widgets/ContactButton';
-import './Styles/homepagemobile.css';
+import './styles/homepagemobile.css';
 
 const Home = () => {
     return (
@@ -12,7 +12,7 @@ const Home = () => {
             <h1 className="purpleText" style={{'textAlign':'center', 'marginBottom': 0}}>Andrew Nolan</h1>
             <h2 style={{'textAlign':'center', 'marginTop':0}}>Student, Programmer, Pretty Cool Guy</h2>
             <div style={{'textAlign':'center'}}>
-                <img className="rounded-image" alt="A super cool picture of me" width={240} height={240} src={require("../../resources/images/homepage.jpg")}/>
+                <img className="rounded-image" alt="Andrew standing by the ocean" width={240} height={240} src={require("../../resources/images/homepage.jpg")}/>
             </div>
             <div className="buttonrow">
                 <a className="mylinks" href="about">About Me</a>
