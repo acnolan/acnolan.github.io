@@ -1,9 +1,14 @@
-import Helmet from 'react-helmet';
+import { useEffect } from 'react';
 import ProjectContent from '../widgets/ProjectContent';
 import ContactButton from '../widgets/ContactButton';
 import content from '../../resources/data/projects.json';
 
-const Projects = () => {
+const Projects = (props) => {
+    const {setPageTitle} = props;
+
+    useEffect(() => {
+        setPageTitle("Projects - Andrew Nolan");
+    });
 
     const buildParagraphs = () => {
         return content.map((c,index) => {
@@ -23,9 +28,6 @@ const Projects = () => {
 
     return (
         <div className="content justify-p">
-            <Helmet>
-                <title>{"Andrew Nolan"}</title>
-            </Helmet>
             <br/>
             <h1 
                 style={{"marginBottom":"0px"}} 

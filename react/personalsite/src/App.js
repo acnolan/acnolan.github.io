@@ -8,22 +8,21 @@ import Home from './components/pages/Home';
 import Header from './components/sections/Header';
 import React, {useState} from 'react'
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Andrew Nolan');
-  const [isHomePage, setIsHomePage] = useState(true);
+  const [pageTitle, setPageTitle] = useState('Andrew Nolan');
 
   return (
     <div>
-      <Header currentPage={currentPage} isHomePage={isHomePage}/>
+      <Header pageTitle={pageTitle}/>
       <Routes>
-        <Route path={"/"} element={<Home/>}/>
-        <Route path={"about"} element={<About/>}/>
-        <Route path={"blogs"} element={<Blogs/>}/>
-        <Route path={"Projects"} element={<Projects/>}/>
-        <Route path={"resume"} element={<Resume/>}/>
-        <Route path={"Work"} element={<Work/>}/>
+        <Route path={"/"} element={<Home setPageTitle={setPageTitle}/>}/>
+        <Route path={"about"} element={<About setPageTitle={setPageTitle}/>}/>
+        <Route path={"blogs"} element={<Blogs setPageTitle={setPageTitle}/>}/>
+        <Route path={"Projects"} element={<Projects setPageTitle={setPageTitle}/>}/>
+        <Route path={"resume"} element={<Resume setPageTitle={setPageTitle}/>}/>
+        <Route path={"Work"} element={<Work setPageTitle={setPageTitle}/>}/>
       </Routes>
     </div>
   );

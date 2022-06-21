@@ -1,13 +1,16 @@
-import Helmet from 'react-helmet';
+import {useEffect} from 'react';
 import ContactButton from '../widgets/ContactButton';
 import './styles/homepagemobile.css';
 
-const Home = () => {
+const Home = (props) => {
+    const {setPageTitle} = props;
+
+    useEffect(() => {
+        setPageTitle("Andrew Nolan");
+    });
+
     return (
         <div className="content">
-            <Helmet>
-                <title>{"Andrew Nolan"}</title>
-            </Helmet>
             <br/>
             <h1 className="purpleText" style={{'textAlign':'center', 'marginBottom': 0}}>Andrew Nolan</h1>
             <h2 style={{'textAlign':'center', 'marginTop':0}}>Student, Programmer, Pretty Cool Guy</h2>

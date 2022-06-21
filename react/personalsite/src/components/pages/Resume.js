@@ -1,13 +1,16 @@
-import Helmet from 'react-helmet';
+import { useEffect } from 'react';
 import ContactButton from '../widgets/ContactButton';
 import './styles/resume.css';
 
-const Resume = () => {
+const Resume = (props) => {
+    const {setPageTitle} = props;
+
+    useEffect(() => {
+        setPageTitle("Resume - Andrew Nolan");
+    });
+
     return (
         <div className="content justify-p">
-            <Helmet>
-                <title>{"Andrew Nolan"}</title>
-            </Helmet>
             <br/>
             <div style={{"display":"flex","justify-content":"space-around"}}>
                 <h1 className="purpleText">Resume</h1>

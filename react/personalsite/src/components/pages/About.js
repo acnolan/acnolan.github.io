@@ -1,9 +1,14 @@
-import Helmet from 'react-helmet';
+import { useEffect } from 'react';
 import favorites from '../../resources/data/favorites.json';
 import FlipTileRow from '../sections/FlipTileRow';
 import './styles/flipcard.css';
 
-const About = () => {
+const About = (props) => {
+    const {setPageTitle} = props;
+
+    useEffect(() => {
+        setPageTitle("About - Andrew Nolan");
+    });
 
     const buildFlipTiles = () => {
         return favorites.map((tileData, index) => {
@@ -23,9 +28,6 @@ const About = () => {
 
     return (
         <div class="content">
-            <Helmet>
-                <title>{"About - Andrew Nolan"}</title>
-            </Helmet>
             <br/>
             <h1 class="purpleText" style={{'textAlign': 'center'}}>About Me</h1>
 
