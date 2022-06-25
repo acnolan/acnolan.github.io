@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 import ContactButton from '../widgets/ContactButton';
-import './styles/homepagemobile.css';
+import homeStyles from './styles/home.module.css';
 
 const Home = (props) => {
     const {setPageTitle} = props;
@@ -17,7 +17,7 @@ const Home = (props) => {
             <div style={{'textAlign':'center'}}>
                 <img className="rounded-image" alt="Andrew standing by the ocean" width={240} height={240} src={require("../../resources/images/homepage.jpg")}/>
             </div>
-            <div className="buttonrow">
+            <div className={homeStyles.buttonrow}>
                 <a className="mylinks" href="about">About Me</a>
                 <a className="mylinks" href="work">Work Experience</a>
                 <a className="mylinks" href="projects">Projects</a>

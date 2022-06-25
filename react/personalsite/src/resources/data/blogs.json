@@ -1,0 +1,12 @@
+{
+    "posts":
+        [
+            {
+                "title": "Hello World!",
+                "date": "12/22/2020",
+                "tags": ["Misc"],
+                "description": "The first ever entry to my blogs",
+                "url": "./blogs/HelloWorld"
+            }
+        ]
+}

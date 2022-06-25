@@ -1,13 +1,15 @@
+import flipTileStyles from './styles/FlipTile.module.css';
+
 const FlipTile = (props) => {
     const { tileData } = props;
 
     return(
-        <div className="flip-card" onclick="">
-            <div className="flip-card-inner">
-                <div className="flip-card-front">
+        <div className={flipTileStyles.flipCard} onclick="">
+            <div className={flipTileStyles.flipCardInner}>
+                <div className={flipTileStyles.flipCardFront}>
                     <h1>{tileData.question}</h1>
                 </div>
-                <div className="flip-card-back">
+                <div className={flipTileStyles.flipCardBack}>
                     <img 
                         src={require("../../resources/images/about/"+tileData.imgSrc)} 
                         alt={tileData.altText}

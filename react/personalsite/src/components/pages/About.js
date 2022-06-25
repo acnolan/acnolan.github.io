@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import favorites from '../../resources/data/favorites.json';
 import FlipTileRow from '../sections/FlipTileRow';
-import './styles/flipcard.css';
 
 const About = (props) => {
     const {setPageTitle} = props;

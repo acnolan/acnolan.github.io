@@ -1,4 +1,4 @@
-import './styles/ProjectContent.styles.css';
+import projectContentStyles from './styles/ProjectContent.module.css';
 
 const ProjectContent = (props) => {
     const {title, link, dates, location, content, isLeftAlign} = props;
@@ -23,7 +23,7 @@ const ProjectContent = (props) => {
 
     return(
         <>
-            <div className={isLeftAlign ? "" : "alignRight"}>
+            <div className={isLeftAlign ? "" : projectContentStyles.alignRight}>
                 {buildTitle()}
                 <h3>{dates + ", " + location}</h3>
                 {buildParagraphs()}

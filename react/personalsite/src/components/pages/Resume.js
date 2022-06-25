@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import ContactButton from '../widgets/ContactButton';
-import './styles/resume.css';
+import resumeStyles from './styles/resume.module.css';
 
 const Resume = (props) => {
     const {setPageTitle} = props;
@@ -13,9 +13,9 @@ const Resume = (props) => {
         <div className="content justify-p">
             <br/>
             <div style={{"display":"flex","justify-content":"space-around"}}>
-                <h1 className="purpleText">Resume</h1>
+                <h1 className={resumeStyles.purpleText}>Resume</h1>
                 <a 
-                    className="mylinks" 
+                    className={resumeStyles.mylinks} 
                     style={{"margin-top": "auto","margin-bottom": "auto"}}
                     href="../../data/AndrewNolan_Resume_2021.pdf" 
                     download
@@ -25,7 +25,7 @@ const Resume = (props) => {
             </div>
             <div style={{"text-align":"center"}}>
                 <object 
-                    class="pdf-holder" 
+                    class={resumeStyles.pdfHolder} 
                     data="./data/AndrewNolan_Resume_2021.pdf" 
                     type="application/pdf"
                     width="100%" 
