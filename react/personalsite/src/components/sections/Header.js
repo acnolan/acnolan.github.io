@@ -38,6 +38,12 @@ const Header = (props) => {
                             rel="noopener noreferrer" aria-label="linkedin"
                             className="fa fa-linkedin"></a>
                         <a 
+                            target="_blank" 
+                            href="https://twitter.com/AndrewNolanDev" 
+                            rel="noopener noreferrer" 
+                            aria-label="twitter" 
+                            className="fa fa-twitter"></a>
+                        <a 
                             name="Email to me"
                             href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"
                             className="fa fa-envelope">

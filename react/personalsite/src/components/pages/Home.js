@@ -24,7 +24,6 @@ const Home = (props) => {
                 <a className="mylinks" href="blogs">Blogs</a>
             </div>
             <ContactButton/>
-            <br/><br/><br/><br/>
         </div>
     )
 }

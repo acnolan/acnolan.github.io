@@ -10,11 +10,11 @@ const BlogEntry = (props) => {
         blogData.tags.forEach(tag => {
             postTagsText += tag + ', ';
         });
-        return <h4>{postTagsText.slice(0, postTagsText.length - 2)}</h4>;
+        return postTagsText.slice(0, postTagsText.length - 2);
     }
 
     return (
-        <div onClick={redirectToBlog}>
+        <div key={blogData.title} className="blogListEntry" onClick={redirectToBlog}>
             <h3 className="blogTitleLine">{blogData.title}</h3>
             <h3 className="blogDateLine">{blogData.date}</h3>
             <p className="blogDescription">{blogData.description}</p>

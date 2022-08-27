@@ -13,9 +13,9 @@ const Resume = (props) => {
         <div className="content justify-p">
             <br/>
             <div style={{"display":"flex","justify-content":"space-around"}}>
-                <h1 className={resumeStyles.purpleText}>Resume</h1>
+                <h1 className={"purpleText"}>Resume</h1>
                 <a 
-                    className={resumeStyles.mylinks} 
+                    className={"mylinks"} 
                     style={{"margin-top": "auto","margin-bottom": "auto"}}
                     href="../../data/AndrewNolan_Resume_2021.pdf" 
                     download

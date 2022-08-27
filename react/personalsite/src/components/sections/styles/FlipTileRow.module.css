@@ -1,8 +1,8 @@
-.flip-row{
+.flipRow{
     display:flex; 
     justify-content: space-around;
 }
 
-.mobile-only-br{
+.mobileOnlyBr{
     display: none;
 }

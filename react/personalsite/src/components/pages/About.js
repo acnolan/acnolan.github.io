@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
-import favorites from '../../resources/data/favorites.json';
 import FlipTileRow from '../sections/FlipTileRow';
+import ContactButton from '../widgets/ContactButton';
+import favorites from '../../resources/data/favorites.json';
 
 const About = (props) => {
     const {setPageTitle} = props;
 
     useEffect(() => {
-        setPageTitle("About - Andrew Nolan");
+        setPageTitle("About Andrew Nolan");
     });
 
     const buildFlipTiles = () => {
@@ -33,6 +34,7 @@ const About = (props) => {
             <p>You can learn a lot about my technical skills and experiences from my resume and work history. However, if you want to learn more about me as a person, here are some of my favorite things!</p>
 
             {buildFlipTiles()}
+            <ContactButton/>
         </div>
     );
 }
