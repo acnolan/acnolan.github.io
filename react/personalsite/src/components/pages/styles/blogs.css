@@ -1,0 +1,104 @@
+/** Blog List Styles **/
+#blogStuff{
+    display: flex;
+}
+
+#blogList{
+    width: 66%;
+    border-right: solid 1px grey;
+}
+
+.blogListEntry{
+    border: solid 1px lightgrey;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 95%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.blogTitleLine, .blogDateLine{
+    display: inline-block;
+    border-bottom: 2px dotted lightgray;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.blogDateLine{
+    float: right;
+    text-align: right;
+}
+
+.blogDescription{
+    margin-top: 0;
+}
+
+#blogFilter{
+    width: 34%;
+    padding-left: 10px;
+}
+
+
+/** Blog Filter Styles **/
+#filterBox{
+    border: solid 1px lightgrey;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#filterBox>h3{
+    border-bottom: 2px dotted lightgray;
+}
+
+#filterBox>p{
+    margin-top:0;
+    margin-bottom:5px;
+}
+
+/** Blog post styles **/
+#backButton{
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #711ca7;
+    color: white;
+    padding: 10px 35px; 
+    box-sizing: border-box;
+    float: right;
+    margin-top: 30px;
+}
+#backButton:hover{
+    background-color: #b597c9;
+}
+
+#blogTitle{
+    display: inline-block;
+}
+
+@media (max-width: 700px){
+    #backButton{
+        margin-top: 20px;
+        width: fit-content;
+        padding: 5px 15px;
+    }
+
+    #blogStuff{
+        display: block;
+    }
+
+    #blogList{
+        width: 100%;
+        border: none;
+    }
+
+    #blogFilter{
+        width: 100%;
+        padding: 0;
+    }
+
+    .blogListEntry, #filterBox{
+        width: initial;
+    }
+}

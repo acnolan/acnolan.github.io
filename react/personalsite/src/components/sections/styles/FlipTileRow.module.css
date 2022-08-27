@@ -1,0 +1,8 @@
+.flipRow{
+    display:flex; 
+    justify-content: space-around;
+}
+
+.mobileOnlyBr{
+    display: none;
+}

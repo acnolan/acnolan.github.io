@@ -1,8 +1,6 @@
 // The data, temporarily stored here, should be moved to .json file
 let blogData = {};
 
-
-
 // Get the blog
 fetch('https://andrewnolan.dev/blogs/blogData.json')
   .then(res => res.json())

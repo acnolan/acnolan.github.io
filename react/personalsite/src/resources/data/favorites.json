@@ -1,0 +1,92 @@
+[
+    {
+        "question": "Favorite TV Show? ",
+        "imgSrc": "tvshow.jpg",
+        "altText": "Nathan for You"
+    },
+    {
+        "question": "Favorite Movie?",
+        "imgSrc": "movie.jpg",
+        "altText": "Scott Pilgrim vs the World"
+    },
+    {
+        "question": "Favorite Book?",
+        "imgSrc": "book.jpg",
+        "altText": "Where Wizards Stay up Late"
+    },
+    {
+        "question": "Favorite Video Game?",
+        "imgSrc": "game.jpg",
+        "altText": "Skyrim"
+    },
+    {
+        "question": "Favorite Album?",
+        "imgSrc": "album.jpg",
+        "altText": "Random Access Memories"
+    },
+    {
+        "question": "Favorite Ice Cream Flavor?",
+        "imgSrc": "icecream.png",
+        "altText": "Ben and Jerry's Half Baked"
+    },
+    {
+        "question": "Hobby?",
+        "imgSrc": "hobby.jpg",
+        "altText": "Chess"
+    },
+    {
+        "question": "Coolest Place I've Travelled?",
+        "imgSrc": "travel.png",
+        "altText": "Albania"
+    },
+    {
+        "question": "Favorite Emoji?",
+        "imgSrc": "emoji.png",
+        "altText": "upside down smiley face emoji"
+    },
+    {
+        "question": "GIF Pronounciation?",
+        "imgSrc": "gif.png",
+        "altText": "Soft G"
+    },
+    {
+        "question": "Favorite Number?",
+        "imgSrc": "number.png",
+        "altText": "The number two"
+    },
+    {
+        "question": "Political Compass",
+        "imgSrc": "politicalcompass.png",
+        "altText": "Political compass"
+    },
+    {
+        "question": "Favorite Podcast?",
+        "imgSrc": "podcast.jpg",
+        "altText": "Revisionist History"
+    },
+    {
+        "question": "Favorite Food?",
+        "imgSrc": "food.jpg",
+        "altText": "Philly Cheesesteak"
+    },
+    {
+        "question": "Favorite Animal?",
+        "imgSrc": "animal.jpg",
+        "altText": "Kitty!"
+    },
+    {
+        "question": "Favorite Fruit?",
+        "imgSrc": "fruit.jpg",
+        "altText": "Black berries"
+    },
+    {
+        "question": "Social Media of Choice?",
+        "imgSrc": "socialmedia.png",
+        "altText": "Twitter"
+    },
+    {
+        "question": "Favorite Programming Language?",
+        "imgSrc": "programming.png",
+        "altText": "JavaScript"
+    }
+]
