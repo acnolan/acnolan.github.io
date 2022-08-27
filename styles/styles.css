@@ -64,25 +64,27 @@ html{
     margin: 5px 2px;
     border-radius: 5px;
     float: right;
+    color: white;
 }
 
 .fa-github{
     background: #6e5494;
-    color: white;
 }
 
 .fa-linkedin{
     background: #0077B5;
-    color: white;
+}
+
+.fa-twitter{
+    background-color: #1DA1F2;
 }
 
 .fa-envelope{
     background: #363434;
-    color: white;
+    
 }
 
 .fa-home{
-    color: white;
     background: #711ca7;
 }
 
@@ -90,8 +92,12 @@ html{
     background: #76678d;
 }
 
+.fa-twitter:hover{
+    background: #47aff0
+}
+
 .fa-linkedin:hover{
-    background: rgb(34, 130, 182);
+    background: #2282B6;
 }
 
 .fa-envelope:hover{

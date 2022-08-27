@@ -2,7 +2,7 @@
 let blogData = {};
 
 // Get the blog
-fetch('https://acnolan.tech/blogs/blogData.json')
+fetch('https://andrewnolan.dev/blogs/blogData.json')
   .then(res => res.json())
   .then(json => {
     blogData = json;
