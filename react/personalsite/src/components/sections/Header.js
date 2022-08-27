@@ -1,5 +1,6 @@
 import Helmet from 'react-helmet';
 
+/* eslint-disable jsx-a11y/anchor-has-content */
 const Header = (props) => {
     const {pageTitle} = props;
     return(

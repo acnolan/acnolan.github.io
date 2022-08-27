@@ -16,6 +16,7 @@ const Blogs = (props) => {
     });
 
     const generateBlogList = () => {
+        // eslint-disable-next-line array-callback-return
         const entries = blogData.posts.map(blog => {
             if (blog.tags.some(tag => selectedTags.includes(tag))){
                 return <BlogEntry key={blog.title} blogData={blog}/>

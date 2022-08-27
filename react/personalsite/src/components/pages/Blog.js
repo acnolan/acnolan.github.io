@@ -5,7 +5,7 @@ const Blog = (props) => {
     const {setPageTitle} = props;
     
     let urlParts = window.location.href.split('/');
-    const [blog, setBlog] = useState(urlParts[urlParts.length-1]);
+    const blog = urlParts[urlParts.length-1];
     const [blogContent, setBlogContent] = useState();
 
     useEffect(() => {
@@ -17,6 +17,7 @@ const Blog = (props) => {
                 setPageTitle(b.title);
                 return true;  
             }
+            return false;
         }); 
         
     });
@@ -39,7 +40,10 @@ const Blog = (props) => {
                 <a href="../blogs" className={"mobile-only"} id="backButton">&lt; Back</a>
                 <h1 id="blogTitle" className={"purpleText"}>{"The requested blog does not exist!"}</h1>
                 <div style={{"text-align":"center", "margin":"auto"}}>
-                    <img src="/favicon.ico"/>
+                    <img 
+                        src="/favicon.ico"
+                        alt="An emoji for when things go wrong"
+                    />
                 </div>
                 <br/><br/><br/><br/>
             </div> 
