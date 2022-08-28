@@ -152,7 +152,7 @@ h2 a{
 }
 
 @media (max-width: 700px){
-  .fa-github, .fa-linkedin, .fa-envelope{
+  .fa-github, .fa-linkedin, .fa-envelope, .fa-twitter{
       display: none;
   }
   .purpleText{
