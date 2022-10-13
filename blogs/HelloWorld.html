@@ -14,11 +14,11 @@
     <!-- my stuff -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta name="description" content="Hello world! This is my first ever blog post!">
-    <meta name="keywords" content="Andrew Nolan, Andrew Nolan WPI, Andrew Nolan Blog, Hello World">
+    <meta name="description" content="A discussion of Chernoff Faces.">
+    <meta name="keywords" content="Chernoff Faces, Andrew Nolan, Data Visualization">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='icon' href='../images/favicon.ico'>
-    <title>Hello World!</title>
+    <title>A Chat about Chernoff Faces</title>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
 </head>
@@ -45,12 +45,34 @@
         <br>
         <a href="../blogs" class="desktop-only" id="backButton">&lt; Back to Blog List</a>
         <a href="../blogs" class="mobile-only" id="backButton">&lt; Back</a>
-        <h1 id="blogTitle" class="purpleText">Hello World!</h1>
+        <h1 id="blogTitle" class="purpleText">A Chat about Chernoff Faces</h1>
         <h3>Andrew Nolan</h3>
-        <h3>12/22/2020</h3>
-        <p>Hello World!</p>
-        <p>Much like a new programming language, I felt like the first thing I should do in a new blog is to start with a simple Hello World. This is mostly a place holder but I thought if I put something down I will be more likely to come back and write some real articles in 2021.</p>
-        <p>Wish me luck with that! And I hope to see you all back here in 2021!</p>
+        <h3>10/12/2022</h3>
+        <h2>Intro</h2>
+        <p>Last summer I took the course CS 548 Knowledge Discovery and Data Mining. In one of the lectures we talked about data visualizations and in one slide we breifly discussed Chernoff Faces. For some reason I think about this data visualization way more than I should. For my assignment 1 project I made some Chernoff Face visualizations of Iris species data in d3. Since I've been thinking about them all week I felt like an introduction/discussion to the applications of the visualization would be a good choice for this week's reflection.</p>
+        <h2>Background</h2>
+        <p>For those unfamiliar with the data vis, Chernoff Faces were invented in 1973 by the American Mathematician, Herman Chernoff. Chernoff Faces provide a way to visualize multivariate data by mapping data features to visual features on the face [1][11]. The benefits of this visualization come from the claim that humans can easily recognize faces and identify small changes between them. This is useful if the goal of the visualization is pattern recognition, outlier detection, or clustering similar data objects. However, the scale and value of data is often obscured by this vis. Without intimate knowledge of which values are mapped to what facial feature it is hard to decipher more than which objects are similar or outliers.</p>
+
+        <p>From what I can tell, in most languages you would have to fork someone's Github repo or build your own system for visualizing data with Chernoff Faces. But if you are a fan of R, there is a package called aplpack that includes easy to use Chernoff Face code. This library is commonly used in real world Chernoff Faces. You can see actually see this library in use in all of the examples below. You can learn how to use it in the article "How to Visualize Data with Cartoonish Faces ala Chernoff" [6].</p>
+
+        <h2>Real World Examples</h2>
+        <p>Considering that most people have probably not heard of this visualization, it's unsurprising that it is rarely used for real world applications. However, I wanted to share a few practical examples that could be found.</p>
+
+        <p>In 2006 a Social Science Statistics blogger shared a Baseball bloggers Chernoff face represenation of 2005 National League Baseball statistics [4][5]. The faces below map the following features to facial features:</p>
+
+        <ul>
+            <li>Win percent -> face height, smile curve, and hair styling</li>
+            <li>Hits -> face width, eye height, and nose height</li>
+            <li>Home runs -> face shape, eye width, and nose width</li>
+            <li>Walks -> mouth height, hair height, and ear width</li>
+            <li>Stolen bases -> mouth width, hair width, and ear height.</li>
+        </ul>
+
+        <img src="./images/baseball.png" alt="Chernoff faces representing baseball statistics"/>
+
+        <p>While these statistics may be meaningful, it's hard to determine anything from these faces. In 2005 the winner of the National League was the Houston Astros (who then went on to lose to the White Sox in the World Series). In these faces, Houston doesn't particularly stand out. I'm not knowledgeable enough about baseball to tell you if that means anything, but it appears to me that would mean stand out stats don't neccisarily determine winningness in baseball.</p>
+
+        <p>Most Chernoff Face discussion will be from blog posts like the one above, mostly as a for fun look at an obscure data visualization. But there are cases in which Chernoff Faces are used in publishable research. For example, in 2017, the Journal of Documentation published an entry titled "Big data analysis of public library operations and services by using the Chernoff face method" [12]. By using the following feature mapping, the researchers were able to use Chernoff Faces to compare libraries in London and Seoul over time.</p>
         <br><br><br><br>
     </div>
 </body>
