@@ -7,6 +7,20 @@
                 "Tags": ["Misc"],
                 "Description": "The first ever entry to my blogs",
                 "Url": "./blogs/HelloWorld"
+            },
+            {
+                "Title": "A Chat about Chernoff Faces",
+                "Date": "10/12/2022",
+                "Tags": ["Misc"],
+                "Description": "A discussion of Chernoff Faces.",
+                "Url": "./blogs/ChernoffFaces"
+            },
+            {
+                "Title": "Hiking the Highest Points in all 50 States",
+                "Date": "1/17/23",
+                "Tags": ["Misc"],
+                "Description": "My quest to climb to the highest point in all 50 United States. An ongoing journey.",
+                "Url": "./blogs/HighestPeaks"
             }
         ]
 }
