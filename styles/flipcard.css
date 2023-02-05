@@ -53,10 +53,6 @@
     margin-bottom: 54px;
   }
 
-  .mobile-only-br {
-    display: none;
-  }
-
   /* medium screens */
   @media (max-width: 1000px) {
     .flip-card {
@@ -85,8 +81,8 @@
       flex-direction: column;
     }
 
-    .mobile-only-br {
-      display: block;
+    .mobile-only-br, .flip-row {
+      margin-bottom: 15px;
     }
 
     .content p {
