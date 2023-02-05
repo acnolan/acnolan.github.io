@@ -1,23 +1,23 @@
 /** Styles for the homepage on mobile devices **/
-.buttonrow{
+.button-row {
     text-align:center; 
     margin-top:20px;
 }
 
-@media (max-width: 700px){
-    .buttonrow{
+@media (max-width: 700px) {
+    .button-row {
         display: flex;
         flex-direction: column;
     }
-    .buttonrow a{
+    .button-row a {
         margin-bottom: 10px;
         font-size: 12px;
     }
-    div img{
+    div img {
         width: 128px;
         height: 128px;
     }
-    h2{
+    h2 {
         font-size: 15px;
     }
 }
