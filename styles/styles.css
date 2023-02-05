@@ -1,4 +1,4 @@
-body{
+body {
     color: #606c76;
     font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 1.6em;
@@ -7,23 +7,57 @@ body{
     line-height: 1.6;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-.purpleText{
+.page-title {
+    text-decoration: none;
+    color:white;
+}
+
+.footer-div {
+    text-align:center; 
+    margin-top:20px;
+    margin-bottom: 60px;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.alternate-headers div:nth-of-type(2n) h2, .alternate-headers div:nth-of-type(2n) h3 {
+    text-align: right;
+}
+
+.alternate-headers div {
+    margin-bottom: 45px;
+}
+
+.purple-text {
     color: #711ca7;
 }
 
-.content{
+.content {
     margin: 0 auto;
     max-width: 112.0rem;
     padding: 0 2.0rem;
     position: relative;
-    /* width: 100%; */
 }
 
-.header{
+body > .content {
+    margin-top: 54px;
+}
+
+.work-description {
+    margin-bottom: 54px;
+}
+
+.header {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -37,25 +71,25 @@ html{
     z-index: 10;
 }
 
-.header h1{
+.header h1 {
     color: white;
     margin: 0;
     padding: 0;
     display: inline-block;
 }
 
-.linkBlock{
+.link-block {
     float: right;
     display: inline;
     text-align: right;
     padding-top: 3px;
 }
 
-.rounded-image{
+.rounded-image {
     border-radius: 50%;
 }
 
-.fa{
+.fa {
     padding: 6px;
     font-size: 20px;
     width: 20px;
@@ -67,48 +101,48 @@ html{
     color: white;
 }
 
-.fa-github{
+.fa-github {
     background: #6e5494;
 }
 
-.fa-linkedin{
+.fa-linkedin {
     background: #0077B5;
 }
 
-.fa-twitter{
+.fa-twitter {
     background-color: #1DA1F2;
 }
 
-.fa-envelope{
+.fa-envelope {
     background: #363434;
     
 }
 
-.fa-home{
+.fa-home {
     background: #711ca7;
 }
 
-.fa-github:hover{
+.fa-github:hover {
     background: #76678d;
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover {
     background: #47aff0
 }
 
-.fa-linkedin:hover{
+.fa-linkedin:hover {
     background: #2282B6;
 }
 
-.fa-envelope:hover{
+.fa-envelope:hover {
     background: #4b4848;
 }
 
-.fa-home:hover{
+.fa-home:hover {
     background: #b597c9;
 }
 
-#email, .mylinks{
+#email, .my-links {
     text-decoration: none;
     border-radius: 5px;
     background: linear-gradient(grey,darkgrey(37, 37, 253));
@@ -118,7 +152,15 @@ html{
     box-sizing: border-box;
 }
 
-.mylinks:hover{
+.no-top-margin {
+    margin-top: 0;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.my-links:hover{
     background: linear-gradient(darkgrey,grey);
 }
 
@@ -129,52 +171,53 @@ html{
     line-height: 1.6;
 }
 
-.justify-p p{
+.justify-p p {
     text-align: justify;
 }
 
-.justify-p h2{
+.justify-p h2 {
     margin-bottom: 0;
 }
-.justify-p h3{
+.justify-p h3 {
     margin: 0;
 }
 
-h2 a{
+h2 a {
     color: inherit;
     text-decoration: inherit;
 }
 
-#email{
+#email {
     background-color: #711ca7;
 }
-#email:hover{
+#email:hover {
     background-color: #b597c9;
 }
 
-.mobile-only{
+.mobile-only {
     display: none;
 }
 
-@media (min-width: 700px){
-    #email{
+@media (min-width: 700px) {
+    #email {
         font-size: 1.5em;
     }
 }
 
-@media (max-width: 700px){
-    .fa-github, .fa-linkedin, .fa-envelope, .fa-twitter{
+@media (max-width: 700px) {
+    .fa-github, .fa-linkedin, .fa-envelope, .fa-twitter {
         display: none;
     }
-    .purpleText{
+
+    .purple-text {
         font-size: 24px;
     }
         
-    .desktop-only{
+    .desktop-only {
         display:none;
     }
 
-    .mobile-only{
+    .mobile-only {
         display: block;
     }
 }
