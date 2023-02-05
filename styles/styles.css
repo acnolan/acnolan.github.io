@@ -11,6 +11,33 @@ html{
     font-size: 62.5%;
 }
 
+.pageTitle {
+    text-decoration: none;
+    color:white;
+}
+
+.footerDiv {
+    text-align:center; 
+    margin-top:20px;
+    margin-bottom: 60px;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.rightText {
+    text-align: right;
+}
+
+.alternateHeaders div:nth-of-type(2n) h2, .alternateHeaders div:nth-of-type(2n) h3 {
+    text-align: right;
+}
+
+.alternateHeaders div {
+    margin-bottom: 45px;
+}
+
 .purpleText{
     color: #711ca7;
 }
@@ -116,6 +143,14 @@ html{
     color: white;
     padding: 10px 35px; 
     box-sizing: border-box;
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
 }
 
 .mylinks:hover{

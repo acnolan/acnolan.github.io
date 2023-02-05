@@ -3,13 +3,23 @@
     height:1100px;
 }
 
-@media (max-width: 850px){
-    .pdf-holder{
+.resume-header {
+    display:flex;
+    justify-content:space-around;
+}
+
+.mylinks {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media (max-width: 850px) {
+    .pdf-holder {
         width: 100%;
         height: 100%;
     }
     
-    .mylinks{
+    .mylinks {
         display: none;
     }
 }
