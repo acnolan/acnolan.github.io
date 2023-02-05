@@ -11,7 +11,7 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
 
 // Create the list of blog posts
 function generatePosts() {
-    document.getElementById("blogList").innerHTML = "";
+    document.getElementById("blog-list").innerHTML = "";
     let viableTags = getViableTags();
 
     blogData.posts.forEach(post => {
@@ -19,7 +19,7 @@ function generatePosts() {
         if (post.Tags.some(tag => viableTags.includes(tag))) {
             // Create the blog entry
             let blogEntry = document.createElement("div");
-            blogEntry.className = "blogListEntry";
+            blogEntry.className = "blog-list-entry";
             blogEntry.onclick = function () {
                 window.location.href = post.Url;
             }
@@ -27,19 +27,19 @@ function generatePosts() {
             // Create the post title element
             let postTitle = document.createElement("h3");
             postTitle.textContent = post.Title;
-            postTitle.className = "blogTitleLine";
+            postTitle.className = "blog-title-line";
             blogEntry.appendChild(postTitle);
 
             // Create the post date element
             let postDate = document.createElement("h3");
             postDate.textContent = post.Date;
-            postDate.className = "blogDateLine";
+            postDate.className = "blog-date-line";
             blogEntry.appendChild(postDate);
 
             // Create the post description element
             let postDescription = document.createElement("p");
             postDescription.textContent = post.Description;
-            postDescription.className = "blogDescription";
+            postDescription.className = "blog-description";
             blogEntry.appendChild(postDescription);
 
             // Create the post tags element
@@ -52,8 +52,8 @@ function generatePosts() {
             blogEntry.appendChild(postTags);
 
             // Add the blog entry to the blog list
-            let blogList = document.getElementById("blogList");
-            blogList.appendChild(blogEntry);
+            let blog-list = document.getElementById("blog-list");
+            blog-list.appendChild(blogEntry);
         }
     });
 }

@@ -1,14 +1,14 @@
 /** Blog List Styles **/
-#blogStuff{
+#blog-stuff {
     display: flex;
 }
 
-#blogList{
+#blog-list {
     width: 66%;
     border-right: solid 1px grey;
 }
 
-.blogListEntry{
+.blog-list-entry {
     border: solid 1px lightgrey;
     padding-left: 15px;
     padding-right: 15px;
@@ -17,30 +17,30 @@
     cursor: pointer;
 }
 
-.blogTitleLine, .blogDateLine{
+.blog-title-line, .blog-date-line {
     display: inline-block;
     border-bottom: 2px dotted lightgray;
     width: 50%;
     margin-bottom: 0;
 }
 
-.blogDateLine{
+.blog-date-line {
     float: right;
     text-align: right;
 }
 
-.blogDescription{
+.blog-description {
     margin-top: 0;
 }
 
-#blogFilter{
+#blog-filter {
     width: 34%;
     padding-left: 10px;
 }
 
 
 /** Blog Filter Styles **/
-#filterBox{
+#filter-box {
     border: solid 1px lightgrey;
     padding-left: 15px;
     padding-right: 15px;
@@ -49,17 +49,17 @@
     margin-left: auto;
 }
 
-#filterBox>h3{
+#filter-box > h3 {
     border-bottom: 2px dotted lightgray;
 }
 
-#filterBox>p{
+#filter-box > p {
     margin-top:0;
     margin-bottom:5px;
 }
 
 /** Blog post styles **/
-#backButton{
+#back-button {
     text-decoration: none;
     border-radius: 5px;
     background-color: #711ca7;
@@ -69,36 +69,36 @@
     float: right;
     margin-top: 30px;
 }
-#backButton:hover{
+#back-button:hover {
     background-color: #b597c9;
 }
 
-#blogTitle{
+#blog-title {
     display: inline-block;
 }
 
-@media (max-width: 700px){
-    #backButton{
+@media (max-width: 700px) {
+    #back-button {
         margin-top: 20px;
         width: fit-content;
         padding: 5px 15px;
     }
 
-    #blogStuff{
+    #blog-stuff {
         display: block;
     }
 
-    #blogList{
+    #blog-list {
         width: 100%;
         border: none;
     }
 
-    #blogFilter{
+    #blog-filter {
         width: 100%;
         padding: 0;
     }
 
-    .blogListEntry, #filterBox{
+    .blog-list-entry, #filter-box {
         width: initial;
     }
 }
