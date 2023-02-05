@@ -1,2 +1,3 @@
 node_modules/*
 react/personalsite/node_modules/*
+.vscode/*
