@@ -47,7 +47,14 @@ html {
     max-width: 112.0rem;
     padding: 0 2.0rem;
     position: relative;
-    /* width: 100%; */
+}
+
+body > .content {
+    margin-top: 54px;
+}
+
+.work-description {
+    margin-bottom: 54px;
 }
 
 .header {

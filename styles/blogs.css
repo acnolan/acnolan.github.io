@@ -1,11 +1,16 @@
 /** Blog List Styles **/
 #blog-stuff {
     display: flex;
+    margin-bottom: 54px;
 }
 
 #blog-list {
     width: 66%;
     border-right: solid 1px grey;
+}
+
+#sort-by {
+    margin-bottom: 28px;
 }
 
 .blog-list-entry {
@@ -47,6 +52,7 @@
     width: 95%;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 28px;
 }
 
 #filter-box > h3 {

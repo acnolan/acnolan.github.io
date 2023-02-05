@@ -52,8 +52,8 @@ function generatePosts() {
             blogEntry.appendChild(postTags);
 
             // Add the blog entry to the blog list
-            let blog-list = document.getElementById("blog-list");
-            blog-list.appendChild(blogEntry);
+            let blogList = document.getElementById("blog-list");
+            blogList.appendChild(blogEntry);
         }
     });
 }
@@ -75,7 +75,7 @@ function getViableTags() {
 
 // Update the order of the document
 function updateSort() {
-    if (document.getElementById("sortby").value === "1") {
+    if (document.getElementById("sort-by").value === "1") {
         blogData.posts.sort((a, b) => (a.Date < b.Date) ? 1 : -1);
     } else {
         blogData.posts.sort((a, b) => (a.Date > b.Date) ? 1 : -1);
