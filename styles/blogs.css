@@ -1,15 +1,30 @@
 /** Blog List Styles **/
-#blog-stuff {
-    display: flex;
-    margin-bottom: 54px;
+
+#blog-filter {
+    width: 34%;
+    padding-left: 10px;
 }
 
 #blog-list {
     width: 66%;
 }
 
+#blog-stuff {
+    display: flex;
+    margin-bottom: 54px;
+}
+
 #sort-by {
     margin-bottom: 28px;
+}
+
+.blog-date-line {
+    float: right;
+    text-align: right;
+}
+
+.blog-description {
+    margin-top: 0;
 }
 
 .blog-list-entry {
@@ -27,21 +42,6 @@
     width: 50%;
     margin-bottom: 0;
 }
-
-.blog-date-line {
-    float: right;
-    text-align: right;
-}
-
-.blog-description {
-    margin-top: 0;
-}
-
-#blog-filter {
-    width: 34%;
-    padding-left: 10px;
-}
-
 
 /** Blog Filter Styles **/
 #filter-box {
@@ -85,8 +85,9 @@
         padding: 5px 15px;
     }
 
-    #blog-stuff {
-        display: block;
+    #blog-filter {
+        width: 100%;
+        padding: 0;
     }
 
     #blog-list {
@@ -94,9 +95,8 @@
         border: none;
     }
 
-    #blog-filter {
-        width: 100%;
-        padding: 0;
+    #blog-stuff {
+        display: block;
     }
 
     .blog-list-entry, #filter-box {
