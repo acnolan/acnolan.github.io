@@ -7,7 +7,7 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
   .then(json => {
     blogData = json;
     updateSort();
-})
+});
 
 // Create the list of blog posts
 function generatePosts() {

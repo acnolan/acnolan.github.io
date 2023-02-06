@@ -6,7 +6,6 @@
 
 #blog-list {
     width: 66%;
-    border-right: solid 1px grey;
 }
 
 #sort-by {
@@ -66,17 +65,13 @@
 
 /** Blog post styles **/
 #back-button {
-    text-decoration: none;
-    border-radius: 5px;
-    background-color: #711ca7;
-    color: white;
-    padding: 10px 35px; 
-    box-sizing: border-box;
+    color: #711ca7;
     float: right;
     margin-top: 30px;
 }
+
 #back-button:hover {
-    background-color: #b597c9;
+    color: #b597c9;
 }
 
 #blog-title {
