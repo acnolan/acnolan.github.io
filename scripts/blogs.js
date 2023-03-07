@@ -38,7 +38,7 @@ function generatePosts() {
 
             // Create the post description element
             let postDescription = document.createElement("p");
-            postDescription.textContent = post.Description;
+            postDescription.innerHTML = post.Description;
             postDescription.className = "blog-description";
             blogEntry.appendChild(postDescription);
 
