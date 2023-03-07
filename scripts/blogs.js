@@ -64,8 +64,14 @@ function getViableTags() {
     if (document.getElementById("coding").checked) {
         viableTags.push("Coding");
     }
+    if (document.getElementById("design").checked) {
+        viableTags.push("Design");
+    }
     if (document.getElementById("movies").checked) {
         viableTags.push("Movies");
+    }
+    if (document.getElementById("books").checked) {
+        viableTags.push("Books");
     }
     if (document.getElementById("misc").checked) {
         viableTags.push("Misc");
