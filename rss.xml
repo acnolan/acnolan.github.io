@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Andrew's Blog</title>
+        <link>https://andrewnolan.dev</link>
+        <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 06 Mar 2023 00:00:00 UT</lastBuildDate>
+        <item>
+            <title>Book Club: Don't Make me Think - Chapter 1</title>
+            <link>https://andrewnolan.dev/blogs/DontMakeMeThink1.html</link>
+            <description><![CDATA[Let's read and talk about the Introduction and Chapter 1 of Steve Krug's classic book on design, <i>Don't Make me Think</i>. ]]></description>
+            <pubDate>Mon, 06 Mar 2023 00:00:00 UT</pubDate>
+            <guid>https://andrewnolan.dev/blogs/DontMakeMeThink1.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Misc</category>
+        </item>
+        <item>
+            <title>Hello World!</title>
+            <link>hhttps://andrewnolan.dev/blogs/HelloWorld.html</link>
+            <description><![CDATA[The first ever entry to Andrew's blogs, please enjoy!]]></description>
+            <pubDate>Tue, 22 Dec 2020 00:00:00 UT</pubDate>
+            <guid>https://andrewnolan.dev/blogs/helloworld.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Misc</category>
+        </item>
+    </channel>
+</rss>
