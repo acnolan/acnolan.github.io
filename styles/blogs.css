@@ -59,6 +59,12 @@
     margin-bottom: 0;
 }
 
+.rss-subscribe {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    font-size: smaller;
+}
+
 /** Blog Filter Styles **/
 #filter-box {
     border: solid 1px lightgrey;
