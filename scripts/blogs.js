@@ -24,17 +24,21 @@ function generatePosts() {
                 window.location.href = post.Url;
             }
 
+            let titleDiv = document.createElement("div");
+            titleDiv.className = "blog-title-div";
+            blogEntry.append(titleDiv);
+
             // Create the post title element
             let postTitle = document.createElement("h3");
             postTitle.textContent = post.Title;
             postTitle.className = "blog-title-line";
-            blogEntry.appendChild(postTitle);
+            titleDiv.appendChild(postTitle);
 
             // Create the post date element
             let postDate = document.createElement("h3");
             postDate.textContent = post.Date;
             postDate.className = "blog-date-line";
-            blogEntry.appendChild(postDate);
+            titleDiv.appendChild(postDate);
 
             // Create the post description element
             let postDescription = document.createElement("p");

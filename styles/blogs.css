@@ -53,10 +53,19 @@
     padding: 15px;
 }
 
-.blog-title-line, .blog-date-line {
-    display: inline-block;
+.blog-title-div {
     border-bottom: 2px dotted lightgray;
-    width: 50%;
+}
+
+.blog-title-line {
+    display: inline-block;
+    width: 67%;
+    margin-bottom: 0;
+}
+
+.blog-date-line {
+    display: inline-block;
+    width: 33%;
     margin-bottom: 0;
 }
 
