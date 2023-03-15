@@ -86,9 +86,9 @@ function getViableTags() {
 // Update the order of the document
 function updateSort() {
     if (document.getElementById("sort-by").value === "0") {
-        blogData.posts.sort((a, b) => (a.Date < b.Date) ? 1 : -1);
+        blogData.posts.sort((a, b) => (new Date(a.Date) < new Date(b.Date)) ? 1 : -1);
     } else {
-        blogData.posts.sort((a, b) => (a.Date > b.Date) ? 1 : -1);
+        blogData.posts.sort((a, b) => (new Date(a.Date) > new Date(b.Date)) ? 1 : -1);
     }
     generatePosts();
 }
