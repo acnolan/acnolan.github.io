@@ -6,12 +6,21 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Mon, 06 Mar 2023 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Mar 2023 00:00:00 UT</lastBuildDate>
+        <item>
+            <title>Designing Billboards! Book Club: Don't Make me Think - Chapter 2 and 3</title>
+            <link>https://andrewnolan.dev/blogs/DontMakeMeThink2.html</link>
+            <description><![CDATA[This week we read Chapters 2 and 3 of Steve Krug's classic book on design, <i>Don't Make me Think</i> and discuss classic user behaviors and designing our sites like billboards to make them easier to scan. ]]></description>
+            <pubDate>Wed, 15 Mar 2023 17:30:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/DontMakeMeThink2.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Design, Books</category>
+        </item>
         <item>
             <title>Book Club: Don't Make me Think - Chapter 1</title>
             <link>https://andrewnolan.dev/blogs/DontMakeMeThink1.html</link>
             <description><![CDATA[Let's read and talk about the Introduction and Chapter 1 of Steve Krug's classic book on design, <i>Don't Make me Think</i>. ]]></description>
-            <pubDate>Tue, 06 Mar 2023 20:58:00 EST</pubDate>
+            <pubDate>Mon, 06 Mar 2023 20:58:00 EST</pubDate>
             <guid>https://andrewnolan.dev/blogs/DontMakeMeThink1.html</guid>
             <author>Andrew Nolan</author>
             <category>Design, Books</category>

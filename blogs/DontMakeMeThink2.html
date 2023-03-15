@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150741562-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150741562-1');
+    </script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description"
+        content="This week we read Chapters 2 and 3 of Steve Krug's classic book on design, Don't Make me Think and discuss classic user behaviors and designing our sites like billboards to make them easier to scan.">
+    <meta name="keywords" content="Andrew Nolan, Don't make me think, web design, Steve Krug">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>Designing Billboards! Book Club: Don't Make me Think - Chapter 2 and 3</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+</head>
+
+<body class="homepage">
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home" class="fa fa-home"></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"
+                    class="fa fa-github"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer"
+                    aria-label="linkedin" class="fa fa-linkedin"></a>
+                <a target="_blank" href="https://twitter.com/AndrewNolanDev" rel="noopener noreferrer"
+                    aria-label="twitter" class="fa fa-twitter"></a>
+                <a name="Send me an email"
+                    href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"
+                    class="fa fa-envelope"></a>
+            </div>
+        </div>
+    </div>
+    <div class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">Designing Billboards! Book Club: Don't Make me Think - Chapter 2 and 3
+        </h1>
+        <h3>Andrew Nolan</h3>
+        <h3>3/15/2023</h3>
+
+        <p>To most users, looking at a website is like glancing at a billboard while going 60 mph on the highway. Unless the website is a blog, or news, or meant to be fully consumed most users are on your site for a specific interactive goal and they will tunnel vision towards that objective. If they cannot figure out how to do it quickly, they will move on.</p>
+
+        <p>Like all things in design if it's best to implement these principles, it depends. But working with the assumption that users need to figure out how to parse your website fast is a great heuristic for getting started. In Chapters 2 and 3 of <i>Don't make me Think</i> we take a look at that idea.</p>
+
+        <p>Krug provides three assumptions we can use as heuristics for how a typical user may view our website.</p>
+
+        <h3>Rule 1: People scan pages </h3>
+
+        <p>Unless the page is a document, like an article or blog post (I sure hope you are reading this!), users tend to scan for keywords or things that catch their eye. They are on a mission. And like sharks, if they don't keep moving they die. We have all been using the internet for years, some of us for our entire lives. We know that when we are online we don't need to read everything to find what we want. We're good at scanning and we have trained this skill from a young age. We can assume our users are scanning now too.</p>
+
+        <h3>Rule 2: People don't make optimal choices. They satisfice.</h3>
+
+        <p>Satisficing means to pick what satisfies and suffices. When users scan the page, as we mentioned, they are on a mission. Thus, they are likely to choose the first reasonable option they come across on the page. As soon as we find a link we're on our way to the next place.</p>
+
+        <p>Optimizing is hard and, again, we're in a hurry. Nothing bad happens if we make a wrong choice on a typical website. Weighing options might not improve the outcome and it will take more time. If something seems right and it solves the problem that's what people will go with.</p>
+
+        <h3>Rule 3: People don't figure out how things work. They muddle through </h3>
+
+        <p>People don't often read instructions. If you are a software developer you are probably guilty of this too. I know we love to code, but reading through documentation can often be a chore.</p>
+
+        <p>People are inclined to use what works and muddle through until it does. What sounds more fun, reading documentation until you find what you need or bashing a few things until one works? Once we find something that works we often stick with it.</p>
+
+        <p>Process improvement is a big skill and important job. But a lot of people ignore it. We don't often try to improve existing processes. We work to make new exciting things. Our users are like this too. So we need to design our websites to guide them to what they don't yet know they need.</p>
+
+        <p>If users are just going to "make it work" with any design, why do we need to bother with good design?</p>
+
+        <p> Well, if the design is good, there is a better chance our users succeed! They will feel more confident with the tool and want to use it more. And your design can steer them to where you want them to be.</p>
+
+        <p><i>(I should mention, as with everything in design these are guidelines and the true answer to how users will actually behave is it depends). </i></p>
+
+        <p>These are important rules we can use for our designs. You, dear reader, may be one of the people who pays close attention to details and reads the entirety of sites. But, it is important to remember this is not always the case. Many people will fly through the content.</p>
+
+        <p>As an aside, this leads to an interesting observation about software engineering design reviews. Many engineers will ultra focus on UI design and nitpick small changes. This is great, but may overlook some of the larger usability issues that are there when someone who is not paying close attention actually tries to use the app. That is the value of usability studies and actual user feedback.</p>
+
+        <p>If users are going to try to use our websites and tools quickly like a billboard, how can we ensure they find what they need and want easily? The answer is simple, we design a good billboard.</p>
+
+        <h3>Designing a Good Billboard </h3>
+
+        <p>There are five key points in chapter 3 about designing your site.</p>
+
+        <ol>
+            <li>Take advantage of conventions </li>
+            <li>Create effective hierarchies </li>
+            <li>Make it obvious what is clickable</li>
+            <li>Reduce visual noise</li>
+            <li>Format content to support scanning </li>
+        </ol>
+
+        <h4>Conventions are your friends </h4>
+
+        <p>There is a reason some design patterns are widely used. People just expect them. A lot of developers and designers have hot takes about these patterns. It is ok if you don't like them. If you can improve them great! But keep in mind they are what your users are expecting. And this ease of use and consistency may help our design.</p>
+
+        <p>Things like a logo in the upper left or right corner (depending on language). Search and nav on the top or left. Well known icons: social networks, shopping carts, video play buttons, search magnifying glasses. These icons are often more metaphorical representations of their digital web counterparts, but we know what they mean. All of these are patterns we just expect to work on websites.</p>
+
+        <p>Take a look at a website in a language you don't speak. How much can you do without reading? Probably a lot! That's the key to consistency.</p>
+
+        <p>The biggest benefit of conventions are that users do not need to constantly relearn different websites. As we learned in the <a href="./DontMakeMeThink1">chapter 1 blog</a>. Our goal with design is to <em>not make me think</em>! If we can reduce the cognitive load on our users, we did a good job.</p>
+
+        <p>This said, we always come back to our classic design aphorism, "it depends." Consistency is good, but clarity is better. While your creative energies may often be better focused in other places, reinventing the design wheel in a way that improves clarity is always great. In design review meetings people often default to calling out inconsistency as a hallmark of bad design. If the design is more clear this way, inconsistency can be thrown away!</p>
+
+        <h4>Create effective visual hierarchies </h4>
+
+        <p><strong><em>More important things should be more prominent!</em></strong></p>
+
+        <p><b>Bold</b>, <span style="color:red">color</span>, offsets, placing things near the top. All of these are techniques to make important content stand out.</p>
+
+        <p>Spatial relations matter. If something is logically related, it should be physically related on the page too.</p>
+
+        <p>Nesting can indicate when topics are within each other.</p>
+
+        <p>These are all very powerful tools to make scanning easier on the user. If everything looked the same users would have to read and parse it all themselves. Our design can preparse the page for them.</p>
+
+        <p>These tips are important outside of the web too. Newspapers have been doing this for longer than any of us have been alive. Hierarchies are great for scanning.</p>
+
+        <h4>Make it obvious what is <a href="https://en.wikipedia.org/wiki/Hyperlink" target="_blank" rel="noopener noreferrer">clickable</a></h4>
+
+        <p>Not much more to say on this one. CSS exists, don't be scared to use it. You can make things look nice and make sense.</p>
+
+        <h4>Reduce visual noise </h4>
+
+        <p>Again CSS can help. Align things. Grid and Flex layouts are super powerful (maybe I should do a blog on them someday). Keeping everything in an easy to parse layout is an amazing thing to do.</p>
+
+        <p><em><i>DON'T SHOUT! WHICH SENTENCE IN THIS PARAGRAPH IS MOST IMPORTANT? IF I BOLDED OR EMPHASIZED IT, IT WOULD BE CLEAR. BUT HAVING EVERYTHING LOUD AND BIG MAKES IT IMPOSSIBLE TO TELL. USE YOUR VISUALIZE HIERARCHIES, HEADERS, ITALICS, AND BOLD APPROPRIATELY.</i></em></p>
+
+
+        <p>Reduce clutter. If you have too much on a page, people will not know what to do. If it doesn't add to a user's goal, remove it from the page.</p>
+
+        <p>And always remember, whitespace is not a bad thing.</p>
+
+        <h4>Format text to support scanning</h4>
+
+        <p>This final point is a culmination and collaboration of the other four.</p>
+
+        <p>Like we saw with hierarchies. Headings are good. They can distinguish levels and make it clear where content belongs and what it will be.</p>
+
+        <p> Use lists! They are great for scanning.</p>
+
+        <p> Keep paragraphs short. A wall of text is a turn off.</p>
+
+        <p>Even single sentences as a paragraph are a-ok!</p>
+
+        <p>Highlight key terms. Peoples' eyes are drawn to <b>bold</b>.</p>
+
+        <p>Using hierarchies, highlighting, and list are all great tools for improving the scanning of a webpage.</p>
+
+        <p>These guidelines for a good billboard may seem like common sense. But as you are perusing the web, pay attention. You will start to notice how often these things are overlooked. Incorporating these ideas into your designs will help improve your websites and make them easier for users to scan.</p>
+
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </div>
+</body>
+
+</html>
