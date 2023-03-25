@@ -6,7 +6,16 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 15 Mar 2023 00:00:00 UT</lastBuildDate>
+        <lastBuildDate>Sat, 25 Mar 2023 13:00:00 UT</lastBuildDate>
+        <item>
+            <title>Man vs Machine! Predicting the Academy Awards</title>
+            <link>https://andrewnolan.dev/blogs/AcademyAwardsPrediction.html</link>
+            <description><![CDATA[Is Machine Learning better than a human at predicting the winners of the Academy Awards? I trained a few basic machine learning models to test this out. ]]></description>
+            <pubDate>Sat, 25 Mar 2023 13:00:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/AcademyAwardsPrediction.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Movies, Coding</category>
+        </item>
         <item>
             <title>Designing Billboards! Book Club: Don't Make me Think - Chapter 2 and 3</title>
             <link>https://andrewnolan.dev/blogs/DontMakeMeThink2.html</link>
