@@ -21,6 +21,13 @@
                 "Tags": ["Books","Design"],
                 "Description": "This week we read Chapters 2 and 3 of Steve Krug's classic book on design, <i>Don't Make me Think</i> and discuss classic user behaviors and designing our sites like billboards to make them easier to scan.",
                 "Url": "./blogs/DontMakeMeThink2"
+            },
+            {
+                "Title": "Man vs Machine! Predicting the Academy Awards",
+                "Date": "3/18/2023",
+                "Tags": ["Coding","Movies"],
+                "Description": "Is Machine Learning better than a human at predicting the winners of the Academy Awards? I trained a few basic machine learning models to test this out.",
+                "Url": "./blogs/AcademyAwardsPrediction"
             }
         ]
 }
