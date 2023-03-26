@@ -35,6 +35,13 @@
                 "Tags": ["Books","Design"],
                 "Description": "Today we take a look at Chapter 4 of Don't Make me Think, Krug's Second Law of Usability, \"it doesn't matter how many times I have to click, as long as each click is a mindless, unambiguous choice.\"",
                 "Url": "./blogs/DontMakeMeThink4"
+            },
+            {
+                "Title": "Omit needless words! Book Club: Don't Make me Think - Chapter 5",
+                "Date": "3/26/2023",
+                "Tags": ["Books","Design"],
+                "Description": "Don't Make me Think Chapter 5 - Omit Words.",
+                "Url": "./blogs/DontMakeMeThink5"
             }
         ]
 }
