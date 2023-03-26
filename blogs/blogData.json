@@ -28,6 +28,13 @@
                 "Tags": ["Coding","Movies"],
                 "Description": "Is Machine Learning better than a human at predicting the winners of the Academy Awards? I trained a few basic machine learning models to test this out.",
                 "Url": "./blogs/AcademyAwardsPrediction"
+            },
+            {
+                "Title": "Don't Make me Click?! Book Club: Don't Make me Think - Chapter 4",
+                "Date": "3/25/2023",
+                "Tags": ["Books","Design"],
+                "Description": "Today we take a look at Chapter 4 of Don't Make me Think, Krug's Second Law of Usability, \"it doesn't matter how many times I have to click, as long as each click is a mindless, unambiguous choice.\"",
+                "Url": "./blogs/DontMakeMeThink4"
             }
         ]
 }
