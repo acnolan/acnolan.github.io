@@ -63,6 +63,13 @@
                 "Tags": ["Books","Design"],
                 "Description": "Most UX arguments are a waste of time There are important UX discussions to be had, but make sure you can avoid discussions that aren't going anywhere and direct them in a good solution.",
                 "Url": "./blogs/DontMakeMeThink8"
+            },
+            {
+                "Title": "Usability Testing on 18 Cents a Day - Book Club: Don't Make me Think - Chapter 9",
+                "Date": "4/16/2023",
+                "Tags": ["Books","Design"],
+                "Description": "Usability testing is the single most important thing you can do to improve your website's design. It does not have to be scary, in fact it is easy and inexpensive to do!",
+                "Url": "./blogs/DontMakeMeThink9"
             }
         ]
 }
