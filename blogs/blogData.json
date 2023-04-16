@@ -42,6 +42,13 @@
                 "Tags": ["Books","Design"],
                 "Description": "Don't Make me Think Chapter 5 - Omit Words.",
                 "Url": "./blogs/DontMakeMeThink5"
+            },
+            {
+                "Title": "Navigating the web! Book Club: Don't Make me Think - Chapter 6",
+                "Date": "4/14/2023",
+                "Tags": ["Books","Design"],
+                "Description": "On the internet we magically teleport from page to page. Making sure the navigation on your website is strong is the best way to handle this magical journey.",
+                "Url": "./blogs/DontMakeMeThink6"
             }
         ]
 }

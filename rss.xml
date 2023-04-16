@@ -6,7 +6,16 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Sun, 26 Mar 2023 00:00:00 EST</lastBuildDate>
+        <lastBuildDate>Fri, 14 Apr 2023 00:00:00 EST</lastBuildDate>
+        <item>
+            <title>Navigating the web! Book Club: Don't Make me Think - Chapter 6</title>
+            <link>https://andrewnolan.dev/blogs/DontMakeMeThink6.html</link>
+            <description><![CDATA[On the internet we magically teleport from page to page. Making sure the navigation on your website is strong is the best way to handle this magical journey.]]></description>
+            <pubDate>Fri, 14 Apr 2023 00:00:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/DontMakeMeThink6.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Books, Design</category>
+        </item>
         <item>
             <title>Omit needless words! Book Club: Don't Make me Think - Chapter 5</title>
             <link>https://andrewnolan.dev/blogs/DontMakeMeThink5.html</link>
