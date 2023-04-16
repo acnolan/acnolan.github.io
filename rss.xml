@@ -6,7 +6,16 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Fri, 14 Apr 2023 00:00:00 EST</lastBuildDate>
+        <lastBuildDate>Sat, 15 Apr 2023 20:55:00 EST</lastBuildDate>
+        <item>
+            <title>It All Starts with a Big Bang! Book Club: Don't Make me Think - Chapter 7</title>
+            <link>https://andrewnolan.dev/blogs/DontMakeMeThink7.html</link>
+            <description><![CDATA[In this chapter, Krug argues that like the universe began in a few seconds with a big bang, a user's impression of a website is formed in a few seconds on the homepage as well. So make sure your homepage is designed well!]]></description>
+            <pubDate>Sat, 15 Apr 2023 20:55:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/DontMakeMeThink7.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Books, Design</category>
+        </item>
         <item>
             <title>Navigating the web! Book Club: Don't Make me Think - Chapter 6</title>
             <link>https://andrewnolan.dev/blogs/DontMakeMeThink6.html</link>

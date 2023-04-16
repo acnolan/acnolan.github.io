@@ -49,6 +49,13 @@
                 "Tags": ["Books","Design"],
                 "Description": "On the internet we magically teleport from page to page. Making sure the navigation on your website is strong is the best way to handle this magical journey.",
                 "Url": "./blogs/DontMakeMeThink6"
+            },
+            {
+                "Title": "It All Starts with a Big Bang! Book Club: Don't Make me Think - Chapter 7",
+                "Date": "4/15/2023",
+                "Tags": ["Books","Design"],
+                "Description": "In this chapter, Krug argues that like the universe began in a few seconds with a big bang, a user's impression of a website is formed in a few seconds on the homepage as well. So make sure your homepage is designed well!",
+                "Url": "./blogs/DontMakeMeThink7"
             }
         ]
 }
