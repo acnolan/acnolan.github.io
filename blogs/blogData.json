@@ -56,6 +56,13 @@
                 "Tags": ["Books","Design"],
                 "Description": "In this chapter, Krug argues that like the universe began in a few seconds with a big bang, a user's impression of a website is formed in a few seconds on the homepage as well. So make sure your homepage is designed well!",
                 "Url": "./blogs/DontMakeMeThink7"
+            },
+            {
+                "Title": "Don't get Trapped in Pointless UX Debates! Book Club: Don't Make me Think - Chapter 8",
+                "Date": "4/15/2023",
+                "Tags": ["Books","Design"],
+                "Description": "Most UX arguments are a waste of time There are important UX discussions to be had, but make sure you can avoid discussions that aren't going anywhere and direct them in a good solution.",
+                "Url": "./blogs/DontMakeMeThink8"
             }
         ]
 }
