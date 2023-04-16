@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150741562-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150741562-1');
+    </script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description"
+        content="On the internet we magically teleport from page to page. Making sure the navigation on your website is strong is the best way to handle this magical journey.">
+    <meta name="keywords" content="Andrew Nolan, Don't make me think, web design, Steve Krug">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>Navigating the web! Book Club: Don't Make me Think - Chapter 6</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+</head>
+
+<body class="homepage">
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home" class="fa fa-home"></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"
+                    class="fa fa-github"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer"
+                    aria-label="linkedin" class="fa fa-linkedin"></a>
+                <a target="_blank" href="https://twitter.com/AndrewNolanDev" rel="noopener noreferrer"
+                    aria-label="twitter" class="fa fa-twitter"></a>
+                <a name="Send me an email"
+                    href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"
+                    class="fa fa-envelope"></a>
+            </div>
+        </div>
+    </div>
+    <div class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">Navigating the web! Book Club: Don't Make me Think - Chapter 6</h1>
+        <h3>Andrew Nolan</h3>
+        <h3>4/14/2023</h3>
+
+        <p>Websites are a lot like shopping in stores. You can browse or search (ask for help). There should be signs to guide you and show you where you are. Each aisle is like a page. And much like good websites, stores have some sort of hierarchy you can navigate. </p>
+
+        <img src="./images/dontmakemethink/aisle.jpg" alt="An aisle of a grocery store. Is this also a website?" class="blog-image">
+
+        <p>However, designing an easily navigable place on the web is tougher. </p>
+
+        <p>On the web, there is no sense of scale. In a store, you can estimate the size pretty well. A website could have many secrets and subpages. </p>
+
+        <p>On the web, there is also no sense of direction nor physical location. No left or right. No up or down. Where did we come from, where did we go? On the web there is only the hierarchy. It's hard to find where you are. </p>
+
+        <p>Or, it would be hard if we didn't have good design principles to help with this. 
+
+        </p>Web navigation is essential. It is not just another feature or something that is nice to have. Without navigation, there is no web. 
+
+        </p>There are a few obvious reasons we need navigation on our websites: 
+
+        <ul>
+            <li>It helps us find what we want. </li>
+            <li>It helps us know where we are. </li>
+        </ul>
+
+        <p>But there are also some not so obvious reasons we need navigation too: </p>
+
+        <ul>
+            <li>It tells us what else is here. </li>
+            <li>It tells us how to use the site and how things are connected. </li>
+            <li>Good navigation gives us confidence in the people who built the site. </li>
+        </ul>
+
+        <p>Although we can make a metaphor with a store, they are different. There is a reason we don't talk about library or grocery store navigation. It's easier. Designing good navigation for the web is as hard as it is important. </p>
+
+        <p>So, we know navigation is very important. We better make sure that our navigation is good then too. </p>
+
+        <p>The first thing to keep in mind is conventions. If there is one thing Krug continues to emphasize in this book, it's the importance of conventions.</p> 
+
+        <p>Imagine how annoying it would be if every road used different street signs and stop light styles.</p>
+
+        <p>Think about when you read a book that has no table of contents or page numbers. </p>
+
+        <img src="./images/dontmakemethink/trafficlights.jpg" alt="A traffic light tree sculpture. Good thing this is art and not in use somewhere! But considering how driving is in the US, I wouldn't be surprised..." class="blog-image" style="width: 25%">
+
+        <p>Conventions are there to make life easier. There is a pervasive mindset to redesign the web or make it art. And there is a time and place for that, I love good aesthetics. But if you are trying to build a site that is easy to use, conventions will help a lot with that. </p>
+
+        <p>Some important conventions every website should have. </p>
+
+        <ul>
+            <li>Have a header at the top of the page. </li>
+            <li>Put the site name or logo in the corner. </li>
+            <li>Utilities or search go in the other corner. </li>
+            <li>There should be some navigation sections below.  </li>
+            <li>Make sure the navigation sections indicate where you are in the site. </li>
+            <li>The page name should be prominently displayed. </li>
+            <li>A local navigation menu goes on the left or top. </li>
+            <li>At the bottom the footer should have some navigation too. </li>
+        </ul>
+
+        <p>From that list you may have noticed navigation is very important. Not only does it get its own place, it is also in the header and footer of every page. These navigation elements should be persistent and consistent.  </p>
+
+        <p>Every page should have these features, and they should also be the same on each page. If a header disappears or drastically changes, it will confuse users. </p>
+
+        <p>In all these navigation elements, there are four things you should have: </p>
+        
+        <ul>
+            <li>The site name or logo.</li>
+            <li>Utilities like login, support, etc...</li>
+            <li>An option to search.</li>
+            <li>Section level navigation.</li>
+        </ul>
+
+        <p>Another thing you may have noticed is that search comes up a lot. Search can be difficult to implement and may not be your top priority when developing a new app. But I encourage you to consider it! Usability consultant and Human-Computer Interaction researcher, Jakob Nielsen, categorized web users as two groups: search-dominant  and link-dominant. Search-dominant users prefer to search for what they want, while link-dominant users navigate the hierarchy by clicking. Estimates show search users make up about 50% of the customer base. So, search is good to have! </p>
+
+        <p>It is also important to make sure users know where they are. In a store, you see the sign when you walk in and you know where you are. But with a website, you can arrive on any page. It's important to keep the title and navigation clear on every page so no one gets lost. </p>
+
+        <p>A great way to test if a website's navigation is clear and strong is with what Krug calls the "Trunk Test." Imagine you have escaped the trunk of the car, can you tell where you are? </p>
+
+
+
+
+        <p>Try this on a random website (not going in a trunk, but blindly entering a website). The navigation is strong if you can answer these questions within seconds: </p>
+
+        <ul>
+            <li>What site is this? </li>
+            <li>What page am I on? </li>
+            <li>What are the major sections of this site?</li>
+            <li>What are my options at this level?</li>
+            <li>Where am I in the scheme of things?</li>
+            <li>How can I search? </li>
+        </ul>
+
+        <p>If you know where you are and can find where you are going, the site has done a good job with navigation. </p>
+
+        <img src="./images/dontmakemethink/trunktest.jpg" alt="Hopefully you aren't actually locked in a trunk." class="blog-image">
+
+        <p>I hope it is clear that navigation is important, and with some of these tips you can prevent your users from getting lost! </p>
+        
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </div>
+</body>
+
+</html>
