@@ -71,6 +71,9 @@ function getViableTags() {
     if (document.getElementById("design").checked) {
         viableTags.push("Design");
     }
+    if (document.getElementById("edTech").checked) {
+        viableTags.push("EdTech");
+    }
     if (document.getElementById("movies").checked) {
         viableTags.push("Movies");
     }
