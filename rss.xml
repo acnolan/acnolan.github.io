@@ -6,7 +6,16 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Mon, 17 Apr 2023 20:09:00 EST</lastBuildDate>
+        <lastBuildDate>Sun, 23 Apr 2023 18:36:00 EST</lastBuildDate>
+        <item>
+            <title>Designing for Mobile, Not as Scary as it Sounds - Book Club: Don't Make me Think - Chapter 10</title>
+            <link>https://andrewnolan.dev/blogs/DontMakeMeThink10.html</link>
+            <description><![CDATA[Designing a website for mobile used to be very scary. But really, the design principles are no different than anywhere else. Don't be scared modern frameworks make this easy.]]></description>
+            <pubDate>Mon, 17 Apr 2023 20:09:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/DontMakeMeThink10.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Books, Design</category>
+        </item>
         <item>
             <title>Musings on the Adoption of ChatGPT in K-12 Education Survey</title>
             <link>https://andrewnolan.dev/blogs/ChatGPTAdoptionSurvey.html</link>

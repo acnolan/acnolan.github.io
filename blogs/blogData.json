@@ -77,6 +77,13 @@
                 "Tags": ["EdTech"],
                 "Description": "The Walton Family Foundation's survey of K-12 Educators revealed a dramatic (over 50%) adoption of the tool in classrooms within a few months. What does this mean for education? I think it will help.",
                 "Url": "./blogs/ChatGPTAdoptionSurvey"
+            },
+            {
+                "Title": "Usability Testing on 18 Cents a Day - Book Club: Don't Make me Think - Chapter 9",
+                "Date": "4/23/2023",
+                "Tags": ["Books","Design"],
+                "Description": "Designing a website for mobile used to be very scary. But really, the design principles are no different than anywhere else. Don't be scared modern frameworks make this easy.",
+                "Url": "./blogs/DontMakeMeThink10"
             }
         ]
 }
