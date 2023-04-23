@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150741562-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150741562-1');
+    </script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Designing a website for mobile used to be very scary. But really, the design principles are no different than anywhere else. Don't be scared modern frameworks make this easy.">
+    <meta name="keywords" content="Andrew Nolan, Don't make me think, web design, Steve Krug">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>Designing for Mobile, Not as Scary as it Sounds - Book Club: Don't Make me Think - Chapter 10</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+</head>
+
+<body class="homepage">
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home" class="fa fa-home"></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"
+                    class="fa fa-github"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer"
+                    aria-label="linkedin" class="fa fa-linkedin"></a>
+                <a target="_blank" href="https://twitter.com/AndrewNolanDev" rel="noopener noreferrer"
+                    aria-label="twitter" class="fa fa-twitter"></a>
+                <a name="Send me an email"
+                    href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"
+                    class="fa fa-envelope"></a>
+            </div>
+        </div>
+    </div>
+    <div class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">Designing for Mobile, Not as Scary as it Sounds - Book Club: Don't Make me Think - Chapter 10</h1>
+        <h3>Andrew Nolan</h3>
+        <h3>4/23/2023</h3> 
+
+        <p>Smartphones have been part of our lives for over a decade now. There are people old enough to drive in the US this year who were born into and don't know a world without smartphones. </p>
+
+        <p>In 2007, Apple revolutionized the world with the iPhone. You can debate which smartphones are best and most impactful, but it's undeniable that the iPhone helped kickstart the mobile web browsing revolution. </p>
+
+        <img src="./images/dontmakemethink/iphone.webp" alt="The old iPhone is so small and thick! Crazy." style="max-height: 300px" class="blog-image">
+
+        <p>Prior to smartphones, the mobile web existed but it was slow and clunky. I remember having fun on the web of my dad's Blackberry. But what early phones offered did not compare to what the early iPhones gave us. </p>
+            
+        <p>Back in the day, web designers focused on crafting strong desktop sites and mobile came as an afterthought if it was a thought at all. Heck, even designing responsive/scalable apps for different sized desktop monitors was not always considered. However, the easy zooming and scrolling that came with touch screen smartphones changed that. The web, even without new designs, suddenly became much more usable on a tiny screen.</p> 
+
+        <img src="./images/dontmakemethink/pinchzoom.png" alt="Pinch and zoom! What a world!" style="max-height: 300px" class="blog-image">
+
+        <p>These accessibility features, coupled with internet connections constantly available to our new pocket computers, web browsing on them quickly took off. </p>
+
+        <p>When this chapter was added to the <i>Don't Make me Think</i> in 2014, the mobile web was the wild west. Luckily Krug acknowledges this fact. Although some ideas in the chapter feel dated, the main theme remains true, you should design mobile sites with the same thought and care you would design for the desktop. </p>
+
+        <h4>Tradeoffs</h4>
+
+        <p>With the split between mobile and desktop web browsing, the main challenge becomes how to design for one without compromising the other. Tradeoffs become a big deal.</p>
+
+        <p>One popular approach for handling this dilemma is to use <em>mobile first design</em>. Essentially, we design the website first for a mobile device and then scale that into the desktop website. </p>
+
+        <p>Back when this book was written it looked a little different than today. The mobile site often had reduced features and just contained what the designers considered must have capabilities, while the desktop site was fully fleshed out.  </p>
+
+        <p>Generally, this is not a best practice and doesn't happen as much today. Modern web frameworks make it easy to make scalable websites for both mobile and desktop. No need to maintain separate code repos or paths. Plus, smartphones are fast enough to handle the full web now.</p>
+
+        <p>If you are required to make the mobile version different, at least give an option to switch over to the desktop view for users that want to. Mobile users want the same rights as those on the desktop. </p>
+
+        <h4>The Tyranny of Itty-Bitty Living Spaces</h4> 
+
+        <p>I think it's important to emphasize again the size of mobile devices during design.  </p>
+
+        <p>If you go back to <a href=/DontMakeMeThink7.html rel="noopener noreferrer" target="_blank">chapter 7</a> and look at all of the things you are encouraged to include on your home page or even the navigation elements of <a href=/DontMakeMeThink6.html rel="noopener noreferrer" target="_blank">chapter 6</a>, you'll see that it's very hard to fit all of this into a small device. </p>
+
+        <p>Tradeoffs, as we mentioned, have become very important in this context. There will likely be more levels and menus needed to display everything you want to show. It is important to pick what is most important to show immediately on your pages. That means more clicks for the user. Luckily, if we remember what we learned in <a href=/DontMakeMeThink4.html rel="noopener noreferrer" target="_blank">chapter 4</a>, we can make these clicks unambiguous and the user will not care. </p>
+
+        <p>Managing screen real estate should not come at the cost of usability. This is especially true with interactive elements like links and buttons. There are no cursors turning into <span style="cursor: pointer">hands</span> or hover styles on mobile. You need to make sure everything is crystal clear. </p>
+
+        <h4>Attributes of Well Designed Mobile Apps</h4> 
+
+        <p>Going back to Krug's law of usability "A person of average (or even below average) ability and experience can figure out how to use the thing to accomplish something without it being more trouble than it's worth." Krug says there are three key attributes here: learnable, effective, and efficient. If your app can be described as those, it is probably well made. </p>
+
+        <p>However, those attributes are for all websites. Mobile does have a few additional special cases. </p>
+
+        <p>It should be <em>memorable</em>. People do not spend much time on websites, and the mobile world makes things even faster. Memorable is kind of another step beyond learnable. Mobile apps often give a quick tutorial when first launched and then never show any help again. If you return after a while and cannot remember how it works, that's a problem. </p>
+
+        <p>Luckily, learnability is another key attribute of all designs, so if you can make your app easy to learn it will also be easy to relearn if people do forget. </p>
+
+        <p>Another design attribute Krug brings up is <em>delightful</em>. If your app is delightful it is a good thing. This one is not as much about usability, and it's not really mobile specific either. But if you can find something people need to accomplish and do it in a creative way, that will bring delight and cause people to use your app. </p>
+
+        <p>Just don't forget about usability in the process. </p>
+
+        <h4>Conclusion</h4> 
+
+        <p>At the end of the day, mobile is here and it is here to stay. New technologies are coming every day and it's important to adapt and use them. While there may be tradeoffs and considerations you need to accommodate in your designs, it's important to remember good design principles remain consistent throughout and a new technology is not an excuse to forget about usability.</p>
+        
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </div>
+</body>
+
+</html>
