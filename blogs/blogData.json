@@ -3,7 +3,7 @@
         [
             {
                 "Title": "Hello World!",
-                "Date": "12/22/2020",
+                "Date": "2020-12-22",
                 "Tags": ["Misc"],
                 "Description": "The first ever entry to my blogs",
                 "Url": "./blogs/HelloWorld"
