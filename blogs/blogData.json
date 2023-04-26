@@ -84,6 +84,13 @@
                 "Tags": ["Books","Design"],
                 "Description": "Designing a website for mobile used to be very scary. But really, the design principles are no different than anywhere else. Don't be scared modern frameworks make this easy.",
                 "Url": "./blogs/DontMakeMeThink10"
+            },
+            {
+                "Title": "AI is Going to Change Education, in Fact it Already has",
+                "Date": "",
+                "Tags": ["EdTech"],
+                "Description": "",
+                "Url": "./blogs/AiChangeEducation"
             }
         ]
 }
