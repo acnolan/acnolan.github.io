@@ -91,6 +91,13 @@
                 "Tags": ["EdTech"],
                 "Description": "In less than six months ChatGPT has taken the world by storm. All industries are adapting to the new technology, education included. Initially there was a lot of hesitation and fear, but as educators begin to adopt the new technology in their classrooms it has become clear the fear may not be needed. AI will change education, but I think it will be for the better.",
                 "Url": "./blogs/AiChangeEducation"
+            },
+            {
+                "Title": "Learning with the Feynman Technique",
+                "Date": "2023-04-30",
+                "Tags": ["EdTech"],
+                "Description": "The Feynman Technique is a famous learning by teaching method that can help improve student outcomes.",
+                "Url": "./blogs/FeynmanTechnique"
             }
         ]
 }
