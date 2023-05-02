@@ -41,9 +41,10 @@
         <h1 class="purple-text" style="margin-bottom: 0">Blogs</h1>
         <div class="blog-rss-and-search-div">
             <p>Check out the <a href="./rss.xml">RSS Feed</a>!</p>
-            <form>
-                <input id="searchBar" type="text" placeholder="search...">
-                <button onclick="search(event)">Search</button>
+            <form id="searchBar">
+                <!--Crazy fact: If the button is on a new line it displays differently-->
+                <!--What a wild HTML science fact, whitespace is bonkers-->
+                <input name="query" type="text" placeholder="search..."><button>Search</button>
             </form>
         </div>
         <div id="blog-stuff">

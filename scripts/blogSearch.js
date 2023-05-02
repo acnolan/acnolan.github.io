@@ -14,6 +14,20 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
  * @param {string} query 
  */
 const search = (e) => {
-    e.preventDefault();
-    console.log(e);
+  e.preventDefault();
+  const data = new FormData(e.target);
+  query = Object.fromEntries(data.entries())?.query;
+
+  // Create result filter list
+
+  // Loop through the blogSearchData
+  // Check if the title or description has the query
+  // If yes, include it in the filter list
+
+
+  // Apply filter to search results
 }
+
+document.querySelector('#searchBar').addEventListener('submit', search);
+
+
