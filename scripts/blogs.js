@@ -83,12 +83,13 @@ function applySearchFiltering(post) {
     // 5. Add a sort by for relevant that is used when search is applied
     // 6. Weighting in sort (maybe title is higher than description)
     // 7. Highlight matching text
+    // 8. Fuzzy search?
     post.Description.split(" ").forEach(textBlob => {
         queryFilter.split(" ").forEach(query => {
-            return textBlob.includes(query);
+            return textBlob.toLowerCase().includes(query.toLowerCase());
         });
     });
-    return post.Description.includes(queryFilter) || post.Title.includes(queryFilter)
+    return post.Description.toLowerCase().includes(queryFilter.toLowerCase()) || post.Title.toLowerCase().includes(queryFilter.toLowerCase())
 }
 
 function highlightMatchingSearchText(textToMatch) {
@@ -101,6 +102,8 @@ function sortBySearch() {
     // Weigh each post by the search sort criteria
     // 1. +1.5 for matching tokens to query in title
     // 2. +1 for matching tokens to query in description
+    // 3. +0.5 matching substring of token in title
+    // 4. +0.25 matching substring of token in description
 }
 
 
