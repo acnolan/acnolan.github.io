@@ -1,5 +1,6 @@
 // The data, temporarily stored here, should be moved to .json file
 let blogData = {};
+let queryFilter = "";
 
 // Get the blog
 fetch('https://andrewnolan.dev/blogs/blogData.json')
@@ -12,11 +13,10 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
 // Create the list of blog posts
 function generatePosts() {
     document.getElementById("blog-list").innerHTML = "";
-    let viableTags = getViableTags();
 
     blogData.posts.forEach(post => {
         // Check if the post has one of the selected tags
-        if (post.Tags.some(tag => viableTags.includes(tag))) {
+        if (checkFilters(post)) {
             // Create the blog entry
             let blogEntry = document.createElement("div");
             blogEntry.className = "blog-list-entry";
@@ -62,6 +62,48 @@ function generatePosts() {
     });
 }
 
+
+// Check if a blog post is filtered
+function checkFilters(post) {
+    const viableTags = getViableTags();
+    return post.Tags.some(tag => viableTags.includes(tag)) && applySearchFiltering(post);
+}
+
+function applySearchFiltering(post) {
+    // If no search term, don't worry about it
+    if (!queryFilter) {
+        return true;
+    }
+
+    // Some things to try
+    // 1. Match full text vs substring (probably can't do full text easily without stemming so maybe a ranking later)
+    // 2. Stemming
+    // 3. Tokenizing (check if any search token shows up more = higher weight) (break both text and query into tokens)
+    // 4. Synonyms
+    // 5. Add a sort by for relevant that is used when search is applied
+    // 6. Weighting in sort (maybe title is higher than description)
+    // 7. Highlight matching text
+    post.Description.split(" ").forEach(textBlob => {
+        queryFilter.split(" ").forEach(query => {
+            return textBlob.includes(query);
+        });
+    });
+    return post.Description.includes(queryFilter) || post.Title.includes(queryFilter)
+}
+
+function highlightMatchingSearchText(textToMatch) {
+    // Break query into tokens and loop
+        // Break textToMatch into tokens and check if it matches
+            // add <em> tags around matches
+}
+
+function sortBySearch() {
+    // Weigh each post by the search sort criteria
+    // 1. +1.5 for matching tokens to query in title
+    // 2. +1 for matching tokens to query in description
+}
+
+
 // Goes through the tags and returns an array containing ones that are checked
 function getViableTags() {
     let viableTags = [];
@@ -95,3 +137,17 @@ function updateSort() {
     }
     generatePosts();
 }
+
+/**
+ * Search for a query term
+ * 
+ * @param {string} query 
+ */
+function search(e) {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    queryFilter = Object.fromEntries(data.entries())?.query;
+    generatePosts();
+  }
+  
+  document.querySelector('#searchBar').addEventListener('submit', search);
