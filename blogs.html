@@ -39,12 +39,7 @@
     <div class="content">
         <h1 class="purple-text" style="margin-bottom: 0">Blogs</h1>
         <div class="blog-rss-and-search-div">
-            <p>Check out the <a href="./rss.xml">RSS Feed</a>!</p>
-            <form id="searchBar">
-                <!--Crazy fact: If the button is on a new line it displays differently-->
-                <!--What a wild HTML science fact, whitespace is bonkers-->
-                <input name="query" type="text" placeholder="search..."><button>Search</button>
-            </form>
+            <p>Like what you see subscribe to the <a href="./rss.xml">RSS Feed</a>!</p>
         </div>
         <div id="blog-stuff">
             <div id="blog-list">
@@ -60,12 +55,18 @@
                     </select>
                     <br>
                     <strong>Tags:</strong>
-                    <p><input id="coding" type="checkbox" onchange="generatePosts()" checked>Coding</p>
-                    <p><input id="design" type="checkbox" onchange="generatePosts()" checked>Design</p>
-                    <p><input id="edTech" type="checkbox" onchange="generatePosts()" checked>EdTech</p>
-                    <p><input id="movies" type="checkbox" onchange="generatePosts()" checked>Movies</p>
-                    <p><input id="books" type="checkbox" onchange="generatePosts()" checked>Books</p>
-                    <p><input id="misc" type="checkbox" onchange="generatePosts()" checked>Miscellaneous</p>
+                    <p><input id="coding" type="checkbox" onchange="generatePosts()" checked><label for="coding">Coding</label></p>
+                    <p><input id="design" type="checkbox" onchange="generatePosts()" checked><label for="design">Design</label></p>
+                    <p><input id="edTech" type="checkbox" onchange="generatePosts()" checked><label for="edTech">EdTech</label></p>
+                    <p><input id="movies" type="checkbox" onchange="generatePosts()" checked><label for="movies">Movies</label></p>
+                    <p><input id="books" type="checkbox" onchange="generatePosts()" checked><label for="books">Books</label></p>
+                    <p><input id="misc" type="checkbox" onchange="generatePosts()" checked><label for="misc">Miscellaneous</label></p>
+                    <br>
+                    <form id="search-bar">
+                        <!--Crazy fact: If the button is on a new line it displays differently-->
+                        <!--What a wild HTML science fact, whitespace is bonkers-->
+                        <input name="query" type="text" placeholder="search blogs..."><button>Search</button>
+                    </form>
                 </div>
             </div>
         </div>
