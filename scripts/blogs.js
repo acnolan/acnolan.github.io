@@ -87,7 +87,7 @@ function applySearchFiltering(post) {
 // Highlight text in title or description matched by search
 function highlightMatchingSearchText(textToMatch) {
     queryFilter.split(" ").forEach(query => {
-        const indexOfMatch = textToMatch.toLowerCase().indexOf(query.toLowerCase());
+        const indexOfMatch = cleanUpText(textToMatch).indexOf(cleanUpText(query));
         if (indexOfMatch >= 0) {
             textToMatch = textToMatch.substring(0, indexOfMatch) + '<em>' + textToMatch.substring(indexOfMatch, indexOfMatch + query.length) + '</em>' + textToMatch.substring(indexOfMatch + query.length);
             textToMatch = textToMatch.replaceAll(query, '<em>' + query + '</em>');
@@ -114,23 +114,28 @@ function scoreSearchResult(post) {
 
     queryFilter.split(" ").forEach(query => {
         post.Title.split(" ").forEach(word => {
-            if (word.toLowerCase() === query.toLowerCase()) {
+            if (cleanUpText(word) === cleanUpText(query)) {
                 searchWeight += 1.5;
-            } else if (word.toLowerCase().includes(query.toLowerCase())) {
+            } else if (cleanUpText(word).includes(cleanUpText(query))) {
                 searchWeight += 0.75;
             }
         });
 
         post.Description.split(" ").forEach(word => {
-            if (word.toLowerCase() === query.toLowerCase()) {
+            if (cleanUpText(word) === cleanUpText(query)) {
                 searchWeight += 1;
-            } else if (word.toLowerCase().includes(query.toLowerCase())) {
+            } else if (cleanUpText(word).includes(cleanUpText(query))) {
                 searchWeight += 0.5;
             }
         });
     });
 
     return searchWeight;
+}
+
+// Cleans up text for search purposes
+function cleanUpText(text) {
+    return text.toLowerCase().trim();
 }
 
 
@@ -175,7 +180,7 @@ function updateSort() {
 function search(e) {
     e.preventDefault();
     const data = new FormData(e.target);
-    queryFilter = Object.fromEntries(data.entries())?.query;
+    queryFilter = cleanUpText(Object.fromEntries(data.entries())?.query);
 
     if (!queryFilter) {
         document.getElementById('sort-by').innerHTML = '<option value="0">Newest First</option><option value="1">Oldest First</option>';
