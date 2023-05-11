@@ -98,6 +98,13 @@
                 "Tags": ["EdTech"],
                 "Description": "The Feynman Technique is a famous learning by teaching method that can help improve student outcomes.",
                 "Url": "./blogs/FeynmanTechnique"
+            },
+            {
+                "Title": "Usability as a Common Courtesy - Book Club: Don't Make me Think - Chapter 11",
+                "Date": "2023-05-10",
+                "Tags": ["Books","Design"],
+                "Description": "It's important to make your site usable so people can use it. But usability also is a great way to foster good will amongst your user base.",
+                "Url": "./blogs/DontMakeMeThink11"
             }
         ]
 }
