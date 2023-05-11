@@ -6,7 +6,16 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 10 May 2023 20:00:00 EST</lastBuildDate>
+        <lastBuildDate>Wed, 10 May 2023 21:32:00 EST</lastBuildDate>
+        <item>
+            <title>Playing Wordle with ChatGPT</title>
+            <link>https://andrewnolan.dev/blogs/WordleWithChatGPT.html</link>
+            <description><![CDATA[AI can be scary smart sometimes. If you need a way to calm your fears for a moment, try playing a game with one.]]></description>
+            <pubDate>Wed, 10 May 2023 21:32:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/WordleWithChatGPT.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Coding</category>
+        </item>
         <item>
             <title>Usability as a Common Courtesy - Book Club: Don't Make me Think - Chapter 11</title>
             <link>https://andrewnolan.dev/blogs/DontMakeMeThink11.html</link>

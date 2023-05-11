@@ -105,6 +105,13 @@
                 "Tags": ["Books","Design"],
                 "Description": "It's important to make your site usable so people can use it. But usability also is a great way to foster good will amongst your user base.",
                 "Url": "./blogs/DontMakeMeThink11"
+            },
+            {
+                "Title": "Playing Wordle with ChatGPT",
+                "Date": "2023-05-10",
+                "Tags": ["Coding"],
+                "Description": "AI can be scary smart sometimes. If you need a way to calm your fears for a moment, try playing a game with one.",
+                "Url": "./blogs/WordleWithChatGPT"
             }
         ]
 }
