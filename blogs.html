@@ -2,15 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150741562-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-150741562-1');
-    </script>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
+        async src="./scripts/count.js"></script>
     <!-- my stuff -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -35,7 +29,7 @@
                     class="fa fa-github"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"
                     class="fa fa-linkedin"></a>
-                <a target="_blank" href="https://twitter.com/AndrewNolanDev" rel="noopener noreferrer" aria-label="twitter"
+                <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"
                     class="fa fa-twitter"></a>
                 <a name="Email to me" href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"
                     class="fa fa-envelope"></a>
@@ -43,8 +37,10 @@
         </div>
     </div>
     <div class="content">
-        <h1 class="purple-text">Blogs</h1>
-        <p>Check out the <a href="./rss.xml">RSS Feed</a>!</p>
+        <h1 class="purple-text" style="margin-bottom: 0">Blogs</h1>
+        <div class="blog-rss-and-search-div">
+            <p>Like what you see subscribe to the <a href="./rss.xml">RSS Feed</a>!</p>
+        </div>
         <div id="blog-stuff">
             <div id="blog-list">
                 <!-- Added dynamically in JS -->
@@ -59,12 +55,18 @@
                     </select>
                     <br>
                     <strong>Tags:</strong>
-                    <p><input id="coding" type="checkbox" onchange="generatePosts()" checked>Coding</p>
-                    <p><input id="design" type="checkbox" onchange="generatePosts()" checked>Design</p>
-                    <p><input id="edTech" type="checkbox" onchange="generatePosts()" checked>EdTech</p>
-                    <p><input id="movies" type="checkbox" onchange="generatePosts()" checked>Movies</p>
-                    <p><input id="books" type="checkbox" onchange="generatePosts()" checked>Books</p>
-                    <p><input id="misc" type="checkbox" onchange="generatePosts()" checked>Miscellaneous</p>
+                    <p><input id="coding" type="checkbox" onchange="generatePosts()" checked><label for="coding">Coding</label></p>
+                    <p><input id="design" type="checkbox" onchange="generatePosts()" checked><label for="design">Design</label></p>
+                    <p><input id="edTech" type="checkbox" onchange="generatePosts()" checked><label for="edTech">EdTech</label></p>
+                    <p><input id="movies" type="checkbox" onchange="generatePosts()" checked><label for="movies">Movies</label></p>
+                    <p><input id="books" type="checkbox" onchange="generatePosts()" checked><label for="books">Books</label></p>
+                    <p><input id="misc" type="checkbox" onchange="generatePosts()" checked><label for="misc">Miscellaneous</label></p>
+                    <br>
+                    <form id="search-bar">
+                        <!--Crazy fact: If the button is on a new line it displays differently-->
+                        <!--What a wild HTML science fact, whitespace is bonkers-->
+                        <input name="query" type="text" placeholder="search blogs..."><button>Search</button>
+                    </form>
                 </div>
             </div>
         </div>

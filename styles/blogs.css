@@ -38,9 +38,14 @@
     border: solid 1px lightgrey;
     padding-left: 15px;
     padding-right: 15px;
-    width: 95%;
     margin-bottom: 5px;
     cursor: pointer;
+}
+
+.blog-rss-and-search-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .blog-table {
@@ -80,7 +85,6 @@
     border: solid 1px lightgrey;
     padding-left: 15px;
     padding-right: 15px;
-    width: 95%;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 28px;
@@ -93,6 +97,26 @@
 #filter-box > p {
     margin-top:0;
     margin-bottom:5px;
+}
+
+#filter-box label, #filter-box input {
+    cursor: pointer;
+}
+
+#search-bar button { 
+    background-color: #711ca7;
+    color: white;
+    padding: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+#search-bar button:hover {
+    background-color: #b597c9;
+}
+
+#search-bar input {
+    padding: 4px;
 }
 
 /** Blog post styles **/
