@@ -9,14 +9,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="description"
-        content="The Feynman Technique is a famous learning by teaching method that can help improve student outcomes.">
-    <meta name="keywords" content="Andrew Nolan, EdTech, Feynman Technique">
+        content="AI can be scary smart sometimes. If you need a way to calm your fears for a moment, try playing a game with one.">
+    <meta name="keywords" content="Andrew Nolan, Ai, ChatGPT, Wordle">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='icon' href='../images/favicon.ico'>
-    <title>Learning with the Feynman Technique</title>
+    <title>Playing Wordle with ChatGPT</title>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
 </head>
+
+<style>
+    .chatArea {
+        padding: 10px;
+        background-color: darkgrey;
+        color: black;
+        font-family: monospace;
+        font-size: large;
+    }
+
+    @media (min-width: 700px) {
+        .chatArea {
+            margin: 40px;
+        }
+    }
+</style>
 
 <body class="homepage">
     <div class="header">
@@ -41,131 +57,54 @@
         <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
         <h1 id="blog-title" class="purple-text">Playing Wordle with ChatGPT</h1>
         <h3>Andrew Nolan</h3>
-        <h3>4/30/2023</h3> 
+        <h3>5/10/2023</h3> 
 
-        <p>There is a lot of talk about how "smart" generative text AI's have become. I think this leads to some misplaced personification and anthropomorphizing of the AI. These models are super impressive and likely in a few years we will have some models that are closer to AGI. But for now we are still just seeing text predictions, albeit very good ones.</p>
+        <p>I have been reading a lot of talk about how "smart" and sentient generative text AIs have become. I think this leads to some misplaced personification and anthropomorphizing of the AI. These models are super impressive and in a few years we will likely have some models that are closer to <span style="cursor:help" title="Artificial General Intelligence. AI that can think like a human.">AGI</span>. But for now we are still just seeing text predictions. They aren't quite capable of thought like some people are proposing.</p>
 
-        <p>If you are like me and ever get a little scared by how well these AIs can chat, I'd like to share a way to make yourself feel a little better. Try playing a game with them!</p>
+        <p>If you are like me and ever get a little scared by the rapid growth of AI, I'd like to share a way to make yourself feel a little better and relax a bit. You should try playing a game with them!</p>
 
-        <p>I've tried playing chess, connect-four, and tic-tac-toe with ChatGPT. Most of these do not go very well, and can show you the AI isn't quite a thinking machine yet. Recently, I asked ChatGPT to guess my Wordle word. Here are the results. Enjoy.</p>
+        <p>I've tried playing chess, connect-four, and <a href="https://twitter.com/AndrewsEdTech/status/1648762308665958421?s=20" target="_blank" rel="noopener noreferer">tic-tac-toe</a> with ChatGPT. Most of these do not go very well. Try it for yourself and you can see the generative AI, like ChatGPT, aren't quite thinking machines yet. Recently, I asked ChatGPT to play Wordle with me. Here are the results. Enjoy.</p>
 
         <p>A quick recap of the rules for those unfamiliar. In Wordle, a player has six guesses to find a five letter word. After each guess it is revealed if letters are in the correct place, incorrect place, or not in the word.</p>
 
         <p><em>Note: the word I wanted ChatGPT to guess was AUDIO.</em></p>
 
-        You:
-Let's play Wordle! You have six guesses to come up with the word I am thinking of:
-_ _ _ _ _
+        <div class="chatArea">
+            <p><strong>Me:</strong></p><p> Let's play Wordle! You have six guesses to come up with the word I am thinking of:<br>_ _ _ _ _</p>
+            <p><strong>ChatGPT:</strong></p><p> Great! I'm ready to play Wordle with you. Here's my first guess:<br>Guess 1: "Hello"</p>
+            <img src="./images/ai/wordle1.png" alt="Hello, the AI's first guess" style="max-height:300px;"class="blog-image">
+            <p><strong>Me:</strong></p><p> You have one letter in the correct place, "O". Take another guess!<br>_ _ _ _ O</p>
+            <p><strong>ChatGPT:</strong></p><p> Alright, let's see. My second guess is:<br>Guess 2: "World"</p>
+            <img src="./images/ai/wordle2.png" alt="World, the AI's second guess" style="max-height:300px;"class="blog-image">
+            <p><strong>Me:</strong></p><p> O was already in the right place. Now you have two correct letters, O and D, both in the wrong places.</p>
+            <p><strong>ChatGPT:</strong></p><p> Okay, got it. Here's my third guess:<br>Guess 3: "About"</p>
+            <img src="./images/ai/wordle3.png" alt="About, the AI's third guess" style="max-height:300px;"class="blog-image">
+            <p><strong>Me:</strong></p><p> O is still in the wrong place, O is the 5th letter. You do have new letters though. A is in the correct place and U is in the wrong place.<br>Your word is currently:<br>A _ _ _ O and D and U are in the word but you haven't found their places yet.<br>What is your next guess?</p>
+            <p><strong>ChatGPT:</strong></p><p> Thanks for the update. Here's my fourth guess:<br>Guess 4: "Anglo"</p>
+            <img src="./images/ai/wordle4.png" alt="Anglo, the AI's fourth guess" style="max-height:300px;"class="blog-image">
+            <p><strong>Me:</strong></p><p> Getting closer! A and O are right. You still left out the D and U though.</p>
+            <p><strong>ChatGPT:</strong></p><p> Okay, let me try again. Here's my fifth guess:<br>Guess 5: "Ahold"</p>
+            <img src="./images/ai/wordle5.png" alt="Ahold, the AI's fifth guess" style="max-height:300px;"class="blog-image">
+            <p><strong>Me:</strong></p><p> Uh oh, you moved the O out of the right spot! D is also in the wrong spot that is where the O goes.</p>
+            <p><strong>ChatGPT:</strong></p><p> I see, thank you for correcting me. Here's my last guess:<br>Guess 6: "Adore"</p>
+            <img src="./images/ai/wordle6.png" alt="Adore, the AI's 'final' guess" style="max-height:300px;"class="blog-image">
+            <p><strong>Me:</strong></p><p> That is not right. Again the D and O are in the wrong spot. I am going to give you an extra chance.<br>Here are all the clues you know.<br>A is the 1st letter. O is the 5th letter.<br>The word has a D and a U as either the 2nd, 3rd, or 4th letters.<br>The word does NOT contain: w, r, l, h, e, t, b, n, or g.<br>Give it one more shot!</p>
+            <p><strong>ChatGPT:</strong></p><p> Thank you for giving me another chance. Here's my final guess:<br>Guess 7: "Auditor"</p>
+            <p><strong>Me:</strong></p><p> Auditor is not 5 letters...</p>
+            <p><strong>ChatGPT:</strong></p><p> Oh, I apologize for that. Let me try again:<br>Guess 7: "Ardour"</p>
+            <p><strong>Me:</strong></p><p> That's also not 5 letters</p>
+            <p><strong>ChatGPT:</strong></p><p> I apologize for my mistake again. Here's my last guess:<br>Guess 7: "Ardent"</p>
+            <p><strong>Me:</strong></p><p> How many letters does Ardent have?</p>
+            <p><strong>ChatGPT:</strong></p><p> I apologize for my mistake. "Ardent" has six letters, not five. I'm afraid I have run out of guesses. Would you like to reveal the word to me?</p>
+            <p><strong>Me: </strong></p><p>The word was Audio.</p>
+            <p><strong>ChatGPT:</strong></p><p> Ah, I see. Thank you for playing Wordle with me! It was a fun and challenging game.</p>
+        </div>
 
-AI:
+        <p>So, the current AIs aren't very good at Wordle. But at least they are polite and had fun.</p>
 
-Great! I'm ready to play Wordle with you. Here's my first guess:
-
-Guess 1: "Hello"
-
-You:
-You have one letter in the correct place, "O". Take another guess!
-_ _ _ _ O
-
-AI:
-
-Alright, let's see. My second guess is:
-
-Guess 2: "World"
-
-You:
-O was already in the right place. Now you have two correct letters, O and D, both in the wrong places.
-
-AI:
-
-Okay, got it. Here's my third guess:
-
-Guess 3: "About"
-
-You:
-O is still in the wrong place, O is the 5th letter. You do have new letters though. A is in the correct place and U is in the wrong place.
-
-Your word is currently:
-A _ _ _ O and D and U are in the word but you haven't found their places yet.
-
-What is your next guess?
-
-AI:
-
-Thanks for the update. Here's my fourth guess:
-
-Guess 4: "Anglo"
-
-You:
-Getting closer! A and O are right. You still left out the D and U though.
-
-AI:
-
-Okay, let me try again. Here's my fifth guess:
-
-Guess 5: "Ahold"
-
-You:
-Uh oh, you moved the A out of the right spot! D is also in the wrong spot that is where the O goes.
-
-AI:
-
-I see, thank you for correcting me. Here's my last guess:
-
-Guess 6: "Adore"
-
-You:
-That is not right. Again the D and O are in the wrong spot. I am going to give you and extra chance.
-
-Here are all the clues you know.
-
-A is the 1st letter. O is the 5th letter.
-
-The word has a D and a U as either the 2nd, 3rd, or 4th letters.
-
-The word does NOT contain: w, r, l, h, e, t, b, n, or g.
-
-Give it one more shot!
-
-AI:
-
-Thank you for giving me another chance. Here's my final guess:
-
-Guess 7: "Auditor"
-
-You:
-Auditor is not 5 letters
-
-AI:
-
-Oh, I apologize for that. Let me try again:
-
-Guess 7: "Ardour"
-
-You:
-That's also not 5 letters
-
-AI:
-
-I apologize for my mistake again. Here's my last guess:
-
-Guess 7: "Ardent"
-
-You:
-How many letters does Ardent have?
-
-AI:
-
-I apologize for my mistake. "Ardent" has six letters, not five. I'm afraid I have run out of guesses. Would you like to reveal the word to me?
-
-You:
-The word was Audio
-
-AI:
-
-Ah, I see. Thank you for playing Wordle with me! It was a fun and challenging game.
-
-        <p>I hope this makes you feel a little better if you've been afraid of AI recently. This isn't meant to be dismissive though. Someday AI will be thinking and sentient. It's important to have discussions about how we will handle that and the rights it will have. But for now, we aren't quite there yet. You can rest easy knowing ChatGPT can't guess your Wordle word.</p>
+        <p>I hope this makes you feel a little better if you've been afraid of AI recently. If you're ever worried just challenge it to tic-tac-toe or Wordle. That should make you feel a bit better.</p>
+        
+        <p>All that said, this isn't meant to be dismissive of AI advancements though. Someday AI <em>will</em> be thinking and potentially sentient. It's important to have discussions about how we will handle that and the rights it will have. But for now, we aren't quite there yet. You can rest easy knowing ChatGPT can't guess your Wordle word.</p>
 
         <p class="rss-subscribe">Enjoyed this article? Hoping for more AI blogs? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
     </div>
