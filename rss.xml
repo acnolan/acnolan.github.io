@@ -6,7 +6,25 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 10 May 2023 21:32:00 EST</lastBuildDate>
+        <lastBuildDate>Sun, 14 May 2023 10:16:00 EST</lastBuildDate>
+        <item>
+            <title>What you can do Right Now - Book Club: Don't Make me Think - Chapter 13</title>
+            <link>https://andrewnolan.dev/blogs/DontMakeMeThink13.html</link>
+            <description><![CDATA[The final chapter of Steve Krug's Don't Make me Think! This chapter covers steps you can take right now to get involved in UX at your job or project. Thanks for coming along and reading the book with me :^)]]></description>
+            <pubDate>Sun, 14 May 2023 10:16:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/DontMakeMeThink13.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Books, Design</category>
+        </item>
+        <item>
+            <title>Accessible Design - Book Club: Don't Make me Think - Chapter 12</title>
+            <link>https://andrewnolan.dev/blogs/DontMakeMeThink12.html</link>
+            <description><![CDATA[Adding accessibility features to your website is a morally great thing to do! Unfortunately, many development teams often overlook these features. Here are some tips to get your started improving your accessibility today!]]></description>
+            <pubDate>Sun, 14 May 2023 10:02:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/DontMakeMeThink12.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Books, Design</category>
+        </item>
         <item>
             <title>Playing Wordle with ChatGPT</title>
             <link>https://andrewnolan.dev/blogs/WordleWithChatGPT.html</link>

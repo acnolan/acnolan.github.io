@@ -112,6 +112,20 @@
                 "Tags": ["Coding"],
                 "Description": "AI can be scary smart sometimes. If you need a way to calm your fears for a moment, try playing a game with one.",
                 "Url": "./blogs/WordleWithChatGPT"
+            },
+            {
+                "Title": "Accessible Design - Book Club: Don't Make me Think - Chapter 12",
+                "Date": "2023-05-14",
+                "Tags": ["Books","Design"],
+                "Description": "Adding accessibility features to your website is a morally great thing to do! Unfortunately, many development teams often overlook these features. Here are some tips to get your started improving your accessibility today!",
+                "Url": "./blogs/DontMakeMeThink12"
+            },
+            {
+                "Title": "What you can do Right Now - Book Club: Don't Make me Think - Chapter 13",
+                "Date": "2023-05-14",
+                "Tags": ["Books","Design"],
+                "Description": "The final chapter of Steve Krug's Don't Make me Think! This chapter covers steps you can take right now to get involved in UX at your job or project. Thanks for coming along and reading the book with me :^)",
+                "Url": "./blogs/DontMakeMeThink13"
             }
         ]
 }
