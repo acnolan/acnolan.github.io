@@ -126,6 +126,13 @@
                 "Tags": ["Books","Design"],
                 "Description": "The final chapter of Steve Krug's Don't Make me Think! This chapter covers steps you can take right now to get involved in UX at your job or project. Thanks for coming along and reading the book with me :^)",
                 "Url": "./blogs/DontMakeMeThink13"
+            },
+            {
+                "Title": "The Two Sigma Problem, can AI Help?",
+                "Date": "2023-05-27",
+                "Tags": ["EdTech"],
+                "Description": "Can AI help solve the 2 Sigma problem by making tutoring more accessible?",
+                "Url": "./blogs/TwoSigma"
             }
         ]
 }

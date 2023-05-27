@@ -6,7 +6,16 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Sun, 14 May 2023 10:16:00 EST</lastBuildDate>
+        <lastBuildDate>Sat, 27 May 2023 17:36:00 EST</lastBuildDate>
+        <item>
+            <title>The Two Sigma Problem, can AI Help?</title>
+            <link>https://andrewnolan.dev/blogs/TwoSigma.html</link>
+            <description><![CDATA[Can AI help solve the 2 Sigma problem by making tutoring more accessible?]]></description>
+            <pubDate>Sat, 27 May 2023 17:36:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/TwoSigma.html</guid>
+            <author>Andrew Nolan</author>
+            <category>EdTech</category>
+        </item>
         <item>
             <title>What you can do Right Now - Book Club: Don't Make me Think - Chapter 13</title>
             <link>https://andrewnolan.dev/blogs/DontMakeMeThink13.html</link>
