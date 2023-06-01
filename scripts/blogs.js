@@ -142,6 +142,9 @@ function cleanUpText(text) {
 // Goes through the tags and returns an array containing ones that are checked
 function getViableTags() {
     let viableTags = [];
+    if (document.getElementById("ai").checked) {
+        viableTags.push("AI");
+    }
     if (document.getElementById("coding").checked) {
         viableTags.push("Coding");
     }

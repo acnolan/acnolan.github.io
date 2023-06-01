@@ -25,7 +25,7 @@
             {
                 "Title": "Man vs Machine! Predicting the Academy Awards",
                 "Date": "2023-03-25",
-                "Tags": ["Coding","Movies"],
+                "Tags": ["Coding","Movies","AI"],
                 "Description": "Is Machine Learning better than a human at predicting the winners of the Academy Awards? I trained a few basic machine learning models to test this out.",
                 "Url": "./blogs/AcademyAwardsPrediction"
             },
@@ -74,7 +74,7 @@
             {
                 "Title": "Musings on the Adoption of ChatGPT in K-12 Education Survey",
                 "Date": "2023-04-17",
-                "Tags": ["EdTech"],
+                "Tags": ["EdTech","AI"],
                 "Description": "The Walton Family Foundation's survey of K-12 Educators revealed a dramatic (over 50%) adoption of the tool in classrooms within a few months. What does this mean for education? I think it will help.",
                 "Url": "./blogs/ChatGPTAdoptionSurvey"
             },
@@ -88,7 +88,7 @@
             {
                 "Title": "AI is Going to Change Education, in Fact it Already has",
                 "Date": "2023-04-26",
-                "Tags": ["EdTech"],
+                "Tags": ["EdTech","AI"],
                 "Description": "In less than six months ChatGPT has taken the world by storm. All industries are adapting to the new technology, education included. Initially there was a lot of hesitation and fear, but as educators begin to adopt the new technology in their classrooms it has become clear the fear may not be needed. AI will change education, but I think it will be for the better.",
                 "Url": "./blogs/AiChangeEducation"
             },
@@ -109,7 +109,7 @@
             {
                 "Title": "Playing Wordle with ChatGPT",
                 "Date": "2023-05-10",
-                "Tags": ["Coding"],
+                "Tags": ["AI"],
                 "Description": "AI can be scary smart sometimes. If you need a way to calm your fears for a moment, try playing a game with one.",
                 "Url": "./blogs/WordleWithChatGPT"
             },
@@ -130,7 +130,7 @@
             {
                 "Title": "The Two Sigma Problem, can AI Help?",
                 "Date": "2023-05-27",
-                "Tags": ["EdTech"],
+                "Tags": ["EdTech","AI"],
                 "Description": "Can AI help solve the 2 Sigma problem by making tutoring more accessible?",
                 "Url": "./blogs/TwoSigma"
             }
