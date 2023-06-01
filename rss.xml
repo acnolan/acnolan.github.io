@@ -6,7 +6,7 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Sat, 27 May 2023 17:36:00 EST</lastBuildDate>
+        <lastBuildDate>Wed, 31 May 2023 21:24:00 EST</lastBuildDate>
         <item>
             <title>The Two Sigma Problem, can AI Help?</title>
             <link>https://andrewnolan.dev/blogs/TwoSigma.html</link>
@@ -14,7 +14,7 @@
             <pubDate>Sat, 27 May 2023 17:36:00 EST</pubDate>
             <guid>https://andrewnolan.dev/blogs/TwoSigma.html</guid>
             <author>Andrew Nolan</author>
-            <category>EdTech</category>
+            <category>EdTech, AI</category>
         </item>
         <item>
             <title>What you can do Right Now - Book Club: Don't Make me Think - Chapter 13</title>
@@ -41,7 +41,7 @@
             <pubDate>Wed, 10 May 2023 21:32:00 EST</pubDate>
             <guid>https://andrewnolan.dev/blogs/WordleWithChatGPT.html</guid>
             <author>Andrew Nolan</author>
-            <category>Coding</category>
+            <category>AI</category>
         </item>
         <item>
             <title>Usability as a Common Courtesy - Book Club: Don't Make me Think - Chapter 11</title>
@@ -68,7 +68,7 @@
             <pubDate>Wed, 26 Apr 2023 22:07:00 EST</pubDate>
             <guid>https://andrewnolan.dev/blogs/AiChangeEducation.html</guid>
             <author>Andrew Nolan</author>
-            <category>EdTech</category>
+            <category>EdTech, AI</category>
         </item>
         <item>
             <title>Designing for Mobile, Not as Scary as it Sounds - Book Club: Don't Make me Think - Chapter 10</title>
@@ -86,7 +86,7 @@
             <pubDate>Mon, 17 Apr 2023 20:09:00 EST</pubDate>
             <guid>https://andrewnolan.dev/blogs/ChatGPTAdoptionSurvey.html</guid>
             <author>Andrew Nolan</author>
-            <category>EdTech</category>
+            <category>EdTech, AI</category>
         </item>
         <item>
             <title>Usability Testing on 18 Cents a Day - Book Club: Don't Make me Think - Chapter 9</title>
@@ -149,7 +149,7 @@
             <pubDate>Sat, 25 Mar 2023 13:00:00 EST</pubDate>
             <guid>https://andrewnolan.dev/blogs/AcademyAwardsPrediction.html</guid>
             <author>Andrew Nolan</author>
-            <category>Movies, Coding</category>
+            <category>Movies, Coding, AI</category>
         </item>
         <item>
             <title>Designing Billboards! Book Club: Don't Make me Think - Chapter 2 and 3</title>
