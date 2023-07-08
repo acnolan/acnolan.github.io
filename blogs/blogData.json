@@ -133,6 +133,13 @@
                 "Tags": ["EdTech","AI"],
                 "Description": "Can AI help solve the 2 Sigma problem by making tutoring more accessible?",
                 "Url": "./blogs/TwoSigma"
+            },
+            {
+                "Title": "A 'Brief' Introduction to Serious Games",
+                "Date": "2023-07-07",
+                "Tags": ["EdTech"],
+                "Description": "Games are fun. But they can also be educational! Join me as we dive into the exciting world of serious games.",
+                "Url": "./blogs/SeriousGames"
             }
         ]
 }
