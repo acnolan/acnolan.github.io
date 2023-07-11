@@ -6,140 +6,140 @@
                 "Date": "2020-12-22",
                 "Tags": ["Misc"],
                 "Description": "The first ever entry to my blogs",
-                "Url": "./blogs/HelloWorld"
+                "Key": "HelloWorld"
             },
             {
                 "Title": "Book Club: Don't Make me Think - Chapter 1",
                 "Date": "2023-03-03",
                 "Tags": ["Books","Design"],
                 "Description": "Let's read and talk about the Introduction and Chapter 1 of Steve Krug's classic book on design, <i>Don't Make me Think</i>.",
-                "Url": "./blogs/DontMakeMeThink1"
+                "Key": "DontMakeMeThink1"
             },
             {
                 "Title": "Designing Billboards! Book Club: Don't Make me Think - Chapter 2 and 3",
                 "Date": "2023-03-15",
                 "Tags": ["Books","Design"],
                 "Description": "This week we read Chapters 2 and 3 of Steve Krug's classic book on design, <i>Don't Make me Think</i> and discuss classic user behaviors and designing our sites like billboards to make them easier to scan.",
-                "Url": "./blogs/DontMakeMeThink2"
+                "Key": "DontMakeMeThink2"
             },
             {
                 "Title": "Man vs Machine! Predicting the Academy Awards",
                 "Date": "2023-03-25",
                 "Tags": ["Coding","Movies","AI"],
                 "Description": "Is Machine Learning better than a human at predicting the winners of the Academy Awards? I trained a few basic machine learning models to test this out.",
-                "Url": "./blogs/AcademyAwardsPrediction"
+                "Key": "AcademyAwardsPrediction"
             },
             {
                 "Title": "Don't Make me Click?! Book Club: Don't Make me Think - Chapter 4",
                 "Date": "2023-03-25",
                 "Tags": ["Books","Design"],
                 "Description": "Today we take a look at Chapter 4 of Don't Make me Think, Krug's Second Law of Usability, \"it doesn't matter how many times I have to click, as long as each click is a mindless, unambiguous choice.\"",
-                "Url": "./blogs/DontMakeMeThink4"
+                "Key": "DontMakeMeThink4"
             },
             {
                 "Title": "Omit needless words! Book Club: Don't Make me Think - Chapter 5",
                 "Date": "2023-03-26",
                 "Tags": ["Books","Design"],
                 "Description": "Don't Make me Think Chapter 5 - Omit Words.",
-                "Url": "./blogs/DontMakeMeThink5"
+                "Key": "DontMakeMeThink5"
             },
             {
                 "Title": "Navigating the web! Book Club: Don't Make me Think - Chapter 6",
                 "Date": "2023-04-14",
                 "Tags": ["Books","Design"],
                 "Description": "On the internet we magically teleport from page to page. Making sure the navigation on your website is strong is the best way to handle this magical journey.",
-                "Url": "./blogs/DontMakeMeThink6"
+                "Key": "DontMakeMeThink6"
             },
             {
                 "Title": "It All Starts with a Big Bang! Book Club: Don't Make me Think - Chapter 7",
                 "Date": "2023-04-15",
                 "Tags": ["Books","Design"],
                 "Description": "In this chapter, Krug argues that like the universe began in a few seconds with a big bang, a user's impression of a website is formed in a few seconds on the homepage as well. So make sure your homepage is designed well!",
-                "Url": "./blogs/DontMakeMeThink7"
+                "Key": "DontMakeMeThink7"
             },
             {
                 "Title": "Don't get Trapped in Pointless UX Debates! Book Club: Don't Make me Think - Chapter 8",
                 "Date": "2023-04-15",
                 "Tags": ["Books","Design"],
                 "Description": "Most UX arguments are a waste of time There are important UX discussions to be had, but make sure you can avoid discussions that aren't going anywhere and direct them in a good solution.",
-                "Url": "./blogs/DontMakeMeThink8"
+                "Key": "DontMakeMeThink8"
             },
             {
                 "Title": "Usability Testing on 18 Cents a Day - Book Club: Don't Make me Think - Chapter 9",
                 "Date": "2023-04-16",
                 "Tags": ["Books","Design"],
                 "Description": "Usability testing is the single most important thing you can do to improve your website's design. It does not have to be scary, in fact it is easy and inexpensive to do!",
-                "Url": "./blogs/DontMakeMeThink9"
+                "Key": "DontMakeMeThink9"
             },
             {
                 "Title": "Musings on the Adoption of ChatGPT in K-12 Education Survey",
                 "Date": "2023-04-17",
                 "Tags": ["EdTech","AI"],
                 "Description": "The Walton Family Foundation's survey of K-12 Educators revealed a dramatic (over 50%) adoption of the tool in classrooms within a few months. What does this mean for education? I think it will help.",
-                "Url": "./blogs/ChatGPTAdoptionSurvey"
+                "Key": "ChatGPTAdoptionSurvey"
             },
             {
                 "Title": "Designing for Mobile, Not as Scary as it Sounds - Book Club: Don't Make me Think - Chapter 10",
                 "Date": "2023-04-23",
                 "Tags": ["Books","Design"],
                 "Description": "Designing a website for mobile used to be very scary. But really, the design principles are no different than anywhere else. Don't be scared modern frameworks make this easy.",
-                "Url": "./blogs/DontMakeMeThink10"
+                "Key": "DontMakeMeThink10"
             },
             {
                 "Title": "AI is Going to Change Education, in Fact it Already has",
                 "Date": "2023-04-26",
                 "Tags": ["EdTech","AI"],
                 "Description": "In less than six months ChatGPT has taken the world by storm. All industries are adapting to the new technology, education included. Initially there was a lot of hesitation and fear, but as educators begin to adopt the new technology in their classrooms it has become clear the fear may not be needed. AI will change education, but I think it will be for the better.",
-                "Url": "./blogs/AiChangeEducation"
+                "Key": "AiChangeEducation"
             },
             {
                 "Title": "Learning with the Feynman Technique",
                 "Date": "2023-04-30",
                 "Tags": ["EdTech"],
                 "Description": "The Feynman Technique is a famous learning by teaching method that can help improve student outcomes.",
-                "Url": "./blogs/FeynmanTechnique"
+                "Key": "FeynmanTechnique"
             },
             {
                 "Title": "Usability as a Common Courtesy - Book Club: Don't Make me Think - Chapter 11",
                 "Date": "2023-05-10",
                 "Tags": ["Books","Design"],
                 "Description": "It's important to make your site usable so people can use it. But usability also is a great way to foster good will amongst your user base.",
-                "Url": "./blogs/DontMakeMeThink11"
+                "Key": "DontMakeMeThink11"
             },
             {
                 "Title": "Playing Wordle with ChatGPT",
                 "Date": "2023-05-10",
                 "Tags": ["AI"],
                 "Description": "AI can be scary smart sometimes. If you need a way to calm your fears for a moment, try playing a game with one.",
-                "Url": "./blogs/WordleWithChatGPT"
+                "Key": "WordleWithChatGPT"
             },
             {
                 "Title": "Accessible Design - Book Club: Don't Make me Think - Chapter 12",
                 "Date": "2023-05-14",
                 "Tags": ["Books","Design"],
                 "Description": "Adding accessibility features to your website is a morally great thing to do! Unfortunately, many development teams often overlook these features. Here are some tips to get your started improving your accessibility today!",
-                "Url": "./blogs/DontMakeMeThink12"
+                "Key": "DontMakeMeThink12"
             },
             {
                 "Title": "What you can do Right Now - Book Club: Don't Make me Think - Chapter 13",
                 "Date": "2023-05-14",
                 "Tags": ["Books","Design"],
                 "Description": "The final chapter of Steve Krug's Don't Make me Think! This chapter covers steps you can take right now to get involved in UX at your job or project. Thanks for coming along and reading the book with me :^)",
-                "Url": "./blogs/DontMakeMeThink13"
+                "Key": "DontMakeMeThink13"
             },
             {
                 "Title": "The Two Sigma Problem, can AI Help?",
                 "Date": "2023-05-27",
                 "Tags": ["EdTech","AI"],
                 "Description": "Can AI help solve the 2 Sigma problem by making tutoring more accessible?",
-                "Url": "./blogs/TwoSigma"
+                "Key": "TwoSigma"
             },
             {
                 "Title": "A 'Brief' Introduction to Serious Games",
                 "Date": "2023-07-07",
                 "Tags": ["EdTech"],
                 "Description": "Games are fun. But they can also be educational! Join me as we dive into the exciting world of serious games.",
-                "Url": "./blogs/SeriousGames"
+                "Key": "SeriousGames"
             }
         ]
 }

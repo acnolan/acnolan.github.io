@@ -4,11 +4,11 @@ let queryFilter = "";
 
 // Get the blog
 fetch('https://andrewnolan.dev/blogs/blogData.json')
-  .then(res => res.json())
-  .then(json => {
-    blogData = json;
-    updateSort();
-});
+    .then(res => res.json())
+    .then(json => {
+        blogData = json;
+        updateSort();
+    });
 
 // Create the list of blog posts
 function generatePosts() {
@@ -21,7 +21,7 @@ function generatePosts() {
             let blogEntry = document.createElement("div");
             blogEntry.className = "blog-list-entry";
             blogEntry.onclick = function () {
-                window.location.href = post.Url;
+                window.location.href = `./blogs/${post.Key}`;
             }
 
             let titleDiv = document.createElement("div");
@@ -64,6 +64,8 @@ function generatePosts() {
     if (!document.getElementById("blog-list").innerHTML) {
         document.getElementById("blog-list").innerHTML = "<h3>No matching blogs :'^(</h3>";
     }
+
+    initiateVisitData();
 }
 
 
@@ -80,7 +82,7 @@ function applySearchFiltering(post) {
     if (!queryFilter) {
         return true;
     }
-    
+
     return scoreSearchResult(post) > 0;
 }
 
@@ -93,7 +95,7 @@ function highlightMatchingSearchText(textToMatch) {
             textToMatch = textToMatch.replaceAll(query, '<em>' + query + '</em>');
         }
     });
-    
+
     return textToMatch;
 }
 
@@ -179,6 +181,29 @@ function updateSort() {
     generatePosts();
 }
 
+// Get visit data
+function getVisitData(blogEntry) {
+    fetch(`https://andrewnolan.goatcounter.com/counter/%2Fblogs%2F${blogEntry}.json`).then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error('Error: ' + response.status);
+        }
+    }).then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error(error);
+    });
+}
+
+function initiateVisitData() {
+    blogData.posts.forEach(post => {
+        //getVisitData(post.Key);
+        getVisitData(post.Url.split("/")[post.Url.split("/").length-1]);
+    });
+}
+
 // Search for something!
 function search(e) {
     e.preventDefault();
@@ -190,7 +215,7 @@ function search(e) {
     }
 
     updateSort();
-  }
-  
-  // Add the listener to the search bar form
-  document.querySelector('#search-bar').addEventListener('submit', search);
+}
+
+// Add the listener to the search bar form
+document.querySelector('#search-bar').addEventListener('submit', search);
