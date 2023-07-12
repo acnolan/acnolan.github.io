@@ -14,7 +14,7 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
 function generatePosts() {
     document.getElementById("blog-list").innerHTML = "";
 
-    blogData.posts.forEach(post => {
+    blogData.posts.forEach(async post => {
         // Check if the post has one of the selected tags
         if (checkFilters(post)) {
             // Create the blog entry
@@ -46,6 +46,11 @@ function generatePosts() {
             postDescription.className = "blog-description";
             blogEntry.appendChild(postDescription);
 
+            // Create the metadata (views and tags) row
+            let metaDataDiv = document.createElement("div");
+            metaDataDiv.className = "meta-data-div";
+            blogEntry.append(metaDataDiv);
+
             // Create the post tags element
             let postTags = document.createElement("h4");
             let postTagsText = "Tags: ";
@@ -53,7 +58,14 @@ function generatePosts() {
                 postTagsText += tag + ', ';
             });
             postTags.textContent = postTagsText.slice(0, postTagsText.length - 2);
-            blogEntry.appendChild(postTags);
+            metaDataDiv.appendChild(postTags);
+
+            // Create the post view count element
+            let postViews = document.createElement("small");
+            postViews.id = `${post.Url.split("/")[post.Url.split("/").length-1]}-views` //`${post.Key}-views`;
+            getVisitData(post.Url.split("/")[post.Url.split("/").length-1]);;//getVisitData(post.Key);
+            postViews.className = "blog-views";
+            metaDataDiv.appendChild(postViews);
 
             // Add the blog entry to the blog list
             let blogList = document.getElementById("blog-list");
@@ -64,8 +76,6 @@ function generatePosts() {
     if (!document.getElementById("blog-list").innerHTML) {
         document.getElementById("blog-list").innerHTML = "<h3>No matching blogs :'^(</h3>";
     }
-
-    initiateVisitData();
 }
 
 
@@ -190,17 +200,13 @@ function getVisitData(blogEntry) {
             throw new Error('Error: ' + response.status);
         }
     }).then(data => {
-        console.log(data);
-    })
-    .catch(error => {
-        console.error(error);
-    });
-}
+        const viewElement = document.getElementById(`${blogEntry}-views`);
+        const viewOrViews = data.count === "1" ? 'view' : 'views';
+        viewElement.innerHTML = `${data.count} ${viewOrViews}`;
 
-function initiateVisitData() {
-    blogData.posts.forEach(post => {
-        //getVisitData(post.Key);
-        getVisitData(post.Url.split("/")[post.Url.split("/").length-1]);
+    }, () => {
+        const viewElement = document.getElementById(`${blogEntry}-views`);
+        viewElement.innerHTML = "0 views";
     });
 }
 

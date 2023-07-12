@@ -24,7 +24,7 @@
 }
 
 .blog-description {
-    margin-top: 0;
+    margin: 0;
 }
 
 .blog-image {
@@ -72,6 +72,12 @@
     display: inline-block;
     width: 33%;
     margin-bottom: 0;
+}
+
+.meta-data-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .rss-subscribe {
