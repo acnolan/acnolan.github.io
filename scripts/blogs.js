@@ -63,7 +63,7 @@ function generatePosts() {
             // Create the post view count element
             let postViews = document.createElement("small");
             postViews.id = `${post.Url.split("/")[post.Url.split("/").length-1]}-views` //`${post.Key}-views`;
-            getVisitData(post.Url.split("/")[post.Url.split("/").length-1]);;//getVisitData(post.Key);
+            getVisitData(post);
             postViews.className = "blog-views";
             metaDataDiv.appendChild(postViews);
 
@@ -185,6 +185,8 @@ function updateSort() {
         blogData.posts.sort((a, b) => (scoreSearchResult(a) < scoreSearchResult(b) ? 1 : -1));
     } else if (document.getElementById("sort-by").value === "0") {
         blogData.posts.sort((a, b) => (new Date(a.Date) < new Date(b.Date)) ? 1 : -1);
+    } else if (document.getElementById("sort-by").value === "2") {
+        blogData.posts.sort((a, b) => (a.Views < b.Views) ? 1 : -1);
     } else {
         blogData.posts.sort((a, b) => (new Date(a.Date) > new Date(b.Date)) ? 1 : -1);
     }
@@ -192,7 +194,8 @@ function updateSort() {
 }
 
 // Get visit data
-function getVisitData(blogEntry) {
+function getVisitData(post) {
+    const blogEntry = post.Url.split("/")[post.Url.split("/").length-1];;//getVisitData(post.Key);
     fetch(`https://andrewnolan.goatcounter.com/counter/%2Fblogs%2F${blogEntry}.json`).then(response => {
         if (response.ok) {
             return response.json();
@@ -203,10 +206,11 @@ function getVisitData(blogEntry) {
         const viewElement = document.getElementById(`${blogEntry}-views`);
         const viewOrViews = data.count === "1" ? 'view' : 'views';
         viewElement.innerHTML = `${data.count} ${viewOrViews}`;
-
+        post.Views = parseInt(data.count);
     }, () => {
         const viewElement = document.getElementById(`${blogEntry}-views`);
         viewElement.innerHTML = "0 views";
+        post.Views = 0;
     });
 }
 
@@ -217,7 +221,7 @@ function search(e) {
     queryFilter = cleanUpText(Object.fromEntries(data.entries())?.query);
 
     if (!queryFilter) {
-        document.getElementById('sort-by').innerHTML = '<option value="0">Newest First</option><option value="1">Oldest First</option>';
+        document.getElementById('sort-by').innerHTML = '<option value="0">Newest First</option><option value="1">Oldest First</option><option value="2">Popularity</option>';
     }
 
     updateSort();
