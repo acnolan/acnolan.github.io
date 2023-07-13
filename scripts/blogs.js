@@ -4,11 +4,11 @@ let queryFilter = "";
 
 // Get the blog
 fetch('https://andrewnolan.dev/blogs/blogData.json')
-  .then(res => res.json())
-  .then(json => {
-    blogData = json;
-    updateSort();
-});
+    .then(res => res.json())
+    .then(json => {
+        blogData = json;
+        updateSort();
+    });
 
 // Create the list of blog posts
 function generatePosts() {
@@ -20,9 +20,6 @@ function generatePosts() {
             // Create the blog entry
             let blogEntry = document.createElement("div");
             blogEntry.className = "blog-list-entry";
-            blogEntry.onclick = function () {
-                window.location.href = post.Url;
-            }
 
             let titleDiv = document.createElement("div");
             titleDiv.className = "blog-title-div";
@@ -46,6 +43,11 @@ function generatePosts() {
             postDescription.className = "blog-description";
             blogEntry.appendChild(postDescription);
 
+            // Create the metadata (views and tags) row
+            let metaDataDiv = document.createElement("div");
+            metaDataDiv.className = "meta-data-div";
+            blogEntry.append(metaDataDiv);
+
             // Create the post tags element
             let postTags = document.createElement("h4");
             let postTagsText = "Tags: ";
@@ -53,7 +55,21 @@ function generatePosts() {
                 postTagsText += tag + ', ';
             });
             postTags.textContent = postTagsText.slice(0, postTagsText.length - 2);
-            blogEntry.appendChild(postTags);
+            metaDataDiv.appendChild(postTags);
+
+            // Create the post view count element
+            let postViews = document.createElement("small");
+            postViews.id = `${post.Key}-views`;
+            getVisitData(post);
+            postViews.className = "blog-views";
+            metaDataDiv.appendChild(postViews);
+
+            // Add a link to the blog
+            // This is more semantic and better for accessibility than a JavaScript onclick
+            const blogLink = document.createElement("a");
+            blogLink.href = `./blogs/${post.Key}`
+            blogLink.className = "blog-link";
+            blogEntry.appendChild(blogLink);
 
             // Add the blog entry to the blog list
             let blogList = document.getElementById("blog-list");
@@ -80,7 +96,7 @@ function applySearchFiltering(post) {
     if (!queryFilter) {
         return true;
     }
-    
+
     return scoreSearchResult(post) > 0;
 }
 
@@ -93,7 +109,7 @@ function highlightMatchingSearchText(textToMatch) {
             textToMatch = textToMatch.replaceAll(query, '<em>' + query + '</em>');
         }
     });
-    
+
     return textToMatch;
 }
 
@@ -173,10 +189,33 @@ function updateSort() {
         blogData.posts.sort((a, b) => (scoreSearchResult(a) < scoreSearchResult(b) ? 1 : -1));
     } else if (document.getElementById("sort-by").value === "0") {
         blogData.posts.sort((a, b) => (new Date(a.Date) < new Date(b.Date)) ? 1 : -1);
+    } else if (document.getElementById("sort-by").value === "2") {
+        blogData.posts.sort((a, b) => (a.Views < b.Views) ? 1 : -1);
     } else {
         blogData.posts.sort((a, b) => (new Date(a.Date) > new Date(b.Date)) ? 1 : -1);
     }
     generatePosts();
+}
+
+// Get visit data
+function getVisitData(post) {
+    const blogEntry = post.Key;
+    fetch(`https://andrewnolan.goatcounter.com/counter/%2Fblogs%2F${blogEntry}.json`).then(response => {
+        if (response.ok) {
+            return response.json();
+        } else {
+            throw new Error('Error: ' + response.status);
+        }
+    }).then(data => {
+        const viewElement = document.getElementById(`${blogEntry}-views`);
+        const viewOrViews = data.count === "1" ? 'view' : 'views';
+        viewElement.innerHTML = `${data.count} ${viewOrViews}`;
+        post.Views = parseInt(data.count);
+    }, () => {
+        const viewElement = document.getElementById(`${blogEntry}-views`);
+        viewElement.innerHTML = "0 views";
+        post.Views = 0;
+    });
 }
 
 // Search for something!
@@ -186,11 +225,11 @@ function search(e) {
     queryFilter = cleanUpText(Object.fromEntries(data.entries())?.query);
 
     if (!queryFilter) {
-        document.getElementById('sort-by').innerHTML = '<option value="0">Newest First</option><option value="1">Oldest First</option>';
+        document.getElementById('sort-by').innerHTML = '<option value="0">Newest First</option><option value="1">Oldest First</option><option value="2">Popularity</option>';
     }
 
     updateSort();
-  }
-  
-  // Add the listener to the search bar form
-  document.querySelector('#search-bar').addEventListener('submit', search);
+}
+
+// Add the listener to the search bar form
+document.querySelector('#search-bar').addEventListener('submit', search);
