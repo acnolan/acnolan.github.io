@@ -14,7 +14,7 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
 function generatePosts() {
     document.getElementById("blog-list").innerHTML = "";
 
-    blogData.posts.forEach(async post => {
+    blogData.posts.forEach(post => {
         // Check if the post has one of the selected tags
         if (checkFilters(post)) {
             // Create the blog entry
