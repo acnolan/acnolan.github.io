@@ -20,9 +20,6 @@ function generatePosts() {
             // Create the blog entry
             let blogEntry = document.createElement("div");
             blogEntry.className = "blog-list-entry";
-            blogEntry.onclick = function () {
-                window.location.href = `./blogs/${post.Key}`;
-            }
 
             let titleDiv = document.createElement("div");
             titleDiv.className = "blog-title-div";
@@ -62,10 +59,17 @@ function generatePosts() {
 
             // Create the post view count element
             let postViews = document.createElement("small");
-            postViews.id = `${post.Url.split("/")[post.Url.split("/").length-1]}-views` //`${post.Key}-views`;
+            postViews.id = `${post.Key}-views`;
             getVisitData(post);
             postViews.className = "blog-views";
             metaDataDiv.appendChild(postViews);
+
+            // Add a link to the blog
+            // This is more semantic and better for accessibility than a JavaScript onclick
+            const blogLink = document.createElement("a");
+            blogLink.href = `./blogs/${post.Key}`
+            blogLink.className = "blog-link";
+            blogEntry.appendChild(blogLink);
 
             // Add the blog entry to the blog list
             let blogList = document.getElementById("blog-list");
@@ -195,7 +199,7 @@ function updateSort() {
 
 // Get visit data
 function getVisitData(post) {
-    const blogEntry = post.Url.split("/")[post.Url.split("/").length-1];;//getVisitData(post.Key);
+    const blogEntry = post.Key;
     fetch(`https://andrewnolan.goatcounter.com/counter/%2Fblogs%2F${blogEntry}.json`).then(response => {
         if (response.ok) {
             return response.json();
