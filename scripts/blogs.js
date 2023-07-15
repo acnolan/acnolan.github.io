@@ -1,6 +1,9 @@
 // For local development with a changed blogData.json, set the values on line 2
 let blogData = {};
-let queryFilter = "";
+
+// Get the search query
+let queryFilter = getSearchQueryParam();
+
 
 // Get the blog
 fetch('https://andrewnolan.dev/blogs/blogData.json')
@@ -9,6 +12,19 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
         blogData = json;
         updateSort();
     });
+
+// Get the search query parameter
+function getSearchQueryParam() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('q');
+    return query || "";
+}
+
+function setSearchQueryParam(newQuery) {
+    let url = new URL(window.location.href);
+    url.searchParams.set("q", newQuery);
+    window.history.replaceState({}, "", url.toString());
+}
 
 // Create the list of blog posts
 function generatePosts() {
@@ -223,6 +239,7 @@ function search(e) {
     e.preventDefault();
     const data = new FormData(e.target);
     queryFilter = cleanUpText(Object.fromEntries(data.entries())?.query);
+    setSearchQueryParam(queryFilter);
 
     if (!queryFilter) {
         document.getElementById('sort-by').innerHTML = '<option value="0">Newest First</option><option value="1">Oldest First</option><option value="2">Popularity</option>';
