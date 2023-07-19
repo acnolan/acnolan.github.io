@@ -132,6 +132,7 @@
 
 #search-bar input {
     padding: 4px;
+    cursor: auto;
 }
 
 /** Blog post styles **/
