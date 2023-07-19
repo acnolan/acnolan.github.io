@@ -17,7 +17,11 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
 function getSearchQueryParam() {
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get('q');
-    return query || "";
+    if (query) {
+        document.getElementById("search-bar-input").value = query;
+        return query;
+    }
+    return "";
 }
 
 function setSearchQueryParam(newQuery) {
