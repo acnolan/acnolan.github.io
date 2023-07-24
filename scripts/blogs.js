@@ -89,6 +89,7 @@ function generatePosts() {
             const blogLink = document.createElement("a");
             blogLink.href = `./blogs/${post.Key}`
             blogLink.className = "blog-link";
+            blogLink.ariaLabel = post.Title;
             blogEntry.appendChild(blogLink);
 
             // Add the blog entry to the blog list
