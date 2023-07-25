@@ -122,8 +122,8 @@ html {
     padding: 0;
     overflow: hidden;
     width: 100%;
-    background-color: #565656;
-    background: linear-gradient(darkgrey, #565656);
+    background-color: grey;
+    background: linear-gradient(darkgrey, grey);
     position: fixed;
     top: 0;
     margin-left: -8px;
@@ -161,12 +161,12 @@ html {
 }
 
 .my-links {
-    background: linear-gradient(#565656, darkgrey(37, 37, 253));
-    background-color: #565656;
+    background: linear-gradient(grey, darkgrey(37, 37, 253));
+    background-color: grey;
 }
 
 .my-links:hover {
-    background: linear-gradient(darkgrey, #565656);
+    background: linear-gradient(darkgrey, grey);
 }
 
 .no-top-margin {
