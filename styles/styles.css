@@ -145,7 +145,7 @@ html {
     margin-bottom: 0;
 }
 
-.justify-p h3 {
+.justify-p h3, .justify-p .blog-by-line {
     margin: 0;
 }
 
