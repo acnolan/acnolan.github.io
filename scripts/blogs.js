@@ -52,7 +52,7 @@ function generatePosts() {
             titleDiv.appendChild(postTitle);
 
             // Create the post date element
-            let postDate = document.createElement("h3");
+            let postDate = document.createElement("p");
             postDate.textContent = post.Date;
             postDate.className = "blog-date-line";
             titleDiv.appendChild(postDate);
