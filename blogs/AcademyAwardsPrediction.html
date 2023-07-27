@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <!-- Goat Counter (GDPR Friendly Analytics) -->
-    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
-        async src="../scripts/count.js"></script>
-    <!-- my stuff -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="description" content="Is Machine Learning better than a human at predicting the winners of the Academy Awards? I trained a few basic machine learning models to test this out.">
-    <meta name="keywords" content="Academy Awards, Oscars, Machine Learning, movie predictions, academy award predictions">
-    <link rel='icon' href='../images/favicon.ico'>
-    <title>Man vs Machine! Predicting the Academy Awards</title>
-    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+  <!-- Goat Counter (GDPR Friendly Analytics) -->
+  <script data-goatcounter="https://andrewnolan.goatcounter.com/count" async src="../scripts/count.js"></script>
+  <!-- my stuff -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Is Machine Learning better than a human at predicting the winners of the Academy Awards? I trained a few basic machine learning models to test this out.">
+  <meta name="keywords"
+    content="Academy Awards, Oscars, Machine Learning, movie predictions, academy award predictions">
+  <link rel='icon' href='../images/favicon.ico'>
+  <title>Man vs Machine! Predicting the Academy Awards</title>
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
 </head>
 
 <style>
@@ -22,429 +23,514 @@
     border: 1px solid black;
   }
 
-  td, th {
+  td,
+  th {
     padding: 3px;
     border: 1px solid black;
   }
 </style>
 
 <body class="homepage">
-    <div class="header">
-        <div class="content">
-            <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
-            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
-            <div class="link-block">
-              <a href="../blogs" aria-label="home"><img class="fa fa-home" src = "../images/iconSvgs/home.svg" alt="Home icon"/></a>
-              <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "../images/iconSvgs/github.svg" alt="Github icon"/></a>
-              <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "../images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
-              <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"><img class="fa fa-twitter" src = "../images/iconSvgs/twitter.svg" alt="Twitter icon"/></a>
-              <a name="Email to me" aria-label="Email to me" href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "../images/iconSvgs/mail.svg" alt="Email icon"/></a>
-            </div>
-        </div>
+  <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+  <div class="header">
+    <div class="content">
+      <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
+      <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+      <div class="link-block">
+        <a href="../blogs" aria-label="home"><img class="fa fa-home" src="../images/iconSvgs/home.svg"
+            alt="Home icon" /></a>
+        <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img
+            class="fa fa-github" src="../images/iconSvgs/github.svg" alt="Github icon" /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer"
+          aria-label="linkedin"><img class="fa fa-linkedin" src="../images/iconSvgs/linkedin.svg"
+            alt="LinkedIn icon" /></a>
+        <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"><img
+            class="fa fa-twitter" src="../images/iconSvgs/twitter.svg" alt="Twitter icon" /></a>
+        <a name="Email to me" aria-label="Email to me"
+          href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img
+            class="fa fa-envelope" src="../images/iconSvgs/mail.svg" alt="Email icon" /></a>
+      </div>
     </div>
-    <div class="content justify-p">
-        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
-        <h1 id="blog-title" class="purple-text">Man vs Machine! Predicting the Academy Awards</h1>
-        <p class="blog-by-line">Andrew Nolan</p>
-        <p class="blog-by-line">2023-03-25</p>
-        
-        <p>Every year I try my best to complete the <a href="https://www.reddit.com/r/oscarsdeathrace/" target="_blank" rel="noopener noreferrer">Oscars Death Race</a>. I enjoy watching all the movies and I appreciate the chance to learn about and watch some films I would not have watched otherwise. Like this year, one of my favorite films was <i>Mrs. Harris Goes to Paris</i>, not the type of movie I would normally watch. But this post isn't about movies, it's about machine learning.</p>
+  </div>
+  <main id="main" class="content justify-p">
+    <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+    <h1 id="blog-title" class="purple-text">Man vs Machine! Predicting the Academy Awards</h1>
+    <p class="blog-by-line">Andrew Nolan</p>
+    <p class="blog-by-line">2023-03-25</p>
 
-        <img src="./images/academyawards/oscarwinners.webp" alt="I didn't predict any of them would win. But I'm glad they did! Especially the Everything Everywhere all at once folks, they deserved it!" class="blog-image">
+    <p>Every year I try my best to complete the <a href="https://www.reddit.com/r/oscarsdeathrace/" target="_blank"
+        rel="noopener noreferrer">Oscars Death Race</a>. I enjoy watching all the movies and I appreciate the chance to
+      learn about and watch some films I would not have watched otherwise. Like this year, one of my favorite films was
+      <i>Mrs. Harris Goes to Paris</i>, not the type of movie I would normally watch. But this post isn't about movies,
+      it's about machine learning.</p>
 
-        <p>AI and machine learning are all the rage right now. This isn't another generative text algorithm post though. In an effort to teach myself more about machine learning and refine my skills, I decided to make this year's Oscar watching experience a challenge. Can I train an algorithm to predict the Academy Award winners better than I can.</p>
+    <img src="./images/academyawards/oscarwinners.webp"
+      alt="I didn't predict any of them would win. But I'm glad they did! Especially the Everything Everywhere all at once folks, they deserved it!"
+      class="blog-image">
 
-        <p>And the results are, I can! I will admit none of the models I trained performed that well, but they did beat me this year. (Although the Oscar results this year were somewhat surprising, that's a discussion for another time).</p>
+    <p>AI and machine learning are all the rage right now. This isn't another generative text algorithm post though. In
+      an effort to teach myself more about machine learning and refine my skills, I decided to make this year's Oscar
+      watching experience a challenge. Can I train an algorithm to predict the Academy Award winners better than I can.
+    </p>
 
-        <p>The following table summarizes the predictions, training, and final accuracy of me and the five models.</p>
+    <p>And the results are, I can! I will admit none of the models I trained performed that well, but they did beat me
+      this year. (Although the Oscar results this year were somewhat surprising, that's a discussion for another time).
+    </p>
 
-        <h3>Prediction Results</h3>
+    <p>The following table summarizes the predictions, training, and final accuracy of me and the five models.</p>
 
-        <div style="overflow-x: auto; width: 100%">
-          <table>
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>My Predictions</th>
-                <th>Naive Bayes</th>
-                <th>KNN</th>
-                <th>Logistic Regression</th>
-                <th>Random Forest</th>
-                <th>SVM</th>
-                <th>Actual Results</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>actor in a leading role</th>
-                <td>Austin Butler - Elvis</td>
-                <td>The Banshees of Inisherin</td>
-                <td>Elvis</td>
-                <td>The Banshees of Inisherin</td>
-                <td>The Banshees of Inisherin</td>
-                <td>Elvis</td>
-                <td>The Whale</td>
-              </tr>
-              <tr>
-                <th>actor in a supporting role</th>
-                <td>Brendan Gleeson - The Banshees of Inisherin</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>The Banshees of Inisherin</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Causeway</td>
-                <td>Everything Everywhere All at Once</td>
-              </tr>
-              <tr>
-                <th>actress in a leading role</th>
-                <td>Cate Blanchett - Tar</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>To Leslie</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Tar</td>
-                <td>Everything Everywhere All at Once</td>
-              </tr>
-              <tr>
-                <th>actress in a supporting role</th>
-                <td>Kerry Condon - The Banshees of Inisherin</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>The Banshees of Inisherin</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Black Panther: Wakanda Forever</td>
-                <td>Everything Everywhere All at Once</td>
-              </tr>
-              <tr>
-                <th>animated feature film</th>
-                <td>Guillermo del Toro's Pinocchio</td>
-                <td>Guillermo del Toro's Pinocchio</td>
-                <td>Guillermo del Toro's Pinocchio</td>
-                <td>Puss in Boots: The Last Wish</td>
-                <td>Puss in Boots: The Last Wish</td>
-                <td>Guillermo del Toro's Pinocchio</td>
-                <td>Guillermo del Toro's Pinocchio</td>
-              </tr>
-              <tr>
-                <th>cinematography</th>
-                <td>All Quiet on the Western Front</td>
-                <td>All Quiet on the Western Front</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Tar</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Bardo, False Chronicle of a Handful of Truths</td>
-                <td>All Quiet on the Western Front</td>
-              </tr>
-              <tr>
-                <th>costume design</th>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Black Panther: Wakanda Forever</td>
-                <td>Black Panther: Wakanda Forever</td>
-              </tr>
-              <tr>
-                <th>directing</th>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Triangle of Sadness</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>The Banshees of Inisherin</td>
-                <td>Everything Everywhere All at Once</td>
-              </tr>
-              <tr>
-                <th>documentary feature film</th>
-                <td>Navalny</td>
-                <td>Fire of Love</td>
-                <td>All That Breathes</td>
-                <td>Fire of Love</td>
-                <td>All the Beauty and the Bloodshed</td>
-                <td>All That Breathes</td>
-                <td>Navalny</td>
-              </tr>
-              <tr>
-                <th>documentary short film</th>
-                <td>The Elephant Whisperers</td>
-                <td>The Elephant Whisperers</td>
-                <td>The Elephant Whisperers</td>
-                <td>The Elephant Whisperers</td>
-                <td>Haulout</td>
-                <td>The Elephant Whisperers</td>
-                <td>The Elephant Whisperers</td>
-              </tr>
-              <tr>
-                <th>film editing</th>
-                <td>Top Gun: Maverick</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Top Gun: Maverick</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Elvis</td>
-                <td>Everything Everywhere All at Once</td>
-              </tr>
-              <tr>
-                <th>international feature film</th>
-                <td>All Quiet on the Western Front</td>
-                <td>All Quiet on the Western Front</td>
-                <td>All Quiet on the Western Front</td>
-                <td>The Quiet Girl</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Argentina, 1985</td>
-                <td>All Quiet on the Western Front</td>
-              </tr>
-              <tr>
-                <th>makeup and hairstyling</th>
-                <td>Elvis</td>
-                <td>Black Panther: Wakanda Forever</td>
-                <td>All Quiet on the Western Front</td>
-                <td>The Batman</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Black Panther: Wakanda Forever</td>
-                <td>The Whale</td>
-              </tr>
-              <tr>
-                <th>music (original score)</th>
-                <td>Babylon</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Babylon</td>
-                <td>All Quiet on the Western Front</td>
-              </tr>
-              <tr>
-                <th>music (original song)</th>
-                <td>RRR</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>RRR</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Black Panther: Wakanda Forever</td>
-                <td>RRR</td>
-              </tr>
-              <tr>
-                <th>best picture</th>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Top Gun: Maverick</td>
-                <td>The Banshees of Inisherin</td>
-                <td>Avatar: The Way of Water</td>
-                <td>Everything Everywhere All at Once</td>
-              </tr>
-              <tr>
-                <th>production design</th>
-                <td>Babylon</td>
-                <td>Avatar: The Way of Water</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Babylon</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Avatar: The Way of Water</td>
-                <td>All Quiet on the Western Front</td>
-              </tr>
-              <tr>
-                <th>short film (animated)</th>
-                <td>Ice Merchants</td>
-                <td>My Year of Dicks</td>
-                <td>The Boy, the Mole, the Fox and the Horse</td>
-                <td>Ice Merchants</td>
-                <td>Ice Merchants</td>
-                <td>The Boy, the Mole, the Fox and the Horse</td>
-                <td>The Boy, the Mole, the Fox and the Horse</td>
-              </tr>
-              <tr>
-                <th>short film (live action)</th>
-                <td>Le Pupille</td>
-                <td>Le Pupille</td>
-                <td>An Irish Goodbye</td>
-                <td>The Red Suitcase</td>
-                <td>Le Pupille</td>
-                <td>An Irish Goodbye</td>
-                <td>An Irish Goodbye</td>
-              </tr>
-              <tr>
-                <th>sound</th>
-                <td>All Quiet on the Western Front	</td>
-                <td>Avatar: The Way of Water</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Top Gun: Maverick</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Avatar: The Way of Water</td>
-                <td>Top Gun: Maverick</td>
-              </tr>
-              <tr>
-                <th>visual effects</th>
-                <td>Avatar: The Way of Water</td>
-                <td>Black Panther: Wakanda Forever</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Top Gun: Maverick</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Avatar: The Way of Water</td>
-                <td>Avatar: The Way of Water</td>
-              </tr>
-              <tr>
-                <th>writing (adapted screenplay)</th>
-                <td>Women Talking</td>
-                <td>All Quiet on the Western Front</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Top Gun: Maverick</td>
-                <td>All Quiet on the Western Front</td>
-                <td>All Quiet on the Western Front</td>
-                <td>Women Talking</td>
-              </tr>
-              <tr>
-                <th>writing (original screenplay)</th>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Triangle of Sadness</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-                <td>Everything Everywhere All at Once</td>
-              </tr>
-              <tr>
-                <th>Training Accuracy</th>
-                <td>60.86%*</td>
-                <td>66.15%</td>
-                <td>79.68%</td>
-                <td>79.68%</td>
-                <td>80.27%</td>
-                <td>79.68%</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <th>True Accuracy</th>
-                <td>11/23 (47%)</td>
-                <td>11/23 (47%)</td>
-                <td>14/23 (61%)</td>
-                <td>4/23 (17%)</td>
-                <td>8/23 (35%)</td>
-                <td>6/23 (26%)</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <h3>Prediction Results</h3>
 
-        <p><em>*My training accuracy is based on the average of my predictions the past 3 years.</em></p>
-
-        <h3>Results</h3>
-
-        <p>K-nearest neighbors (KNN) performed the best and Logistic Regression performed the worst. Interesting to see how well or poorly they both generalized considering their training accuracy (basic cross-validation).</p>
-
-        <p>I originally expected Random Forest to be the most successful as it is an ensemble method and it's often considered one of the best (non-deep learning) models for classifications. It also has more hyperparameters for me to play with and tune, so I was optimistic it would be a stronger model.</p>
-
-        <p>KNN did the best though. In the code I did hyperparameter tuning on each of my models. Although I only tuned two for KNN, in the final model it was determined that Manhattan Distance and 20 neighbors were the best parameters to use. So that is what our winning algorithm did.</p>
-
-        <p>Although KNN won, the other models (mostly) did well too! The expected value of predictions is 4.5 out of 23 if you guess completely randomly (1/5 * 22 + 1/10). All categories have 5 nominees except best picture which has 10. Therefore, all of these models did better than true random except Logistic Regression.</p>
-
-        <p>That said, I should mention, the winners were chosen based on the highest probability of winning according to the models. All the models, except Naive Bayes, predicted it was more likely every movie lost every category. But obviously we can't have that so I used the highest probabilities for winning (lowest odds of losing) as each winner.</p>
-
-        <p>I personally only got 11 right, so I lost to the machine this year. But this was a fun learning experience and I hope to try it again next year! Although, if I improve the code I'll probably just lose even harder...</p>
-
-        <h3>Technical Details</h3>
-
-        <p>This was a pretty bare bones machine learning experiment. It's been a while since I have worked with machine learning so this was a reintroduction for me, and thus I kept it simple.</p>
-
-        <p>If you want to check out the code, you can take a look at the Git repo and mess around with it yourself <a href="https://github.com/acnolan/Academy-Award-Predictions" target="_blank" rel="noopener noreferer">here</a>.</p>
-
-        <p>This project went through the full data mining process. After searching for a while, I found a <a href="https://www.kaggle.com/datasets/unanimad/the-oscar-award" target="_blank" rel="noopener noreferer">Kaggle dataset</a> that had all of the Academy Award data since the first Academy Awards in 1929. I downloaded that and we were off to a good start.</p>
-
-        <p>We needed to do some data cleaning before we could use it. I converted all special characters in the titles to their unaccented versions. This was needed to webscrape Letterboxd (more about that below). Any row without a film (like special awards) we didn't need, so we removed those rows.</p>
-
-        <p>The second step in the process was to do the web scraping and feature building. Nominees and categories from the Kaggle set were a good start but not much to work with. To build out the dataset, I used two additional sources of data, Letterboxd and Twitter.</p>
-
-        <p>Letterboxd is the top film-watching social media (in my opinion). I figured the ratings on Letterboxd may be useful data for determining if a film is an award winner. Using the Letterboxdpy package I scraped data for each film in the dataset. I collected the average user rating and also the genre from here.</p>
-
-        <p>From Twitter, I used the snscrape package to search for the film title + "oscars" and film title + "academy awards." With that data we collected the average likes and retweets on some of the search results to determine a metric for engagement. I also used the textblob package to perform a quick sentiment analysis on the data. This gave us additional features of sentiment and subjectivity of the tweets.</p>
-
-        <p>For both Twitter and Letterboxd, if any movies were included more than once, I reused the data instead of scraping again. This was a small optimization for improving the time it took to build the data. Scraping the web data is pretty slow, so the process to build the data set (not even training models yet) took about 6 hours to run.</p>
-
-        <p>With the data collected, I was almost ready to jump into the fun machine learning stuff.</p>
-
-        <p>First we needed to preprocess all this data. There were a few steps to this.</p>
-
-        <p>For the training data, we dropped any rows with NaN (not a number) or null values. This mostly included special awards (a category we weren't predicting) and some older films. The dataset was around 10,000 records long, so dropping a few still left us with a good set of data to train on.</p>
-
-        <p>For this year's data, I couldn't drop any rows since we need to predict on all this year's results! The only NaN values in this case were when letterboxd scaping failed. To account for that, I imputed the missing ratings as averages of the other ratings. Not perfect, but it at least got us working data. This could be improved next time.</p>
-
-        <p>For the "genre" and "nomination category" features, I needed to convert these from nominal variables to categorical variables. In order to make this something useful we could train and predict on, I used one-hot encoding to make each category into its own column/variable.</p>
-
-        <p>After creating the one-hot encodings I had to align the test data and this year's unknown data to ensure that there were no missing columns when we went to predict later.</p>
-
-        <p>Now that we had all the data ready we could start machine learning!</p>
-
-        <p>First I plotted a correlation heatmap to show the relationships between all the features. Unfortunately, due to all the one hot columns it got pretty big...</p>
-
-        <img src="./images/academyawards/heatmap.webp" alt="Heatmap of the correlation of all the variables we are going to train on." class="blog-image">
-
-        <p>Both text analytics values, sentiment and subjectivity seemed correlated. The film count (number of times a film was nominated) correlated a bit with its Letterboxd rating, sentiment, and subjectivity as well.</p>
-
-        <p>Not too surprising, Animated Short and the Animation Genre also had some strong correlations.</p>
-
-        <p>With the data ready, we jumped into training. I used scikit-learn to train the models. Since I was only using basic classification algorithms, they trained quickly. This let me implement several different models. I chose 5 different types of classification algorithms to train, a fun bonus experiment to see which model worked best:</p>
-
-        <ul>
-          <li>Gaussian Naive Bayes</li>
-          <li>Random Forest</li>
-          <li>K-Nearest Neighbors</li>
-          <li>Support Vector Classification</li>
-          <li>Logistic Regression</li>
-        </ul>
-
-        <p>During the training sci-kit made it super easy. We used 20% of the data for cross validation to get our training accuracy. I also used the builtin Randomized Search CV and Grid Search CV for hyperparameter tuning on the models that supported it.</p>
-
-        <p>Once all of this was there I predicted the outcomes using each model and saved it to a CSV. The results are seen in the table above.</p>
-
-        <p>I used a lot of great packages to make this work. Apart from machine learning, my biggest takeaway from this experience was how massive the network of Python packages is! People really have done everything, so it's a very easy ecosystem to jump into and just start working. The packages I used are:</p>
-
-        <ul>
-          <li><a href="https://pypi.org/project/letterboxdpy/" target="_blank" rel="noopener noreferer">letterboxdpy</a>- to scrape Letterboxd data.</li>
-          <li><a href="https://pypi.org/project/numpy/" target="_blank" rel="noopener noreferer">numpy</a>- you always need this one.</li>
-          <li><a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferer">pandas</a>- to create dataframes and handle the data.</li>
-          <li><a href="https://scikit-learn.org/" target="_blank" rel="noopener noreferer">scikit-learn</a>- to train the machine learning models.</li>
-          <li><a href="https://seaborn.pydata.org/installing.html" target="_blank" rel="noopener noreferer">seaborn</a>- for data visualization.</li>
-          <li><a href="https://github.com/JustAnotherArchivist/snscrape" target="_blank" rel="noopener noreferer">snscrape</a>- to scrape Twitter data.</li>
-          <li><a href="https://pypi.org/project/textblob/" target="_blank" rel="noopener noreferer">textblob</a>- for sentiment analysis.</li>
-          <li><a href="https://pypi.org/project/Unidecode/" target="_blank" rel="noopener noreferer">unidecode</a>- To clean up special characters</li>
-        </ul>
-
-        <h3>Future Work</h3>
-
-        <p>I had a lot of fun with this project this year, but there is still a lot of room to grow. The Oscars aren't going away, so next year we will be back with, hopefully, an even stronger set of models!</p>
-
-        <p>This code was very basic and can be optimized in the future. A few ideas I have for improving these predictions next year are:</p>
-
-        <h4>Additional Data Points</h4>
-
-        <p>We used Twitter and Letterboxd data this year. Some other features that may be helpful to include in the model are:</p>
-
-        <ul>
-          <li>Rotten Tomatoes data, either Audience or Critic scores (maybe both).</li>
-          <li>Other awards data: For example, Golden Globes or BAFTA winners.</li>
-          <li>Scraping another social media, maybe Reddit?</li>
-          <li>Google search trends.</li>
-        </ul>
-
-        <p>I think these additional data points may reveal some additional patterns we can use to train the models.</p>
-
-        <h4>Deep Learning</h4>
-
-        <p>Speaking of training models. This year I focused on basic, classical machine learning models. Next year, I think it could be good to do some deep learning and build a neural network from this dataset. The hope would be a multilayered neural net can uncover more patterns we didn't see and perform with even better accuracy.</p>
-
-        <h4>More Specific Models</h4>
-
-        <p>This year, the models were trained on all data to predict for all categories. This worked pretty well. But, it may work better to train models specifically for each category instead of generalizing to all categories. This would be more time to train but may get better results.</p>
-
-        <p>This was a fun project, and I am sad I lost. Next year I hope to train an even better model and lose by even more! (I'm sure I'll get over it by then).</p>
-
-        <p>Thanks for reading! If you want to check out the code you can find it in <a href="https://github.com/acnolan/Academy-Award-Predictions" target="_blank" rel="noopener noreferer">this Git repo</a>.</p>
-
-        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    <div style="overflow-x: auto; width: 100%">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>My Predictions</th>
+            <th>Naive Bayes</th>
+            <th>KNN</th>
+            <th>Logistic Regression</th>
+            <th>Random Forest</th>
+            <th>SVM</th>
+            <th>Actual Results</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>actor in a leading role</th>
+            <td>Austin Butler - Elvis</td>
+            <td>The Banshees of Inisherin</td>
+            <td>Elvis</td>
+            <td>The Banshees of Inisherin</td>
+            <td>The Banshees of Inisherin</td>
+            <td>Elvis</td>
+            <td>The Whale</td>
+          </tr>
+          <tr>
+            <th>actor in a supporting role</th>
+            <td>Brendan Gleeson - The Banshees of Inisherin</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>The Banshees of Inisherin</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Causeway</td>
+            <td>Everything Everywhere All at Once</td>
+          </tr>
+          <tr>
+            <th>actress in a leading role</th>
+            <td>Cate Blanchett - Tar</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>To Leslie</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Tar</td>
+            <td>Everything Everywhere All at Once</td>
+          </tr>
+          <tr>
+            <th>actress in a supporting role</th>
+            <td>Kerry Condon - The Banshees of Inisherin</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>The Banshees of Inisherin</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Black Panther: Wakanda Forever</td>
+            <td>Everything Everywhere All at Once</td>
+          </tr>
+          <tr>
+            <th>animated feature film</th>
+            <td>Guillermo del Toro's Pinocchio</td>
+            <td>Guillermo del Toro's Pinocchio</td>
+            <td>Guillermo del Toro's Pinocchio</td>
+            <td>Puss in Boots: The Last Wish</td>
+            <td>Puss in Boots: The Last Wish</td>
+            <td>Guillermo del Toro's Pinocchio</td>
+            <td>Guillermo del Toro's Pinocchio</td>
+          </tr>
+          <tr>
+            <th>cinematography</th>
+            <td>All Quiet on the Western Front</td>
+            <td>All Quiet on the Western Front</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Tar</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Bardo, False Chronicle of a Handful of Truths</td>
+            <td>All Quiet on the Western Front</td>
+          </tr>
+          <tr>
+            <th>costume design</th>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Black Panther: Wakanda Forever</td>
+            <td>Black Panther: Wakanda Forever</td>
+          </tr>
+          <tr>
+            <th>directing</th>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Triangle of Sadness</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>The Banshees of Inisherin</td>
+            <td>Everything Everywhere All at Once</td>
+          </tr>
+          <tr>
+            <th>documentary feature film</th>
+            <td>Navalny</td>
+            <td>Fire of Love</td>
+            <td>All That Breathes</td>
+            <td>Fire of Love</td>
+            <td>All the Beauty and the Bloodshed</td>
+            <td>All That Breathes</td>
+            <td>Navalny</td>
+          </tr>
+          <tr>
+            <th>documentary short film</th>
+            <td>The Elephant Whisperers</td>
+            <td>The Elephant Whisperers</td>
+            <td>The Elephant Whisperers</td>
+            <td>The Elephant Whisperers</td>
+            <td>Haulout</td>
+            <td>The Elephant Whisperers</td>
+            <td>The Elephant Whisperers</td>
+          </tr>
+          <tr>
+            <th>film editing</th>
+            <td>Top Gun: Maverick</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Top Gun: Maverick</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Elvis</td>
+            <td>Everything Everywhere All at Once</td>
+          </tr>
+          <tr>
+            <th>international feature film</th>
+            <td>All Quiet on the Western Front</td>
+            <td>All Quiet on the Western Front</td>
+            <td>All Quiet on the Western Front</td>
+            <td>The Quiet Girl</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Argentina, 1985</td>
+            <td>All Quiet on the Western Front</td>
+          </tr>
+          <tr>
+            <th>makeup and hairstyling</th>
+            <td>Elvis</td>
+            <td>Black Panther: Wakanda Forever</td>
+            <td>All Quiet on the Western Front</td>
+            <td>The Batman</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Black Panther: Wakanda Forever</td>
+            <td>The Whale</td>
+          </tr>
+          <tr>
+            <th>music (original score)</th>
+            <td>Babylon</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Babylon</td>
+            <td>All Quiet on the Western Front</td>
+          </tr>
+          <tr>
+            <th>music (original song)</th>
+            <td>RRR</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>RRR</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Black Panther: Wakanda Forever</td>
+            <td>RRR</td>
+          </tr>
+          <tr>
+            <th>best picture</th>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Top Gun: Maverick</td>
+            <td>The Banshees of Inisherin</td>
+            <td>Avatar: The Way of Water</td>
+            <td>Everything Everywhere All at Once</td>
+          </tr>
+          <tr>
+            <th>production design</th>
+            <td>Babylon</td>
+            <td>Avatar: The Way of Water</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Babylon</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Avatar: The Way of Water</td>
+            <td>All Quiet on the Western Front</td>
+          </tr>
+          <tr>
+            <th>short film (animated)</th>
+            <td>Ice Merchants</td>
+            <td>My Year of Dicks</td>
+            <td>The Boy, the Mole, the Fox and the Horse</td>
+            <td>Ice Merchants</td>
+            <td>Ice Merchants</td>
+            <td>The Boy, the Mole, the Fox and the Horse</td>
+            <td>The Boy, the Mole, the Fox and the Horse</td>
+          </tr>
+          <tr>
+            <th>short film (live action)</th>
+            <td>Le Pupille</td>
+            <td>Le Pupille</td>
+            <td>An Irish Goodbye</td>
+            <td>The Red Suitcase</td>
+            <td>Le Pupille</td>
+            <td>An Irish Goodbye</td>
+            <td>An Irish Goodbye</td>
+          </tr>
+          <tr>
+            <th>sound</th>
+            <td>All Quiet on the Western Front </td>
+            <td>Avatar: The Way of Water</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Top Gun: Maverick</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Avatar: The Way of Water</td>
+            <td>Top Gun: Maverick</td>
+          </tr>
+          <tr>
+            <th>visual effects</th>
+            <td>Avatar: The Way of Water</td>
+            <td>Black Panther: Wakanda Forever</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Top Gun: Maverick</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Avatar: The Way of Water</td>
+            <td>Avatar: The Way of Water</td>
+          </tr>
+          <tr>
+            <th>writing (adapted screenplay)</th>
+            <td>Women Talking</td>
+            <td>All Quiet on the Western Front</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Top Gun: Maverick</td>
+            <td>All Quiet on the Western Front</td>
+            <td>All Quiet on the Western Front</td>
+            <td>Women Talking</td>
+          </tr>
+          <tr>
+            <th>writing (original screenplay)</th>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Triangle of Sadness</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+            <td>Everything Everywhere All at Once</td>
+          </tr>
+          <tr>
+            <th>Training Accuracy</th>
+            <td>60.86%*</td>
+            <td>66.15%</td>
+            <td>79.68%</td>
+            <td>79.68%</td>
+            <td>80.27%</td>
+            <td>79.68%</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th>True Accuracy</th>
+            <td>11/23 (47%)</td>
+            <td>11/23 (47%)</td>
+            <td>14/23 (61%)</td>
+            <td>4/23 (17%)</td>
+            <td>8/23 (35%)</td>
+            <td>6/23 (26%)</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+
+    <p><em>*My training accuracy is based on the average of my predictions the past 3 years.</em></p>
+
+    <h3>Results</h3>
+
+    <p>K-nearest neighbors (KNN) performed the best and Logistic Regression performed the worst. Interesting to see how
+      well or poorly they both generalized considering their training accuracy (basic cross-validation).</p>
+
+    <p>I originally expected Random Forest to be the most successful as it is an ensemble method and it's often
+      considered one of the best (non-deep learning) models for classifications. It also has more hyperparameters for me
+      to play with and tune, so I was optimistic it would be a stronger model.</p>
+
+    <p>KNN did the best though. In the code I did hyperparameter tuning on each of my models. Although I only tuned two
+      for KNN, in the final model it was determined that Manhattan Distance and 20 neighbors were the best parameters to
+      use. So that is what our winning algorithm did.</p>
+
+    <p>Although KNN won, the other models (mostly) did well too! The expected value of predictions is 4.5 out of 23 if
+      you guess completely randomly (1/5 * 22 + 1/10). All categories have 5 nominees except best picture which has 10.
+      Therefore, all of these models did better than true random except Logistic Regression.</p>
+
+    <p>That said, I should mention, the winners were chosen based on the highest probability of winning according to the
+      models. All the models, except Naive Bayes, predicted it was more likely every movie lost every category. But
+      obviously we can't have that so I used the highest probabilities for winning (lowest odds of losing) as each
+      winner.</p>
+
+    <p>I personally only got 11 right, so I lost to the machine this year. But this was a fun learning experience and I
+      hope to try it again next year! Although, if I improve the code I'll probably just lose even harder...</p>
+
+    <h3>Technical Details</h3>
+
+    <p>This was a pretty bare bones machine learning experiment. It's been a while since I have worked with machine
+      learning so this was a reintroduction for me, and thus I kept it simple.</p>
+
+    <p>If you want to check out the code, you can take a look at the Git repo and mess around with it yourself <a
+        href="https://github.com/acnolan/Academy-Award-Predictions" target="_blank" rel="noopener noreferer">here</a>.
+    </p>
+
+    <p>This project went through the full data mining process. After searching for a while, I found a <a
+        href="https://www.kaggle.com/datasets/unanimad/the-oscar-award" target="_blank" rel="noopener noreferer">Kaggle
+        dataset</a> that had all of the Academy Award data since the first Academy Awards in 1929. I downloaded that and
+      we were off to a good start.</p>
+
+    <p>We needed to do some data cleaning before we could use it. I converted all special characters in the titles to
+      their unaccented versions. This was needed to webscrape Letterboxd (more about that below). Any row without a film
+      (like special awards) we didn't need, so we removed those rows.</p>
+
+    <p>The second step in the process was to do the web scraping and feature building. Nominees and categories from the
+      Kaggle set were a good start but not much to work with. To build out the dataset, I used two additional sources of
+      data, Letterboxd and Twitter.</p>
+
+    <p>Letterboxd is the top film-watching social media (in my opinion). I figured the ratings on Letterboxd may be
+      useful data for determining if a film is an award winner. Using the Letterboxdpy package I scraped data for each
+      film in the dataset. I collected the average user rating and also the genre from here.</p>
+
+    <p>From Twitter, I used the snscrape package to search for the film title + "oscars" and film title + "academy
+      awards." With that data we collected the average likes and retweets on some of the search results to determine a
+      metric for engagement. I also used the textblob package to perform a quick sentiment analysis on the data. This
+      gave us additional features of sentiment and subjectivity of the tweets.</p>
+
+    <p>For both Twitter and Letterboxd, if any movies were included more than once, I reused the data instead of
+      scraping again. This was a small optimization for improving the time it took to build the data. Scraping the web
+      data is pretty slow, so the process to build the data set (not even training models yet) took about 6 hours to
+      run.</p>
+
+    <p>With the data collected, I was almost ready to jump into the fun machine learning stuff.</p>
+
+    <p>First we needed to preprocess all this data. There were a few steps to this.</p>
+
+    <p>For the training data, we dropped any rows with NaN (not a number) or null values. This mostly included special
+      awards (a category we weren't predicting) and some older films. The dataset was around 10,000 records long, so
+      dropping a few still left us with a good set of data to train on.</p>
+
+    <p>For this year's data, I couldn't drop any rows since we need to predict on all this year's results! The only NaN
+      values in this case were when letterboxd scaping failed. To account for that, I imputed the missing ratings as
+      averages of the other ratings. Not perfect, but it at least got us working data. This could be improved next time.
+    </p>
+
+    <p>For the "genre" and "nomination category" features, I needed to convert these from nominal variables to
+      categorical variables. In order to make this something useful we could train and predict on, I used one-hot
+      encoding to make each category into its own column/variable.</p>
+
+    <p>After creating the one-hot encodings I had to align the test data and this year's unknown data to ensure that
+      there were no missing columns when we went to predict later.</p>
+
+    <p>Now that we had all the data ready we could start machine learning!</p>
+
+    <p>First I plotted a correlation heatmap to show the relationships between all the features. Unfortunately, due to
+      all the one hot columns it got pretty big...</p>
+
+    <img src="./images/academyawards/heatmap.webp"
+      alt="Heatmap of the correlation of all the variables we are going to train on." class="blog-image">
+
+    <p>Both text analytics values, sentiment and subjectivity seemed correlated. The film count (number of times a film
+      was nominated) correlated a bit with its Letterboxd rating, sentiment, and subjectivity as well.</p>
+
+    <p>Not too surprising, Animated Short and the Animation Genre also had some strong correlations.</p>
+
+    <p>With the data ready, we jumped into training. I used scikit-learn to train the models. Since I was only using
+      basic classification algorithms, they trained quickly. This let me implement several different models. I chose 5
+      different types of classification algorithms to train, a fun bonus experiment to see which model worked best:</p>
+
+    <ul>
+      <li>Gaussian Naive Bayes</li>
+      <li>Random Forest</li>
+      <li>K-Nearest Neighbors</li>
+      <li>Support Vector Classification</li>
+      <li>Logistic Regression</li>
+    </ul>
+
+    <p>During the training sci-kit made it super easy. We used 20% of the data for cross validation to get our training
+      accuracy. I also used the builtin Randomized Search CV and Grid Search CV for hyperparameter tuning on the models
+      that supported it.</p>
+
+    <p>Once all of this was there I predicted the outcomes using each model and saved it to a CSV. The results are seen
+      in the table above.</p>
+
+    <p>I used a lot of great packages to make this work. Apart from machine learning, my biggest takeaway from this
+      experience was how massive the network of Python packages is! People really have done everything, so it's a very
+      easy ecosystem to jump into and just start working. The packages I used are:</p>
+
+    <ul>
+      <li><a href="https://pypi.org/project/letterboxdpy/" target="_blank" rel="noopener noreferer">letterboxdpy</a>- to
+        scrape Letterboxd data.</li>
+      <li><a href="https://pypi.org/project/numpy/" target="_blank" rel="noopener noreferer">numpy</a>- you always need
+        this one.</li>
+      <li><a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferer">pandas</a>- to create dataframes
+        and handle the data.</li>
+      <li><a href="https://scikit-learn.org/" target="_blank" rel="noopener noreferer">scikit-learn</a>- to train the
+        machine learning models.</li>
+      <li><a href="https://seaborn.pydata.org/installing.html" target="_blank" rel="noopener noreferer">seaborn</a>- for
+        data visualization.</li>
+      <li><a href="https://github.com/JustAnotherArchivist/snscrape" target="_blank"
+          rel="noopener noreferer">snscrape</a>- to scrape Twitter data.</li>
+      <li><a href="https://pypi.org/project/textblob/" target="_blank" rel="noopener noreferer">textblob</a>- for
+        sentiment analysis.</li>
+      <li><a href="https://pypi.org/project/Unidecode/" target="_blank" rel="noopener noreferer">unidecode</a>- To clean
+        up special characters</li>
+    </ul>
+
+    <h3>Future Work</h3>
+
+    <p>I had a lot of fun with this project this year, but there is still a lot of room to grow. The Oscars aren't going
+      away, so next year we will be back with, hopefully, an even stronger set of models!</p>
+
+    <p>This code was very basic and can be optimized in the future. A few ideas I have for improving these predictions
+      next year are:</p>
+
+    <h4>Additional Data Points</h4>
+
+    <p>We used Twitter and Letterboxd data this year. Some other features that may be helpful to include in the model
+      are:</p>
+
+    <ul>
+      <li>Rotten Tomatoes data, either Audience or Critic scores (maybe both).</li>
+      <li>Other awards data: For example, Golden Globes or BAFTA winners.</li>
+      <li>Scraping another social media, maybe Reddit?</li>
+      <li>Google search trends.</li>
+    </ul>
+
+    <p>I think these additional data points may reveal some additional patterns we can use to train the models.</p>
+
+    <h4>Deep Learning</h4>
+
+    <p>Speaking of training models. This year I focused on basic, classical machine learning models. Next year, I think
+      it could be good to do some deep learning and build a neural network from this dataset. The hope would be a
+      multilayered neural net can uncover more patterns we didn't see and perform with even better accuracy.</p>
+
+    <h4>More Specific Models</h4>
+
+    <p>This year, the models were trained on all data to predict for all categories. This worked pretty well. But, it
+      may work better to train models specifically for each category instead of generalizing to all categories. This
+      would be more time to train but may get better results.</p>
+
+    <p>This was a fun project, and I am sad I lost. Next year I hope to train an even better model and lose by even
+      more! (I'm sure I'll get over it by then).</p>
+
+    <p>Thanks for reading! If you want to check out the code you can find it in <a
+        href="https://github.com/acnolan/Academy-Award-Predictions" target="_blank" rel="noopener noreferer">this Git
+        repo</a>.</p>
+
+    <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+  </main>
 </body>
 
 </html>
