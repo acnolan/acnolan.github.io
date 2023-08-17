@@ -2,21 +2,14 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150741562-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-150741562-1');
-    </script>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
+        async src="../scripts/count.js"></script>
     <!-- my stuff -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="description" content="Hello world! This is my first ever blog post!">
     <meta name="keywords" content="Andrew Nolan, Andrew Nolan WPI, Andrew Nolan Blog, Hello World">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='icon' href='../images/favicon.ico'>
     <title>Hello World!</title>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
@@ -24,35 +17,34 @@
 </head>
 
 <body class="homepage">
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
     <div class="header">
         <div class="content">
-            <h1><a href="../blogs" class="desktop-only" style="text-decoration: none;color:white">Andrew Nolan's Blog</a></h1>
-            <h1><a href="../blogs" class="mobile-only" style="text-decoration: none;color:white">Andrew's Blog</a></h1>
-            <div class="linkBlock">
-                <a href="../blogs" aria-label="home" class="fa fa-home"></a>
-                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"
-                    class="fa fa-github"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"
-                    class="fa fa-linkedin"></a>
-                <a target="_blank" href="https://twitter.com/AndrewNolanDev" rel="noopener noreferrer" aria-label="twitter"
-                    class="fa fa-twitter"></a>
-                <a name="Send me an email" href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"
-                    class="fa fa-envelope"></a>
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home"><img class="fa fa-home" src = "../images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "../images/iconSvgs/github.svg" alt="Github icon"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "../images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
+                <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"><img class="fa fa-twitter" src = "../images/iconSvgs/twitter.svg" alt="Twitter icon"/></a>
+                <a name="Email to me" aria-label="Email to me" href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "../images/iconSvgs/mail.svg" alt="Email icon"/></a>
             </div>
         </div>
     </div>
-    <div class="content justify-p">
-        <br>
-        <a href="../blogs" class="desktop-only" id="backButton">&lt; Back to Blog List</a>
-        <a href="../blogs" class="mobile-only" id="backButton">&lt; Back</a>
-        <h1 id="blogTitle" class="purpleText">Hello World!</h1>
-        <h3>Andrew Nolan</h3>
-        <h3>12/22/2020</h3>
+    <main id="main" class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">Hello World!</h1>
+        <div class="blog-by-line">Andrew Nolan</div>
+        <div class="blog-by-line">2020-12-22</div>
+
         <p>Hello World!</p>
+        
         <p>Much like a new programming language, I felt like the first thing I should do in a new blog is to start with a simple Hello World. This is mostly a place holder but I thought if I put something down I will be more likely to come back and write some real articles in 2021.</p>
+        
         <p>Wish me luck with that! And I hope to see you all back here in 2021!</p>
-        <br><br><br><br>
-    </div>
+
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </main>
 </body>
 
 </html>

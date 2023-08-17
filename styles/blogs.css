@@ -1,104 +1,186 @@
 /** Blog List Styles **/
-#blogStuff{
-    display: flex;
-}
 
-#blogList{
-    width: 66%;
-    border-right: solid 1px grey;
-}
-
-.blogListEntry{
-    border: solid 1px lightgrey;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 95%;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-
-.blogTitleLine, .blogDateLine{
-    display: inline-block;
-    border-bottom: 2px dotted lightgray;
-    width: 50%;
-    margin-bottom: 0;
-}
-
-.blogDateLine{
-    float: right;
-    text-align: right;
-}
-
-.blogDescription{
-    margin-top: 0;
-}
-
-#blogFilter{
+#blog-filter {
     width: 34%;
     padding-left: 10px;
 }
 
+#blog-list {
+    width: 66%;
+}
 
-/** Blog Filter Styles **/
-#filterBox{
+#blog-stuff {
+    display: flex;
+    margin-bottom: 54px;
+}
+
+#sort-by {
+    margin-bottom: 28px;
+}
+
+.blog-by-line {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.blog-date-line {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 0;
+    font-size: 1.17em;
+    text-align: right;
+    float: right;
+    font-weight: 700;
+}
+
+.blog-description {
+    margin: 0;
+}
+
+.blog-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.blog-link {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-list-entry {
     border: solid 1px lightgrey;
     padding-left: 15px;
     padding-right: 15px;
-    width: 95%;
-    margin-right: auto;
-    margin-left: auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
 }
 
-#filterBox>h3{
+.blog-rss-and-search-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.blog-table td, .blog-table  th {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.blog-title-div {
     border-bottom: 2px dotted lightgray;
 }
 
-#filterBox>p{
+.blog-title-line {
+    display: inline-block;
+    width: 67%;
+    margin-bottom: 0;
+}
+
+.meta-data-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rss-subscribe {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    font-size: smaller;
+}
+
+/** Blog Filter Styles **/
+#filter-box {
+    border: solid 1px lightgrey;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 28px;
+}
+
+#filter-box > h3 {
+    border-bottom: 2px dotted lightgray;
+}
+
+#filter-box > p {
     margin-top:0;
     margin-bottom:5px;
 }
 
-/** Blog post styles **/
-#backButton{
-    text-decoration: none;
-    border-radius: 5px;
+#filter-box label, #filter-box input {
+    cursor: pointer;
+}
+
+#search-bar button { 
     background-color: #711ca7;
     color: white;
-    padding: 10px 35px; 
-    box-sizing: border-box;
-    float: right;
-    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
 }
-#backButton:hover{
+
+#search-bar button:hover {
     background-color: #b597c9;
 }
 
-#blogTitle{
+#search-bar input {
+    padding: 4px;
+    cursor: auto;
+}
+
+/** Blog post styles **/
+#back-button {
+    color: #711ca7;
+    float: right;
+    margin-top: 30px;
+}
+
+#back-button:hover {
+    color: #b597c9;
+}
+
+#blog-title {
     display: inline-block;
 }
 
-@media (max-width: 700px){
-    #backButton{
+@media (max-width: 700px) {
+    #back-button {
         margin-top: 20px;
         width: fit-content;
         padding: 5px 15px;
     }
 
-    #blogStuff{
-        display: block;
-    }
-
-    #blogList{
-        width: 100%;
-        border: none;
-    }
-
-    #blogFilter{
+    #blog-filter {
         width: 100%;
         padding: 0;
     }
 
-    .blogListEntry, #filterBox{
+    #blog-list {
+        width: 100%;
+        border: none;
+    }
+
+    #blog-stuff {
+        display: block;
+    }
+
+    .blog-list-entry, #filter-box {
         width: initial;
     }
 }

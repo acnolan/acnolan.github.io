@@ -13,6 +13,7 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="./ChristmasStyles.css">
     <link rel="stylesheet" href="./CatStyles.css">
+    <link rel="stylesheet" href="./ToggleStyles.css">
 
     <!-- import the webpage's client-side javascript file -->
     <script src="./ChristmasScripts.js" defer></script>
@@ -126,6 +127,14 @@
             <img src="./images/done/peartree.jpg" alt="Cutie in a pear tree" width="200px" height="300px">
         </div>
         <div id="finalLine"></div>
+    </div>
+    <div id="toggleDiv">
+        <span>Regular</span>
+        <label class="switch">
+            <input type="checkbox" onclick="toggleCatsmas(event)">
+            <span class="slider"></span>
+        </label>
+        <span>Catsmas</span>
     </div>
     <audio id="cataudio" controls autoplay loop style="margin-top: 5px;">
         <source src="./music/12dayscats.mp3" type="audio/mpeg">

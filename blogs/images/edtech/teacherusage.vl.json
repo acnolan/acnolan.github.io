@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple barchart made with Vega Lite to show the adoption of ChatGPT by teachers.",
+  "width": 400,
+  "data": {
+    "values": [
+      {"Usage": "Daily", "Percent": 40, "Order": 1},
+      {"Usage": "Weekly", "Percent": 10, "Order": 2},
+      {"Usage": "At least once", "Percent": 1, "Order": 3},
+      {"Usage": "Never", "Percent": 49, "Order": 4}
+    ]
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Usage",
+          "type": "nominal",
+          "sort": "Order",
+          "axis": {"labelAngle": 0},
+          "title": "Usage Type"
+        },
+        "y": {"field": "Percent", "type": "quantitative"}
+      },
+      "title": {"text": "Usage of ChatGPT Reported by Teachers"}
+    },
+    {
+      "mark": {"type": "text", "yOffset": -4},
+      "encoding": {
+        "text": {"field": "Percent"},
+        "x": {"field": "Usage", "type": "nominal", "sort": "Order"},
+        "y": {"field": "Percent", "type": "quantitative"}
+      }
+    }
+  ]
+}

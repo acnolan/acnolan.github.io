@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Three pie charts for the perceived benefits of using chatGPT in classrooms. I know pie charts aren't the best option like bars, but it just felt right this time. Sorry.",
+  "data": {
+    "values": [
+      {"category": "Yes", "value1": 68, "value2": 75, "value3": 73},
+      {"category": "No", "value1": 32, "value2": 25, "value3": 27}
+    ]
+  },
+  "transform":[
+    {"calculate": "datum.category +' ('+ datum.value1 + '%)'", "as": "v1"},
+    {"calculate": "datum.category +' ('+ datum.value2 + '%)'", "as": "v2"},
+    {"calculate": "datum.category +' ('+ datum.value3 + '%)'", "as": "v3"}
+  ],
+  "hconcat": [
+    {
+      "encoding": {
+        "theta": {
+          "field": "value1", 
+          "type": "quantitative", 
+          "stack": true
+        },
+        "color": {
+          "field": "category", 
+          "type": "nominal"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "arc", 
+            "outerRadius": 80
+          }
+        },
+        {
+          "mark": {
+            "type": "text", 
+            "radius": 100
+          },
+          "encoding": {
+            "text": {
+              "field": "v1", 
+              "type": "nominal"
+            }
+          }
+        }
+      ],
+      "title": {"text":[ "Percentage of Students who Believe", "ChatGPT Makes them Better Learners "]}
+    },
+    {
+      "encoding": {
+        "theta": {
+          "field": "value2", 
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "field": "category", 
+          "type": "nominal"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "arc", 
+            "outerRadius": 80
+          }
+        },
+        {
+          "mark": {
+            "type": "text", 
+            "radius": 100
+          },
+          "encoding": {
+            "text": {
+              "field": "v2", 
+              "type": "nominal"
+            }
+          }
+        }
+      ],
+      "title": {"text": ["Percentage of Students who Believe", "ChatGPT Helps them Learn Faster"]}
+    },
+    {
+      "encoding": {
+        "theta": {
+          "field": "value3", 
+          "type": "quantitative", 
+          "stack": true
+        },
+        "color": {
+          "field": "category", 
+          "type": "nominal"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "arc", 
+            "outerRadius": 80
+          }
+        },
+        {
+          "mark": {
+            "type": "text", 
+            "radius": 100
+          },
+          "encoding": {
+            "text": {
+              "field": "v3", 
+              "type": "nominal"
+            }
+          }
+        }
+      ],
+      "title": {"text": ["Percentage of Teachers who Believe", "ChatGPT will Improve Student Learning"]}
+    }
+  ]
+}

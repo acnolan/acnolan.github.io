@@ -2,21 +2,14 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150741562-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-150741562-1');
-    </script>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
+        async src="./scripts/count.js"></script>
     <!-- my stuff -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="description" content="Hi, I'm Andrew Nolan. I'm a student, developer, and a pretty cool guy! Check out my website!!">
     <meta name="keywords" content="Andrew Nolan, Andrew Nolan WPI, web dev, Computer Science, acnolan">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='icon' href='./images/favicon.ico'>
     <title>About - Andrew Nolan</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
@@ -24,245 +17,220 @@
 </head>
 
 <body class="homepage">
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
     <div class="header">
         <div class="content">
-            <h1><a href="./" class="desktop-only" style="text-decoration: none;color:white">About Andrew Nolan</a></h1>
-            <h1><a href="./" class="mobile-only" style="text-decoration: none;color:white">About</a></h1>
-            <div class="linkBlock">
-                <a href="./" aria-label="home" class="fa fa-home"></a>
-                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"
-                    class="fa fa-github"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"
-                    class="fa fa-linkedin"></a>
-                <a target="_blank" href="https://twitter.com/AndrewNolanDev" rel="noopener noreferrer" aria-label="twitter"
-                    class="fa fa-twitter"></a>
-                <a name="Send me an email" href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"
-                    class="fa fa-envelope"></a>
+            <h1><a href="./" class="page-title desktop-only">About Andrew Nolan</a></h1>
+            <h1><a href="./" class="page-title mobile-only">About</a></h1>
+            <div class="link-block">
+                <a href="./" aria-label="home"><img class="fa fa-home" src = "./images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "./images/iconSvgs/github.svg" alt="Github icon"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "./images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
+                <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"><img class="fa fa-twitter" src = "./images/iconSvgs/twitter.svg" alt="Twitter icon"/></a>
+                <a name="Email to me" aria-label="Email to me" href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "./images/iconSvgs/mail.svg" alt="Email icon"/></a>
             </div>
         </div>
     </div>
-    <div class="content">
-        <br>
-        <h1 class="purpleText" style="text-align: center;">About Me</h1>
-
-        <p>You can learn a lot about my technical skills and experiences from my resume and work history. However, if you want to learn more about me as a person, here are some of my favorite things!</p>
-
+    <main id="main" class="content">
+        <h1 class="purple-text centered-text">About Me</h1>
+        <p>You can learn a lot about my technical skills and experiences from my <a href="./resume">resume</a> and <a href="./work">work history</a>. However, if you want to learn more about me as a person, here are some of my favorite things!</p>
         <div class="flip-row">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite TV Show?</h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/tvshow.jpg" alt="Nathan for You">
+                        <img src="./images/about/tvshow.webp" alt="Nathan for You">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Movie?</h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/movie.jpg" alt="Scott Pilgrim vs the World">
+                        <img src="./images/about/movie.webp" alt="Scott Pilgrim vs the World">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
             <div class="flip-card" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Book?</h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/book.jpg" alt="Where Wizards Stay up Late">
+                        <img src="./images/about/book.webp" alt="The Queen's Gambit">
                     </div>
                 </div>
             </div>
         </div>
-        <br>
         <div class="flip-row">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Video Game?</h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/game.jpg" alt="Skyrim">
+                        <img src="./images/about/game.webp" alt="Skyrim">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Album?</h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/album.jpg" alt="Random Access Memories">
+                        <img src="./images/about/album.webp" alt="Random Access Memories by Daft Punk">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
             <div class="flip-card" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Ice Cream Flavor?</h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/icecream.png" alt="Ben and Jerry's Half Baked">
+                        <img src="./images/about/icecream.webp" alt="Ben and Jerry's Half Baked">
                     </div>
                 </div>
             </div>
         </div>
-        <br>
         <div class="flip-row">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Hobby? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/hobby.jpg" alt="Chess">
+                        <img src="./images/about/hobby.webp" alt="Chess">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <h1>Coolest Place I've Travelled? </h1>
+                        <h1>Coolest Place I've Traveled? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/travel.png" alt="Albania">
+                        <img src="./images/about/travel.webp" alt="Albania">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
             <div class="flip-card" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Emoji?</h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/emoji.png" alt="upside down smiley face emoji">
+                        <img src="./images/about/emoji.webp" alt="upside down smiley face emoji">
                     </div>
                 </div>
             </div>
         </div>
-        <br>
         <div class="flip-row">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <h1>GIF Pronounciation? </h1>
+                        <h1>GIF Pronunciation? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/gif.png" alt="Soft G">
+                        <img src="./images/about/gif.gif" alt="Soft G like Jif the peanut butter">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Number? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/number.png" alt="The number two">
+                        <img src="./images/about/number.webp" alt="The number two">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
             <div class="flip-card" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Political Compass? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/politicalcompass.png" alt="Political compass">
+                        <img src="./images/about/politicalcompass.webp" alt="Political compass in the bottom left quadrant">
                     </div>
                 </div>
             </div>
         </div>
-        <br>
         <div class="flip-row">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Podcast? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/podcast.jpg" alt="Revisionist History">
+                        <img src="./images/about/podcast.webp" alt="We're Not So Different podcast">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Food? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/food.jpg" alt="Philly Cheesesteak">
+                        <img src="./images/about/food.webp" alt="Philly Cheesesteak">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
             <div class="flip-card" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Animal? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/animal.jpg" alt="Kitty!">
+                        <img src="./images/about/animal.webp" alt="Kitties!">
                     </div>
                 </div>
             </div>
         </div>
-        <br>
         <div class="flip-row">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Fruit? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/fruit.jpg" alt="Black berries">
+                        <img src="./images/about/fruit.webp" alt="Blackberries">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
-            <div class="flip-card" onclick="">
+            <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Social Media of Choice? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/socialmedia.png" alt="Twitter">
+                        <img src="./images/about/socialmedia.webp" alt="Letterboxd">
                     </div>
                 </div>
             </div>
-            <br class="mobile-only-br">
             <div class="flip-card" onclick="">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <h1>Favorite Programming Language?</h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/programming.png" alt="JavaScript">
+                        <img src="./images/about/programming.webp" alt="JavaScript">
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-        <div style="text-align:center; margin-top:20px">
+        <div class="footer-div">
             <a id="email" href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!">Contact
                 Me!</a>
         </div>
-        <br><br><br><br>
-    </div>
+    </main>
 </body>
 
 </html>
