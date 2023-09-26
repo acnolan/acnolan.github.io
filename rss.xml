@@ -6,7 +6,16 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Fri, 07 Jul 2023 22:29:00 EST</lastBuildDate>
+        <lastBuildDate>Mon, 25 Sep 2023 21:38:00 EST</lastBuildDate>
+        <item>
+            <title>Playing Wordle with ChatGPT Again. This time with Vision!</title>
+            <link>https://andrewnolan.dev/blogs/WordleWithChatGPTPlusVision.html</link>
+            <description><![CDATA[ChatGPT with Vision is now available! Does that make it better at Wordle? Let's find out.]]></description>
+            <pubDate>Mon, 25 Sep 2023 21:38:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/WordleWithChatGPTPlusVision.html</guid>
+            <author>Andrew Nolan</author>
+            <category>AI</category>
+        </item>
         <item>
             <title>A 'Brief' Introduction to Serious Games</title>
             <link>https://andrewnolan.dev/blogs/SeriousGames.html</link>

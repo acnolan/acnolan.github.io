@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
+        async src="../scripts/count.js"></script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description"
+        content="ChatGPT with Vision is now available! Does that make it better at Wordle? Let's find out.">
+    <meta name="keywords" content="Andrew Nolan, Ai, ChatGPT, Wordle">
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>Playing Wordle with ChatGPT Again. This time with Vision!</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+</head>
+
+<style>
+    .chatArea {
+        padding: 10px;
+        background-color: darkgrey;
+        color: black;
+        font-family: monospace;
+        font-size: large;
+    }
+
+    @media (min-width: 700px) {
+        .chatArea {
+            margin: 40px;
+        }
+    }
+</style>
+
+<body class="homepage">
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home"><img class="fa fa-home" src = "../images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "../images/iconSvgs/github.svg" alt="Github icon"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "../images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
+                <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"><img class="fa fa-twitter" src = "../images/iconSvgs/twitter.svg" alt="Twitter icon"/></a>
+                <a name="Email to me" aria-label="Email to me" href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "../images/iconSvgs/mail.svg" alt="Email icon"/></a>
+            </div>
+        </div>
+    </div>
+    <main id="main" class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">Playing Wordle with ChatGPT Again. This time with Vision!</h1>
+        <p class="blog-by-line">Andrew Nolan</p>
+        <p class="blog-by-line">2023-09-25</p> 
+
+        <p>Early today (September 25th, 2023) OpenAI made a blog post titled "<a href="https://openai.com/blog/chatgpt-can-now-see-hear-and-speak" target="_blank" rel="noopener noreferrer">ChatGPT can now see, hear, and speak</a>."</p>
+
+        <p>Starting today, ChatGPT can listen to you and analyze photos you share with it. Bringing computer vision into ChatGPT is a big step from its previous text-only conversations. The announcement blog proclaims GPT will now be able to help "troubleshoot why your grill won't start, explore the contents of your fridge to plan a meal, or analyze a complex graph for work-related data." Those are some very impressive claims! </p>
+
+        <p>Earlier this year, during the first wave of generative AI excitement, I wrote a blog about <a rel="noopener noreferrer" target="_blank" href="https://andrewnolan.dev/blogs/WordleWithChatGPT">Playing Wordle with ChatGPT</a> with the goal of reminding people that these tools are very cool, but definitely have some limitations and are not the magic thinking machines some AI fanatics proselytize.</p>
+
+        <p>With vision and audio, conversations with ChatGPT will be more interactive and easier than before. That makes it a good time to remind everyone that these tools do still have limitations. And if you are ever afraid of AI taking over, try playing a game with it, you might not be as scared.</p>
+
+        <p>Today, we are going to play Wordle with ChatGPT again. I am lucky enough to be one of the early accessors of the new vision feature. With Vision ChatGPT can play and make decisions based on the visuals of the game. The same way a human player would see on the <a href="https://www.nytimes.com/games/wordle/index.html" rel="noopener noreferrer" target="_blank">New York Times' site</a>.</p>
+
+        <p>For each step, I will share an image with ChatGPT and ask it to provide the next guess and its interpretation of the resulting image. This way we can see what it's thinking. </p>
+        
+        <p>The secret word will be <em>AUDIO</em>.</p>
+
+        <p>Without further ado, let's play Wordle with ChatGPT...</p>
+
+        <div class="chatArea">
+            <p><strong>Me: </strong></p><p>Let's play Wordle! You have 6 guesses to figure out the word I am thinking of. After each guess I will reveal which letters are correct (green), in the wrong place (yellow), or not part of the word (grey). Are you ready to play? What is your first guess?</p>
+            <p><strong>ChatGPT: </strong></p><p>Sure, I'm ready to play!</p><p>For the first guess, I'll start with a common 5-letter word to get an idea of the letters and their positions. My first guess is:</p><p>PLANT.</p><p>Let me know how each letter fares!</p>
+            <p><strong>Me: </strong></p><p>Here are the results of your first guess. Please let me know what you see in the result image and what your next guess will be.</p>
+            <img src="./images/ai/chatgpt4_wordle1.webp" alt="PLANT, ChatGPT's first guess" style="max-height:300px;"class="blog-image">
+            <p><strong>ChatGPT: </strong></p><p>Based on the image:</p><ul>
+                <li>P, L, N, T are grey, meaning they are not in the word.</li>
+                <li>A is yellow, meaning it's in the word but not in the position I guessed.</li></ul>
+                <p>With that information, I'll guess:</p>
+                <p>RAISE.</p>
+                <p>Let's see how this fares!</p>
+            <p><strong>Me: </strong></p><p>Here is the result of your second guess. Please let me know what you see and what your next guess will be.</p>
+            <img src="./images/ai/chatgpt4_wordle2.webp" alt="RAISE, ChatGPT's second guess" style="max-height:300px;"class="blog-image">
+            <p><strong>ChatGPT: </strong></p><p>Based on the image:</p>
+                <ul>
+                    <li>R, I, S, E are grey, meaning they are not in the word.</li>
+                    <li>A is still yellow, meaning it's in the word but not in the position I guessed.</li>
+                </ul>
+                <p>Given the feedback, I'll try:</p>
+                <p>MAJOR.</p>
+                <p>Let's see how that guess works!</p>
+            <p><strong>Me: </strong></p><p>I is yellow not grey. Here are the results of your third guess. Please let me know what you see and what your next guess will be.</p>
+            <img src="./images/ai/chatgpt4_wordle3.webp" alt="PLANT, ChatGPT's third guess" style="max-height:300px;"class="blog-image">
+            <p><strong>ChatGPT: </strong></p><p>I apologize for the oversight.</p>
+                <p>Based on the image:</p>
+                <ul>
+                    <li>M, J, O, R are grey, meaning they are not in the word.</li>
+                    <li>A is still yellow, meaning it's in the word but not in the position I guessed.</li>
+                    <li>I is yellow, meaning it's in the word but not in the position I guessed.</li>
+                </ul>
+                <p>Taking the feedback into account, my next guess is:</p>
+                <p>AIDED.</p>
+                <p>Let's see if that's closer to the target word!</p>
+            <p><strong>Me: </strong></p><p>Good guess! You have a few in the right place now. Make sure you remember not to use the grey letters. Here are the results of the 4th guess. Let me know what you see and what your next guess will be?</p>
+            <img src="./images/ai/chatgpt4_wordle4.webp" alt="PLANT, ChatGPT's fourth guess" style="max-height:300px;"class="blog-image">
+            <p><strong>ChatGPT: </strong></p><p>Based on the image:</p>
+                <ul>
+                    <li>D is grey, meaning it's not in the word.</li>
+                    <li>A and I are green, meaning they are in the correct positions in the word.</li>
+                </ul>
+                <p>Given the feedback, my next guess is:</p>
+                <p>AILED.</p>
+                <p>Let's see how this guess turns out!</p>
+            <p><strong>Me: </strong></p><p>Are you sure you want to guess AILED? Look at the image again, what letters are colored? Do you want to change your guess?</p>
+            <p><strong>ChatGPT: </strong></p><p>I apologize for the oversight.</p>
+                <p>Re-evaluating the image:</p>
+                <ul>
+                    <li>A is green, meaning it's in the correct position.</li>
+                    <li>I is green, meaning it's in the correct position.</li>
+                    <li>E is yellow, meaning it's in the word but not in the position I guessed.</li>
+                </ul>
+                <p>Considering this information, my next guess is:</p>
+                <p>AIMED.</p>
+                <p>Thank you for pointing that out, and let's see how this guess works!</p>
+            <p><strong>Me: </strong></p><p>Here are the results of your 5th guess. You only have one guess left! Let me know what you see and what your final guess is. </p>
+            <img src="./images/ai/chatgpt4_wordle5.webp" alt="PLANT, ChatGPT's fifth guess" style="max-height:300px;"class="blog-image">
+            <p><strong>ChatGPT: </strong></p><p>Based on the image:</p>
+                <ul>
+                    <li>A and I are green, meaning they are in the correct positions.</li>
+                    <li>M and E are yellow, meaning they are in the word but not in the positions I guessed.</li>
+                </ul>
+                <p>With this information, my final guess is:</p>
+                <p>ALIEN.</p>
+                <p>Fingers crossed! Let's see if that's the word!</p>
+            <p><strong>Me: </strong></p><p>Unfortunately, that is not the word. The word was AUDIO.</p><p>How did you like the game?</p>
+            <p><strong>ChatGPT: </strong></p><p>Ah, AUDIO! That was a fun challenge. I enjoyed the game! Wordle is always an engaging word puzzle, and I appreciate you letting me play along. If you ever want to play again or have any other games or questions in mind, just let me know. Thank you for the experience! 😊</p>
+        </div>
+
+        <p>So, the newly updated AIs still aren't very good at Wordle. It seems like ChatGPT is still having fun though! Even with Vision it makes several logical errors in its guesses and seems to forget the rules. Wordle is a fairly low stakes experiment. But it serves as a good example of the type of mistakes generative AI can still make and is a good warning about using it in more critical applications.</p>
+
+        <p>Vision is definitely an exciting advancement to ChatGPT. But even as these generative AI become more interactive, life-like, and easier to talk to, it is important to remember these tools are not "thinking" yet. They are running algorithms and predicting what to say. Definitely try playing around with ChatGPT+Vision to see what it can do, but I might not trust it to "plan a meal from my fridge" quite yet.</p>
+        
+        <p class="rss-subscribe">Enjoyed this article? Hoping for more AI blogs? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </main>
+</body>
+
+</html>
