@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count" async src="../scripts/count.js"></script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Learn about everyone's favorite data visualization, the Chernoff Face!.">
+    <meta name="keywords"
+        content="Andrew Nolan, Chernoff Faces, Data visualization, blogs, data vis, vis, chernoff, faces">
+
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>A Chat about Chernoff Faces Part 2: Real World Examples</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+</head>
+
+<body class="homepage">
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home"><img class="fa fa-home" src="../images/iconSvgs/home.svg"
+                        alt="Home icon" /></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img
+                        class="fa fa-github" src="../images/iconSvgs/github.svg" alt="Github icon" /></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer"
+                    aria-label="linkedin"><img class="fa fa-linkedin" src="../images/iconSvgs/linkedin.svg"
+                        alt="LinkedIn icon" /></a>
+                <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer"
+                    aria-label="twitter"><img class="fa fa-twitter" src="../images/iconSvgs/twitter.svg"
+                        alt="Twitter icon" /></a>
+                <a name="Email to me" aria-label="Email to me"
+                    href="mailto:acnolan@wpi.edu?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img
+                        class="fa fa-envelope" src="../images/iconSvgs/mail.svg" alt="Email icon" /></a>
+            </div>
+        </div>
+    </div>
+    <main id="main" class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">A Chat about Chernoff Faces Part 2: Real World Examples</h1>
+        <p class="blog-by-line">Andrew Nolan</p>
+        <p class="blog-by-line"></p>
+
+        <h2>Real World Examples</h2>
+
+        <p>Considering that most people have probably not heard of this visualization, it's unsurprising that it is
+            rarely used for real world applications. However, I wanted to share a few practical examples that could be
+            found.</p>
+
+        <p>In 2006 a Social Science Statistics blogger shared a Baseball bloggers Chernoff face representation of 2005
+            National League Baseball statistics [4][5]. The faces below map the following features to facial features:
+        </p>
+
+        <ul>
+            <li>Win percent -> face height, smile curve, and hair styling</li>
+            <li>Hits -> face width, eye height, and nose height</li>
+            <li>Home runs -> face shape, eye width, and nose width</li>
+            <li>Walks -> mouth height, hair height, and ear width</li>
+            <li>Stolen bases -> mouth width, hair width, and ear height.</li>
+        </ul>
+
+        <img src="./images/baseball.png" alt="Chernoff faces representing baseball statistics" />
+
+        <p>While these statistics may be meaningful, it's hard to determine anything from these faces. In 2005 the
+            winner of the National League was the Houston Astros (who then went on to lose to the White Sox in the World
+            Series). In these faces, Houston doesn't particularly stand out. I'm not knowledgeable enough about baseball
+            to tell you if that means anything, but it appears to me that would mean stand out stats don't necessarily
+            determine winningness in baseball.</p>
+
+        <p>Most Chernoff Face discussion you can find online will be from blog posts like the one above, mostly as a for
+            fun look at an obscure data visualization. But there are cases in which Chernoff Faces are used in
+            publishable research. For example, in 2017, the Journal of Documentation published an entry titled "Big data
+            analysis of public library operations and services by using the Chernoff face method" [12]. By using the
+            following feature mapping, the researchers were able to use Chernoff Faces to compare libraries in London
+            and Seoul over time.</p>
+
+        <h2>Challenges and limitations</h2>
+
+        <p>As fun as Chernoff Faces are, they are not all good. https://engineering.purdue.edu/~ebertd/papers/Chernoff_990402.PDF</p>
+
+        emotional bias to facial expressions
+
+        <h2>Further Reading</h2>
+
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Chernoff_face" target="_blank"
+                    rel="noopener noreferrer">Wikipedia</a></li>
+            <li><a href="https://eagereyes.org/criticism/chernoff-faces" target="_blank" rel="noopener noreferrer">A
+                    Critique of Chernoff Faces</a></li>
+            <li><a href="https://web.archive.org/web/20041217153643/http://gis.esri.com/library/userconf/educ04/papers/pap5000.pdf"
+                    target="_blank" rel="noopener noreferrer">Mapping Quality of Life with Chernoff Faces</a></li>
+            <li><a href="https://web.archive.org/web/20130916002111/http://blogs.iq.harvard.edu/sss/archives/2006/11/chernoff_faces_1.shtml"
+                    target="_blank" rel="noopener noreferrer">Chernoff Faces (Baseball)</a></li>
+            <li><a href="https://web.archive.org/web/20130128144805/http://alexreisner.com/baseball/stats/chernoff"
+                    target="_blank" rel="noopener noreferrer">What's the Matter With Chernoff Faces?</a></li>
+            <li><a href="https://flowingdata.com/2010/08/31/how-to-visualize-data-with-cartoonish-faces/"
+                    target="_blank" rel="noopener noreferrer">How to visualize data with cartoonish faces ala
+                    Chernoff</a></li>
+            <li><a href="https://ldld.samizdat.cc/2016/chernoff-faces/" target="_blank"
+                    rel="noopener noreferrer">Chernoff Faces (Crime)</a></li>
+            <li><a href="https://www.ihatethefuture.com/2020/06/deep-chernoff-faces.html" target="_blank"
+                    rel="noopener noreferrer">Deep Chernoff Faces</a></li>
+            <li><a href="https://medium.com/kontinentalist/how-can-a-data-visualisation-be-racist-a652910d8184"
+                    target="_blank" rel="noopener noreferrer">How can a data visualization be racist?</a></li>
+            <li><a href="https://www.cabdirect.org/cabdirect/abstract/20203479862" target="_blank"
+                    rel="noopener noreferrer">Chernoff Faces Application in Livestock</a></li>
+            <li><a href="https://www.jstor.org/stable/2284077" target="_blank" rel="noopener noreferrer">The Use of
+                    Faces to Represent Points in k-Dimensional Space Graphically</a></li>
+            <li><a href="https://www.emerald.com/insight/content/doi/10.1108/JD-08-2016-0098/full/html" target="_blank"
+                    rel="noopener noreferrer">Big Data Analysis of Public Library Operations and Services by using the
+                    Chernoff Face Method</a></li>
+        </ul>
+
+        <p>If you are really excited about Chernoff Faces and haven't found enough with all these other resources, you
+            can check out my <a href="https://andrewnolan.dev/Chernoff-Faces/" target="_blank"
+                rel="noopener noreferrer">original homework assignment</a> for the Data Vis class all those years ago...
+        </p>
+
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </main>
+</body>
+
+</html>
