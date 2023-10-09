@@ -140,6 +140,13 @@
                 "Tags": ["EdTech"],
                 "Description": "Games are fun. But they can also be educational! Join me as we dive into the exciting world of serious games.",
                 "Key": "SeriousGames"
+            },
+            {
+                "Title": "Playing Wordle with ChatGPT Again. This time with Vision!",
+                "Date": "2023-09-25",
+                "Tags": ["AI"],
+                "Description": "ChatGPT with Vision is now available! Does that make it better at Wordle? Let's find out.",
+                "Key": "WordleWithChatGPTPlusVision"
             }
         ]
 }
