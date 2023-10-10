@@ -50,20 +50,38 @@
             first real blog post. That was my intention anyway. However, things happened, and now here we are many blog
             posts later. I think it is still an interesting topic and I hope you enjoy reading about it.</p>
 
-        <p>In the summer of 2020, I took the course CS 548 Knowledge Discovery and Data Mining at WPI. In one of the
+        <img src="./images/chernoff/facebanner.png" alt="A row of Chernoff faces! What could they mean? Read on and you will see" style="max-height:300px;"class="blog-image">
+
+        <p>In the summer of 2020, I took the course CS 548, <i>Knowledge Discovery and Data Mining</i>, at WPI. In one of the
             lectures we talked about data visualizations and briefly, in one slide, in that one lecture, we discussed
             <em>Chernoff Faces</em>. For some reason I think about this data visualization very often, probably more than I
-            should. I wanted to share them with you, hopefully you find them as fascinating as I do.</p>
+            should. So, I wanted to share them with you, hopefully you find them as fascinating as I do.</p>
 
-        <h2>Background</h2>
+        <h2>Plotting Multivariate Data</h2>
 
-        <p>Chernoff Faces were proposed in 1973 by the American Mathematician, Herman Chernoff. The faces provide a way
-            to visualize multivariable data by mapping data feature to visual features on a face. The supposed
-            benefits of this visualization are supported by the claim that humans can easily recognize faces and
-            identify small changes between them. This is useful if the goal of the visualization is pattern recognition,
-            outlier detection, or clustering similar data objects. However, the scale and specific values of data is
-            often obscured by these faces. Without intimate knowledge of which values are mapped to what facial feature
-            it is hard to decipher more than how different or similar the data is.</p>
+        <p>Plotting data effectively is hard. And most of the time we do it, we do it for two dimensions of data, an X and a Y axis. If you had to display three, or even more, dimensions of data in a graph how would you do it?</p>
+
+        <p>Some common options are extending a basic <a href="https://en.wikipedia.org/wiki/Scatter_plot" target="_blank" rel="noopener noreferrer">scatter plot</a> into more dimensions. You can draw it in 3d or flatten it into scatterplot matrix.</p>
+
+        <img src="./images/chernoff/scatterplotmatrix.webp" alt="A 3d scatter plot and its equivalent scatter plot matrix" style="max-height:300px;"class="blog-image">
+
+        <p>Another popular design is to make an interactive parallel coordinates plot. These plots often let viewers rearrange the order of the axes to analyze the patterns in the data.</p>
+
+        <img src="./images/chernoff/ParCorFisherIris.webp" alt="Parallel coordinates of Iris data. We'll talk more about that in a sec." style="max-height:300px;"class="blog-image">
+
+        <p>These are great (and popular) options. But you may already feel a little bit overwhelmed by these plots. How are you supposed to read and interpret them? That's the big challenge that data visualization scientists seek to solve. These are just some of the options.</p>
+
+        <h2>Another Option, Chernoff Faces!</h2>
+
+        <p>Another option for plotting multivariable data is Chernoff Faces!</p>
+
+        <p>Chernoff Faces were proposed in 1973 by the American Mathematician, Herman Chernoff. These faces provide a way
+            to visualize multivariable data by mapping data features to visual features on a face. Proponents of this visualization claim that humans can easily recognize faces and identify small changes between faces. Making these faces useful in pattern recognition,
+            outlier detection, or clustering similar data objects. </p>
+            
+        <p>On the flip side, the scale and specific values of the data is
+            often obscured in these visages. Without intimate knowledge of which values are mapped to each facial feature
+            it is hard to decipher anything beyond how much the data varies.</p>
 
         <p>To better understand these plots, I think an example can be useful. I wanted to share a really simple example to
             illustrate how to use these visualizations. For this example, I will write the code in MATLAB. If you are
