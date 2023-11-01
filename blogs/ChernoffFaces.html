@@ -73,26 +73,17 @@
 
         <h2>Another Option, Chernoff Faces!</h2>
 
-        <p>Another option for plotting multivariable data is Chernoff Faces!</p>
+        <p>An alternative multivariable plot type is Chernoff Faces!</p>
 
-        <p>Chernoff Faces were proposed in 1973 by the American Mathematician, Herman Chernoff. These faces provide a way
-            to visualize multivariable data by mapping data features to visual features on a face. Proponents of this visualization claim that humans can easily recognize faces and identify small changes between faces. Making these faces useful in pattern recognition,
-            outlier detection, or clustering similar data objects. </p>
+        <p>Chernoff Faces were proposed in 1973 by the American Mathematician, Herman Chernoff. These faces provide a way to visualize multivariable data by mapping data features to visual features on a face. Proponents of this visualization claim that humans can easily recognize faces and identify small changes between faces. Making these faces useful in pattern recognition, outlier detection, or clustering similar data objects. </p>
             
-        <p>On the flip side, the scale and specific values of the data is
-            often obscured in these visages. Without intimate knowledge of which values are mapped to each facial feature
-            it is hard to decipher anything beyond how much the data varies.</p>
+        <p>On the flip side, the scale and specific values of the data are often obscured in these visages. Without intimate knowledge of which values are mapped to each facial feature it is hard to decipher anything beyond how much the data varies.</p>
 
-        <p>To better understand these plots, I think an example can be useful. I wanted to share a really simple example to
-            illustrate how to use these visualizations. For this example, I will write the code in MATLAB. If you are
-            interested in exploring the code I used, you can find it <a
+        <p>To better understand these plots, I think an example will be useful. For this example, I will write the code in MATLAB. If you are interested in exploring the code I used for yourself, you can find it <a
                 href="https://github.com/acnolan/Chernoff-Faces-Iris-Visualization" target="_blank"
                 rel="noopener noreferrer">here</a>.</p>
 
-        <p>We are going to use the famous <a href="https://archive.ics.uci.edu/dataset/53/iris" target="_blank"
-                rel="noopener noreferrer">Iris Dataset</a>. This is a famous dataset first used by statistician and
-            biologist Ronald Fisher in the 1930s. If you have taken a machine learning class before, you have probably
-            seen an example with it. It is a very simple multivariate dataset using a few measurements of Iris flowers.
+        <p>We are going to use the famous <a href="https://archive.ics.uci.edu/dataset/53/iris" target="_blank" rel="noopener noreferrer">Iris Dataset</a>. This is a famous dataset first used by statistician and biologist Ronald Fisher in the 1930s. If you have taken a machine learning class before, you have probably seen an example with it. It is a very simple multivariate dataset using a few measurements of Iris flowers.
         </p>
 
         <p>An example subset of the data can be seen here:</p>
@@ -193,13 +184,13 @@
             </tbody>
         </table>
 
-        <p>The textbook data scientist question here is, how can you use these values (sepal length, sepal width, petal length, and petal width) to predict which subspecies of Iris a sample belongs to?</p>
+        <p>The textbook question for this data is how can you use these values (sepal length, sepal width, petal length, and petal width) to predict which subspecies of Iris a sample belongs to?</p>
 
         <p>Typically, this question will be answered using machine learning. But here we will try to answer it through the power of data visualization with Chernoff Faces.</p>
 
         <p>First, we will plot the data related to each subspecies. The goal is to identify patterns based in the data based on how the faces are displayed.</p>
 
-        <p>Since we are using MATLAB, it will map the columns of data to facial features in this order:</p>
+        <p>We will map the data features to the following facial features:</p>
 
         <ul>
             <li>Sepal Length -> Size of face</li>
@@ -212,19 +203,19 @@
 
         side by side
 
+        <p>So, do you see any patterns in the data? We can see some themes such as...</p>
+
+        <p>Now let's take a look at the faces all together.</p>
+
         plot of all together, can you identify?
 
-        <p>Although, these plots are somewhat uncommon, they are included as part of some programming languages. If you
-            are a fan of R, the aplpack package includes features to plot Chernoff Faces. You can read more about it <a
-                href="https://flowingdata.com/2010/08/31/how-to-visualize-data-with-cartoonish-faces" target="_blank"
-                rel="noopener noreferrer">here</a>.</p>
+        <p>Can you tell the differences still?</p>
 
-        <p>As demonstrated above, MATLAB is another example of a programming language with support for Chernoff Faces. This is done
-            through the Glyphplots function in the Statistics and Machine Learning toolbox. Some details can be found in this <a
-                href="https://www.mathworks.com/help/stats/visualizing-multivariate-data.html#d124e3199" target="_blank"
-                rel="noopener noreferrer">documentation about plotting multivariate data</a>.</p>
+        <p>Some people may be able to, others may not. This is the challenge of Chernoff faces and multivariate data plotting in general. There is no perfect visualization. There are tradeoffs to all designs, for some cases, the benefits of Chernoff faces may be worth it. We will talk about that more in the next blog!</p>
 
-        <p>Both of these options are easy to use and fast ways to quickly generate a plot of your data. If you are looking for a fun way to spice up your next data analysis project, consider using these plots, I am sure your audience will love it.</p>
+        <p>I hope you found this data visualization as intriguing as I do. If you have ever used Chernoff Faces or seen them in the wild, please let me know! I'd love to see some of your examples.</p>
+
+        <p>See ya next time!</p>
 
         <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
     </main>
