@@ -197,6 +197,9 @@ function getViableTags() {
     if (document.getElementById("books").checked) {
         viableTags.push("Books");
     }
+    if (document.getElementById("urbanism").checked) {
+        viableTags.push("Urbanism");
+    }
     if (document.getElementById("misc").checked) {
         viableTags.push("Misc");
     }

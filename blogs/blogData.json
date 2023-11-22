@@ -147,6 +147,13 @@
                 "Tags": ["AI"],
                 "Description": "ChatGPT with Vision is now available! Does that make it better at Wordle? Let's find out.",
                 "Key": "WordleWithChatGPTPlusVision"
+            },
+            {
+                "Title": "Andrew's Electric Car Problem: A Response to the NYT Daily's \"Biden's Electric Car Problem\"",
+                "Date": "2023-11-21",
+                "Tags": ["Urbanism"],
+                "Description": "On November 16th, The New York Time's Daily Podcast released an episode about Biden's Electric Car Problem, and I have a problem with it! Namely, it did not discuss public transit or other green transportation solutions.",
+                "Key": "ElectricCarsDaily"
             }
         ]
 }
