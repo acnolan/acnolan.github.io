@@ -52,8 +52,9 @@
     </main>
 
     <script type="text/javascript">
-        fetch('https://andrewnolan.dev/vegalite/2023BlogViews.schema.json').then(data => {
-            vegaEmbed('#viewsVis', data);
+        // TODO: change url
+        fetch('https://raw.githubusercontent.com/acnolan/acnolan.github.io/2023-blogs-review/blogs/vegalite/2023BlogViews.schema.json').then((res) => res.json()).then((json) => {
+            vegaEmbed('#viewsVis', json);
         });      
     </script>
 </body>
