@@ -1,0 +1,16 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with data about Andrew's blogs in 2023.",
+    "data": {"url": "./2023blogdata.json"},
+    "mark": {
+      "type": "bar", 
+      "tooltip": {
+        "content": "data"
+      }
+    },  
+    "encoding": {
+      "x": {"field": "title", "type": "nominal", "axis": {"labelAngle": 90}},
+      "y": {"field": "views", "type": "quantitative"}
+    }
+  }
+  
