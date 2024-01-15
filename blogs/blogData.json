@@ -154,6 +154,13 @@
                 "Tags": ["Urbanism"],
                 "Description": "On November 16th, The New York Time's Daily Podcast released an episode about Biden's Electric Car Problem, and I have a problem with it! Namely, it did not discuss public transit or other green transportation solutions.",
                 "Key": "ElectricCarsDaily"
+            },
+            {
+                "Title": "2023: A Year of Blogs",
+                "Date": "2024-01-15",
+                "Tags": ["Misc"],
+                "Description": "2023 was my first year of blogging! Let's look at the successes and what could have gone better.",
+                "Key": "2023BlogReview"
             }
         ]
 }

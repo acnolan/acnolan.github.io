@@ -46,31 +46,56 @@
 
         <p>First and foremost, thank you to everyone who has read my blogs! Last year I set out a goal of writing at least 12 blogs. I wanted to practice my writing skills and learn more about topics that interested me. The blogs have been a great tool for these goals and I am excited to continue them in 2024.</p>
 
-        <p>I wanted to take time reflect on the experience from last year and see how it can improve the process for the new year.</p>
+        <p>I wanted to take time to reflect on the experience from last year and see how it can improve the process for the new year.</p>
 
         <p>In 2023 I wrote 21 blog posts, an average of 1.75 per month. I exceeded my goal by 9 posts, and coincidentally 21 is a mirror reflection of my goal of 12. Maybe I just got it backwards when I made it.</p>
 
         <p>My blog writing pace was not quite as consistent as the 1.75 per month though. Many of them were front loaded in the year, or at least the part of the year I started writing. 18 of the blogs were written between March and May. The other 3 blogs came out at other times through the rest of the year on no set schedule.</p>
 
-        <div id="monthsVis"></div>
+        <div style="display: flex; justify-content: center;"><div class="blog-image" id="monthsVis"></div></div>
 
-        This year, I plan to have a bit more consistent of a schedule.
+        <p>The number of readers followed a bit different of a pattern. Although less articles were written later in the year, the readership increased!</p>
 
-        The number of readers for the blogs were also not very consistent.
+        <div style="display: flex; justify-content: center;"><div id="viewsVis"></div></div>
 
-        <div id="viewsVis"></div>
+        <p>I think there were several factors impacting this:</p>
 
-        
+        <ol>
+            <li>"Marketing" on social media</li>
+            <li>Standalone Topics</li>
+            <li>Topics that are timely and relevant</li>
+        </ol>
+
+        <p>The biggest factor in readership performance seems to be social media marketing. I posted six blogs on LinkedIn last year. Can you guess which 6 they are?</p>
+
+        <p>If you guessed the six with the highest number of readers you would be right!</p>
+
+        <p>Posts on other platforms such as twitter and HackerNews gained some traction as well, but LinkedIn was the top referrer, accounting for 166 views, about one third of the total readership.</p>
+
+        <p>The content of the topics also may have helped. The least viewed blogs were my book club series on the book <a href="https://sensible.com/dont-make-me-think/" target="_blank" rel="noopener noreferrer"><i>Don't Make me Think</i></a> by Steve Krug. Great book, I highly recommend it. But it is understandable readers don't want to jump into the middle of a series. Having blogs focused on one specific topic that did not require any prior reading may have improved readership.</p>
+
+        <p>Lastly, writing about timely topics seemed to help. ChatGPT is a big trend this past year, writing about fun experiments with it seemed to be the most popular topics. People seem to be interested in AI and when the content can be made accessible and not overly technical it gains a lot of interest.</p>
+
+        <p>Keeping all of this in mind, I have a few new goals for 2024:</p>
+
+        <ol>
+            <li>Publishing blogs on a more consistent schedule. This will hopefully lead to more consistent expectations and readership.</li>
+            <li>Writing blogs that stand on their own as interesting articles</li>
+            <li>Focusing on topics that are trendy but applying my personal spin to my interests and accessible</li>
+        </ol>
+
+        <p>I hope these goals will make my blogging experience more impactful for me and the readers.</p>
+
+        <p>Thanks so much for 2023, looking forward to what we do in 2024!</p>
         
         <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
     </main>
 
     <script type="text/javascript">
-        // TODO: change url
-        fetch('https://raw.githubusercontent.com/acnolan/acnolan.github.io/2023-blogs-review/blogs/vegalite/2023BlogViews.schema.json').then((res) => res.json()).then((json) => {
+        fetch('https://andrewnolan.dev/blogs/vegalite/2023BlogViews.schema.json').then((res) => res.json()).then((json) => {
             vegaEmbed('#viewsVis', json);
         });
-        fetch('https://raw.githubusercontent.com/acnolan/acnolan.github.io/2023-blogs-review/blogs/vegalite/2023BlogMonths.schema.json').then((res) => res.json()).then((json) => {
+        fetch('https://andrewnolan.dev/blogs/vegalite/2023BlogMonths.schema.json').then((res) => res.json()).then((json) => {
             vegaEmbed('#monthsVis', json);
         });
     </script>
