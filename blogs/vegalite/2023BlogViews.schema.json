@@ -1,132 +1,133 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A simple bar chart with data about Andrew's blogs in 2023.",
-    "data": {
-        "values": [
-            {
-              "title": "Playing Wordle with ChatGPT",
-              "month": "2023-05-10",
-              "views": 138
-            },
-            {
-              "title": "A \"Brief\" Introduction to serious games",
-              "month": "2023-07-07",
-              "views": 95
-            },
-            {
-              "title": "Playing Wordle with ChatGPT Again. This time with Vision!",
-              "month": "2023-09-25",
-              "views": 76
-            },
-            {
-              "title": "Musings on the Adoption of ChatGPT in K-12 Education Survey",
-              "month": "2023-04-17",
-              "views": 61
-            },
-            {
-              "title": "The Two Sigma Problem, can AI Help?",
-              "month": "2023-05-27",
-              "views": 33
-            },
-            {
-              "title": "AI is Going to Change Education, in Fact it Already has",
-              "month": "2023-04-26",
-              "views": 18
-            },
-            {
-              "title": "Learning with the Feynman Technique",
-              "month": "2023-04-30",
-              "views": 13
-            },
-            {
-              "title": "Book Club: Don't Make me Think - Chapter 1",
-              "month": "2023-03-03",
-              "views": 10
-            },
-            {
-              "title": "Andrew's Electric Car Problem: A Response to the NYT Daily's \"Biden's Electric Car Problem\"",
-              "month": "2023-11-21",
-              "views": 7
-            },
-            {
-              "title": "What you can do Right Now - Book Club: Don't Make me Think - Chapter 13",
-              "month": "2023-05-14",
-              "views": 6
-            },
-            {
-              "title": "Designing for Mobile, Not as Scary as it Sounds - Book Club: Don't Make me Think - Chapter 10",
-              "month": "2023-04-23",
-              "views": 6
-            },
-            {
-              "title": "Accessible Design - Book Club: Don't Make me Think - Chapter 12",
-              "month": "2023-05-14",
-              "views": 4
-            },
-            {
-              "title": "Man vs Machine! Predicting the Academy Awards",
-              "month": "2023-03-25",
-              "views": 4
-            },
-            {
-              "title": "Omit needless words! Book Club: Don't Make me Think - Chapter 5",
-              "month": "2023-03-26",
-              "views": 3
-            },
-            {
-              "title": "Navigating the web! Book Club: Don't Make me Think - Chapter 6",
-              "month": "2023-04-14",
-              "views": 3
-            },
-            {
-              "title": "Usability Testing on 18 Cents a Day - Book Club: Don't Make me Think - Chapter 9",
-              "month": "2023-04-16",
-              "views": 2
-            },
-            {
-              "title": "It All Starts with a Big Bang! Book Club: Don't Make me Think - Chapter 7",
-              "month": "2023-04-15",
-              "views": 2
-            },
-            {
-              "title": " Usability as a Common Courtesy - Book Club: Don't Make me Think - Chapter 11",
-              "month": "2023-05-10",
-              "views": 2
-            },
-            {
-              "title": "Don't get Trapped in Pointless UX Debates! Book Club: Don't Make me Think - Chapter 8",
-              "month": "2023-04-15",
-              "views": 2
-            },
-            {
-              "title": "Don't Make me Click?! Book Club: Don't Make me Think - Chapter 4",
-              "month": "2023-03-25",
-              "views": 2
-            },
-            {
-              "title": "Designing Billboards! Book Club: Don't Make me Think - Chapter 2 and 3",
-              "month": "2023-03-15",
-              "views": 2
-            }
-          ]
-    },
-    "mark": {
-        "type": "bar",
-        "tooltip": {
-            "content": "data"
-        }
-    },
-    "encoding": {
-        "x": {
-            "field": "title",
-            "type": "nominal",
-            "axis": {
-                "labelAngle": 90
-            }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with data about Andrew's blogs in 2023.",
+  "data": {
+      "values": [
+        {
+          "title": "Book Club: Don't Make me Think - Chapter 1",
+          "month": "2023-03-03",
+          "views": 10
         },
-        "y": {
-            "field": "views",
-            "type": "quantitative"
+        {
+          "title": "Designing Billboards! Book Club: Don't Make me Think - Chapter 2 and 3",
+          "month": "2023-03-15",
+          "views": 2
+        },
+        {
+          "title": "Man vs Machine! Predicting the Academy Awards",
+          "month": "2023-03-25",
+          "views": 4
+        },
+        {
+          "title": "Don't Make me Click?! Book Club: Don't Make me Think - Chapter 4",
+          "month": "2023-03-25",
+          "views": 2
+        },
+        {
+          "title": "Omit needless words! Book Club: Don't Make me Think - Chapter 5",
+          "month": "2023-03-26",
+          "views": 3
+        },
+        {
+          "title": "Navigating the web! Book Club: Don't Make me Think - Chapter 6",
+          "month": "2023-04-14",
+          "views": 3
+        },
+        {
+          "title": "It All Starts with a Big Bang! Book Club: Don't Make me Think - Chapter 7",
+          "month": "2023-04-15",
+          "views": 2
+        },
+        {
+          "title": "Don't get Trapped in Pointless UX Debates! Book Club: Don't Make me Think - Chapter 8",
+          "month": "2023-04-15",
+          "views": 2
+        },
+        {
+          "title": "Usability Testing on 18 Cents a Day - Book Club: Don't Make me Think - Chapter 9",
+          "month": "2023-04-16",
+          "views": 2
+        },
+        {
+          "title": "Musings on the Adoption of ChatGPT in K-12 Education Survey",
+          "month": "2023-04-17",
+          "views": 61
+        },
+        {
+          "title": "Designing for Mobile, Not as Scary as it Sounds - Book Club: Don't Make me Think - Chapter 10",
+          "month": "2023-04-23",
+          "views": 6
+        },
+        {
+          "title": "AI is Going to Change Education, in Fact it Already has",
+          "month": "2023-04-26",
+          "views": 18
+        },
+        {
+          "title": "Learning with the Feynman Technique",
+          "month": "2023-04-30",
+          "views": 13
+        },
+        {
+          "title": " Usability as a Common Courtesy - Book Club: Don't Make me Think - Chapter 11",
+          "month": "2023-05-10",
+          "views": 2
+        },
+        {
+          "title": "Playing Wordle with ChatGPT",
+          "month": "2023-05-10",
+          "views": 138
+        },
+        {
+          "title": "Accessible Design - Book Club: Don't Make me Think - Chapter 12",
+          "month": "2023-05-14",
+          "views": 4
+        },
+        {
+          "title": "What you can do Right Now - Book Club: Don't Make me Think - Chapter 13",
+          "month": "2023-05-14",
+          "views": 6
+        },
+        {
+          "title": "The Two Sigma Problem, can AI Help?",
+          "month": "2023-05-27",
+          "views": 33
+        },
+        {
+          "title": "A \"Brief\" Introduction to serious games",
+          "month": "2023-07-07",
+          "views": 95
+        },
+        {
+          "title": "Playing Wordle with ChatGPT Again. This time with Vision!",
+          "month": "2023-09-25",
+          "views": 76
+        },
+        {
+          "title": "Andrew's Electric Car Problem: A Response to the NYT Daily's \"Biden's Electric Car Problem\"",
+          "month": "2023-11-21",
+          "views": 7
         }
-    }
+      ]
+  },
+  "mark": {
+      "type": "bar",
+      "tooltip": {
+          "content": "data"
+      }
+  },
+  "encoding": {
+      "x": {
+          "field": "title",
+          "type": "nominal",
+          "axis": {
+              "labelAngle": 90
+          },
+          "sort": {"field":"month"}
+      },
+      "y": {
+          "field": "views",
+          "type": "quantitative"
+      }
+  }
 }
