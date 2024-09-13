@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
+        async src="../scripts/count.js"></script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description"
+        content="I have strong preferences between this year's presidential candidates. I wanted to see if my impressions reflected the actual text of the speakers. I will analyze the text of the debates to see the sentiments and emotional content of the candidates.">
+    <meta name="keywords" content="Kamala Harris, Donald Trump, 2024 election, debate, sentiment analysis, MATLAB, machine learning, word cloud, data visualization">
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>What Words Reveal: Sentiment Analysis of the 2024 Presidential Debate Transcript</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+</head>
+
+<body class="homepage">
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home"><img class="fa fa-home" src = "../images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "../images/iconSvgs/github.svg" alt="Github icon"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "../images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
+                <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"><img class="fa fa-twitter" src = "../images/iconSvgs/twitter.svg" alt="Twitter icon"/></a>
+                <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "../images/iconSvgs/mail.svg" alt="Email icon"/></a>
+            </div>
+        </div>
+    </div>
+    <main id="main" class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">What Words Reveal: Sentiment Analysis of the 2024 Presidential Debate Transcript</h1>
+        <p class="blog-by-line">Andrew Nolan</p>
+        <p class="blog-by-line">2024-09-12</p> 
+
+        <p>Since Kamala Harris announced Tim Walz as her running mate I have been more hopeful and optimistic about politics than I have been in a long time. This feeling primarily comes from having an option I can be excited to vote for, but the data scientist inside me wanted to know if there was something more than that. Is there something in the words Harris says that makes me hopeful? Not just the context of the words and the policies they describe, but the actual word choice itself. Is there something about the way Trump speaks (besides the politics and rhetoric) that makes me upset and angry? Luckily, we can leverage the power of technology to visualize their words and understand the emotional choices of their diction.</p>
+
+        <p>Let's take a look at Tuesday night's debate and see if we can unravel this mystery. The first thing we need to do is...</p>
+
+        <h2>Prepare the data</h2>
+
+        <p>ABC, the host of the debate, provided a <a href="https://abcnews.go.com/Politics/harris-trump-presidential-debate-transcript/story?id=113560542" target="_blank" rel="noopener noreferrer">transcript online</a>. They nicely labeled every statement from former president Donald Trump, vice president Kamala Harris, and our two hosts David Muir and Linsey Davis. This makes it easy for us to get the text we need.</p>
+
+        <p>After extracting the text we can preprocess it. This step is all about getting the text ready for analysis. We do not want noisy data, so we can do a few basic things to clean it up such as: </p>
+        
+        <ul>
+            <li>Removing capitalization, so words like <em>this</em> and <em>This</em> are treated the same.</li>
+            <li>Normalize word stemming, for analyzing the emotions of the debate we can treat words like <em>debate</em> and <em>debating</em> as the same.</li>
+            <li>Removing common words like <em>the</em> and <em>a</em>. Those are not helpful for analyzing the sentiment of the speech.</li>
+            <li>Removing punctuation</li>
+        </ul>
+
+        <p>Now we have the data prepped and we are ready to...</p>
+
+        <h2>Visualize the text</h2>
+
+        <p>There are a few basic things we can see from the data right away. Trump spoke 74 times, Harris 34, and the moderators contributed 108 times. While Trump spoke more often his statements were often shorter, on average only 109 words compared to Harris's 172 words per response. These counts also line up with the length of time the candidates spoke. <a href="https://www.cnn.com/2024/09/10/politics/speaking-times-harris-trump-debate-dg/index.html" target="_blank" rel="noopener noreferrer">CNN reported</a> Trump spoke for 42 minutes and 52 seconds while Harris spoke for 37 minutes and 36 seconds. Although Trump spoke more than twice as often, in total he only spoke for about 5 extra minutes.</p>
+
+        <p>This seems to line up with what I witnessed as a viewer of the debate. Trump seemed to interject more often leading to the more frequent, shorter statements. For a debate with muted mics, they seemed to turn them back on pretty often.</p>
+
+        <p>The numbers on the speaking are fun, but they don't tell us much about what the candidate's actually said. Let's visualize the actual text! The most famous data visualization for text is the <em>word cloud</em>. Oftentimes, I feel the word cloud is overlooked as a data visualization tool, sometimes being treated more as a gimmick. But we can gain valuable insights from looking at a map of the most frequently spoken words from each candidate. Below, you can see Harris's cloud on the left and Trump's words on the right.</p>
+
+        <div style="display: flex;">
+            <img src="./images/politics/Harris_wordcloud.png" style="max-width: 50%;" alt="Wordcloud of Harris's debate speech">
+            <img src="./images/politics/Trump_wordcloud.png" style="max-width: 50%;" alt="Wordcloud of Trumps's debate speech">
+        </div>
+
+        <p>I think the biggest thing that stands out looking at these clouds is that Harris talked about Trump a lot. Conversely, it seems like Trump didn't mention Harris by name much at all. Although he did talk about Biden. Trump does not mention America, while <em>American</em> is one of Harris's top words. And interestingly, both candidates said "people" quite a bit.</p>
+
+        <p>Word clouds are one of those things in which everyone will get something different out of it. There is a lot to take in, take some time to look through yourself and see what you can find. Does anything in particular stand out to you?</p>
+
+        <p>My goal of this experiment is to see how optimistic and hopeful the content of the speeches were. Visualizing the text through word clouds can give us some helpful insights, but we can specifically visualize the positivity and negativity as well using...</p>
+
+        <h2>Sentiment Analysis!</h2>
+
+        <p>Sentiment analysis is the process of categorizing text data based on emotions. Specifically, we analyze each word and assign it a score from -1 to 1, where -1 is negative and 1 is a positive emotion. The specific emotional value of each word can be specified by a human or generated from a computer using machine learning.</p>
+
+        <p>For our example we are going to use the <a href="https://github.com/cjhutto/vaderSentiment" target="_blank" rel="noopener noreferrer">VADER sentiment analysis model</a>. This is an open source rule-based sentiment analysis model developed by researchers at Georgia Tech for analyzing the emotions of social media posts. However, it has been tuned to be used for general purpose text as well.</p>
+
+        <p>Now that we have this model, we can use it to score Harris and Trump's debate statements.</p>
+        
+        <div style="display: flex;">
+            <img src="./images/politics/harris_sentiment.png" style="max-width: 50%;" alt="Histogram of Harris's debate sentiment per statement">
+            <img src="./images/politics/trump_sentiment.png" style="max-width: 50%;" alt="Wordcloud of Trumps's debate sentiment per statement">
+        </div>
+
+        <p>From these histograms we see Harris had primarily positive statements. Trump's statements had a wide range of emotion but included a large count of very negative statements. The average sentiment of Harris's statements was 0.35634. For Trump it was -0.16691. This means Harris leaned towards the positive and Trump was mostly negative but fairly close to neutral in his word choice.</p>
+
+        <p>What did these sentiments look like over time? Did the candidate's get more or less positive throughout the debate?</p>
+
+        <div style="display: flex;">
+            <img src="./images/politics/harris_timed_sentiment.png" style="max-width: 50%;" alt="Line chart of Harris's debate sentiment over time">
+            <img src="./images/politics/trump_timed_sentiment.png" style="max-width: 50%;" alt="Line chart of Trumps's debate sentiment over time">
+        </div>
+
+        <p>Well... It looks like they bounced back and forth throughout the night. This may not be too surprising considering the format of the debate. Each candidate takes turns responding to a question or to the other candidate's reply. We can assume that when making a counter argument they may focus more on negative aspects of their opponent's statement.</p>
+
+        <p>We do see one interesting thing looking at the sentiments over time. Trump ended with a series of negative statements while Harris left the night on an optimistic positive note.</p>
+
+        <p>Sentiment analysis is done on a binary scale like this one, negative to positive. But we can take a look at a wider range of feelings using...</p>
+
+        <h2>Emotional Analysis</h2>
+
+        <p>Like sentiment analysis, emotional analysis assigns scores to text based on the words used. However, emotional analysis focuses on categorizing text into specific emotions, while sentiment analysis focuses on putting text into general positive, negative, or neutral categories.</p>
+
+        <p>For emotional analysis we will leverage another pre-trained model. In this case we will use the <a href="https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm" target="_blank" rel="noopener noreferrer">NRC Emotion Lexicon</a>. This model is one of the top emotional analysis lexicons and was developed by the National Research Council of Canada. It includes 8 different emotions.</p>
+
+        <p>Just like the sentiment analysis, we can score the transcript with this model and then visualize the results.</p>
+
+        <div style="display: flex;">
+            <img src="./images/politics/harris_emotions.png" style="max-width: 50%;" alt="Harris's statements emotional breakdown throughout the debate">
+            <img src="./images/politics/trump_emotions.png" style="max-width: 50%;" alt="Trump's statements emotional breakdown throughout the debate">
+        </div>
+
+        <p>Surprisingly, these graphs are very similar. The peaks and valleys of the graph line up pretty well between the two candidates with one major difference. Trump has a higher percentage of anger in his statements. </p>
+
+        <p>Looking back at our word clouds, a lot of the words used feel fairly neutral to me. But looking at some of the words that made it in the word cloud background, still heavily used but not quite as much, there are some key words on the Harris side like "believe", "understand", and "care" that stand out as aligning with the emotions we see.</p>
+
+        <p>And that brings us to our...</p>
+
+        <h2>Closing Remarks</h2>
+
+        <p>I had a lot of fun putting together these data visualizations and trying to uncover some secret. I am not sure I uncovered any secret truth here, but it's nice to see the results lined up with my hypothesis. Harris, in the debate, used more positive language and Trump had more angry and negative rhetoric. I like to think I am rational and focused on policies, but this does also line up with my personal sentiment when listening to them talk.</p>
+        
+        <p>I enjoyed working on this and may continue this series of sentiment analysis blogs and look at the DNC/RNC speeches as well as the upcoming vice presidential debate. It could also be fun to try this same text with different models in case there is some bias. Stay tuned.</p>
+            
+        <p>I am sure some of my own personal bias snuck into this piece. If you made it this far, let me know your thoughts! Did you take away anything different that I missed from these graphs? Do you have any ideas for other things I could look for in the debate transcript or other types of text to analyze? Let me know, I am always open to discussion!</p>
+
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </main>
+</body>
+
+</html>
