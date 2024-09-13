@@ -45,6 +45,9 @@ function getViableTags() {
   if (document.getElementById('urbanism').checked) {
     viableTags.push('Urbanism');
   }
+  if (document.getElementById('politics').checked) {
+    viableTags.push('Politics');
+  }
   if (document.getElementById('misc').checked) {
     viableTags.push('Misc');
   }

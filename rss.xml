@@ -8,6 +8,15 @@
         <language>en-us</language>
         <lastBuildDate>Tue, 21 Nov 2023 21:04:00 EST</lastBuildDate>
         <item>
+            <title>What Words Reveal: Sentiment Analysis of the 2024 Presidential Debate Transcript</title>
+            <link>https://andrewnolan.dev/blogs/DebateSentiment.html</link>
+            <description><![CDATA[Since Kamala Harris announced Tim Walz as her running mate I have been more hopeful and optimistic about politics than I have been in a long time. This feeling primarily comes from having an option I can be excited to vote for, but the data scientist inside me wanted to know if there was something more than that. Is there something in the words Harris says that makes me hopeful? Not just the context of the words and the policies they describe, but the actual word choice itself. Is there something about the way Trump speaks (besides the politics and rhetoric) that makes me upset and angry? Luckily, we can leverage the power of technology to visualize their words and understand the emotional choices of their diction.]]></description>
+            <pubDate>Thu, 12 Sep 2024 20:50:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/DebateSentiment.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Coding, Politics</category>
+        </item>
+        <item>
             <title>2023: A Year of Blogs</title>
             <link>https://andrewnolan.dev/blogs/2023BlogReview.html</link>
             <description><![CDATA[2023 was my first year of blogging! Let's look at the successes and what could have gone better.]]></description>
