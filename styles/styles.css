@@ -1,5 +1,5 @@
 body {
-    color: #606c76;
+    color: var(--site-grey-color);
     font-family: 'Helvetica Neue', 'Helvetica', 'Roboto',  'Arial', sans-serif;
     font-size: 1.6em;
     font-weight: 300;
@@ -68,13 +68,8 @@ html {
     background: #0077B5;
 }
 
-.fa-twitter {
-    background-color: #1DA1F2;
-}
-
 .fa-envelope {
     background: #363434;
-
 }
 
 .fa-home {
@@ -83,10 +78,6 @@ html {
 
 .fa-github:hover {
     background: #76678d;
-}
-
-.fa-twitter:hover {
-    background: #47aff0
 }
 
 .fa-linkedin:hover {
@@ -109,6 +100,7 @@ html {
 
 :root {
     --header-height: 52px;
+    --site-grey-color: #606c76;
 }
 
 .header {
@@ -202,12 +194,7 @@ html {
     opacity: 1;
 }
 
-.title-link {
-    color: #606c76;
-    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    letter-spacing: .01em;
-    line-height: 1.6;
-}
+
 
 .work-description {
     margin-bottom: 54px;
@@ -226,8 +213,7 @@ html {
 
     .fa-github,
     .fa-linkedin,
-    .fa-envelope,
-    .fa-twitter {
+    .fa-envelope {
         display: none;
     }
 

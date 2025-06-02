@@ -3,9 +3,18 @@ let blogData = {};
 // Data for title placement
 const MIN_X = 0;
 const MAX_X = window.innerWidth - 200;
-const MIN_Y = 52;
+const MIN_Y = 0;
 const MAX_Y = window.innerHeight - 200;
 const placedAreas = [];
+
+// Shuffles a list using Fisher-Yates
+const shuffleList = (list) => {
+    for (let i = list.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [list[i], list[j]] = [list[j], list[i]];
+    }
+    return list;
+}
 
 const checkOverlap = (area) => {
   for (let i = 0; i < placedAreas.length; i++) {
@@ -28,13 +37,19 @@ const placeBlogCloudItem = (element) => {
   let randX = 0;
   let randY = 0;
   let area;
+  let retries = 0;
 
   do {
+    retries++;
     randX = Math.round(MIN_X + ((MAX_X - MIN_X) * (Math.random() % 1)));
     randY = Math.round(MIN_Y + ((MAX_Y - MIN_Y) * (Math.random() % 1)));
     area = {
       x: randX, y: randY, width: element.offsetWidth, height: element.offsetHeight,
     };
+    if (retries > 10) {
+        document.body.removeChild(element);
+        return;
+    }
   } while (checkOverlap(area));
 
   placedAreas.push(area);
@@ -43,12 +58,15 @@ const placeBlogCloudItem = (element) => {
 };
 
 const displayCloud = () => {
-  blogData.forEach((blog) => {
+ blogData = shuffleList(blogData);
+  blogData.forEach((blog, index) => {
     const titleDiv = document.createElement('div');
     titleDiv.innerText = blog.Title;
     titleDiv.classList.add('blogCloudItem');
-    document.body.appendChild(titleDiv);
-    placeBlogCloudItem(titleDiv);
+    setTimeout(() => {
+        document.body.appendChild(titleDiv);
+        placeBlogCloudItem(titleDiv);
+    }, 100 * index);
   });
 };
 
@@ -57,5 +75,12 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
   .then((res) => res.json())
   .then((json) => {
     blogData = json.posts;
+    const blogInfoBlock = document.getElementById('blogInfoBlock');
+    placedAreas.push({
+      x: blogInfoBlock.offsetLeft,
+      y: blogInfoBlock.offsetTop,
+      width: blogInfoBlock.offsetWidth,
+      height: blogInfoBlock.offsetHeight
+    });
     displayCloud();
   });

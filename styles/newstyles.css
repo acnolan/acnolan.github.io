@@ -1,5 +1,44 @@
-.blogCloudItem { 
+.blogCloudItem {
     position: absolute;
     max-width: 250px;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+.blogInfoBlock, .blogCloudItem {
     text-align: center;
+    border: solid 1px var(--site-grey-color);
+    border-radius: 5px;
+}
+
+body.darkMode {
+    background-color: black;
+}
+
+body {
+    background-color: white;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.homepage, .homepage body, .homepage #main {
+    height: 100%;
+    overflow: hidden;
+}
+
+.introBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
