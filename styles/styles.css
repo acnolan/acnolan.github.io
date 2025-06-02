@@ -1,6 +1,6 @@
 body {
     color: #606c76;
-    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Roboto',  'Arial', sans-serif;
     font-size: 1.6em;
     font-weight: 300;
     letter-spacing: .01em;
@@ -35,15 +35,6 @@ html {
     color: white;
     padding: 10px 35px;
     box-sizing: border-box;
-}
-
-.alternate-headers div {
-    margin-bottom: 45px;
-}
-
-.alternate-headers div:nth-of-type(2n) h2,
-.alternate-headers div:nth-of-type(2n) h3 {
-    text-align: right;
 }
 
 .centered-text {
@@ -116,6 +107,10 @@ html {
     margin-bottom: 60px;
 }
 
+:root {
+    --header-height: 52px;
+}
+
 .header {
     list-style-type: none;
     margin: 0;
@@ -128,6 +123,7 @@ html {
     top: 0;
     margin-left: -8px;
     z-index: 10;
+    height: var(--header-height);
 }
 
 .header h1 {

@@ -253,7 +253,7 @@ function search(e) {
 // Add the listener to the search bar form
 document.querySelector('#search-bar').addEventListener('submit', search);
 
-// Get the blog
+// Get the blogs
 fetch('https://andrewnolan.dev/blogs/blogData.json')
   .then((res) => res.json())
   .then((json) => {
