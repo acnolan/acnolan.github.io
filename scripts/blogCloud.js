@@ -5,6 +5,8 @@ const MIN_X = 0;
 const MAX_X = window.innerWidth - 200;
 const MIN_Y = 0;
 const MAX_Y = window.innerHeight - 200;
+const SHADOW_COLORS = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
 const placedAreas = [];
 
 // Shuffles a list using Fisher-Yates
@@ -41,8 +43,8 @@ const placeBlogCloudItem = (element) => {
 
   do {
     retries++;
-    randX = Math.round(MIN_X + ((MAX_X - MIN_X) * (Math.random() % 1)));
-    randY = Math.round(MIN_Y + ((MAX_Y - MIN_Y) * (Math.random() % 1)));
+    randX = Math.round(MIN_X + ((MAX_X - MIN_X) * Math.random()));
+    randY = Math.round(MIN_Y + ((MAX_Y - MIN_Y) * Math.random()));
     area = {
       x: randX, y: randY, width: element.offsetWidth, height: element.offsetHeight,
     };
@@ -63,6 +65,17 @@ const displayCloud = () => {
     const titleDiv = document.createElement('div');
     titleDiv.innerText = blog.Title;
     titleDiv.classList.add('blogCloudItem');
+    titleDiv.role = 'button';
+    titleDiv.tabIndex = '0';
+    titleDiv.style.boxShadow = `1px 1px 1px 1px ${SHADOW_COLORS[Math.floor(Math.random() * SHADOW_COLORS.length)]}`;
+    titleDiv.onclick = () => {
+      window.location.href = `./blogs/${blog.Key}`;
+    };
+    titleDiv.onkeydown = (event) => {
+      if (event.key === 'Enter') {
+        window.location.href = `./blogs/${blog.Key}`;
+      }
+    };
     setTimeout(() => {
         document.body.appendChild(titleDiv);
         placeBlogCloudItem(titleDiv);
