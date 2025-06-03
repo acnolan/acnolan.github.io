@@ -11,12 +11,12 @@ const placedAreas = [];
 
 // Shuffles a list using Fisher-Yates
 const shuffleList = (list) => {
-    for (let i = list.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [list[i], list[j]] = [list[j], list[i]];
-    }
-    return list;
-}
+  for (let i = list.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [list[i], list[j]] = [list[j], list[i]];
+  }
+  return list;
+};
 
 const checkOverlap = (area) => {
   for (let i = 0; i < placedAreas.length; i++) {
@@ -49,8 +49,8 @@ const placeBlogCloudItem = (element) => {
       x: randX, y: randY, width: element.offsetWidth, height: element.offsetHeight,
     };
     if (retries > 10) {
-        document.body.removeChild(element);
-        return;
+      document.body.removeChild(element);
+      return;
     }
   } while (checkOverlap(area));
 
@@ -60,7 +60,7 @@ const placeBlogCloudItem = (element) => {
 };
 
 const displayCloud = () => {
- blogData = shuffleList(blogData);
+  blogData = shuffleList(blogData);
   blogData.forEach((blog, index) => {
     const titleDiv = document.createElement('div');
     titleDiv.innerText = blog.Title;
@@ -77,8 +77,8 @@ const displayCloud = () => {
       }
     };
     setTimeout(() => {
-        document.body.appendChild(titleDiv);
-        placeBlogCloudItem(titleDiv);
+      document.body.appendChild(titleDiv);
+      placeBlogCloudItem(titleDiv);
     }, 100 * index);
   });
 };
@@ -93,7 +93,7 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
       x: blogInfoBlock.offsetLeft,
       y: blogInfoBlock.offsetTop,
       width: blogInfoBlock.offsetWidth,
-      height: blogInfoBlock.offsetHeight
+      height: blogInfoBlock.offsetHeight,
     });
     displayCloud();
   });

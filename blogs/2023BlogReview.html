@@ -16,6 +16,8 @@
     <title>2023: A Year of Blogs</title>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+    <link rel="stylesheet" type="text/css" href="../styles/toggleStyles.css">
+    <script defer src="../scripts/theming.js"></script>
 
     <!--Vega-Lite Dependencies-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
@@ -98,6 +100,14 @@
             vegaEmbed('#monthsVis', json);
         });
     </script>
+    <div id="toggleDiv">
+        <span>☀️</span>
+        <label class="switch">
+            <input type="checkbox" checked onclick="ToggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+    </div>
 </body>
 
 </html>

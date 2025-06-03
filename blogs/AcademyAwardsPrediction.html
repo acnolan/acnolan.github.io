@@ -15,6 +15,8 @@
   <title>Man vs Machine! Predicting the Academy Awards</title>
   <link rel="stylesheet" type="text/css" href="../styles/styles.css">
   <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+  <link rel="stylesheet" type="text/css" href="../styles/toggleStyles.css">
+  <script defer src="../scripts/theming.js"></script>
 </head>
 
 <style>
@@ -27,6 +29,9 @@
   th {
     padding: 3px;
     border: 1px solid black;
+  }
+  .dark-mode td, .dark-mode th, .dark-mode table {
+        border: 1px solid white;
   }
 </style>
 
@@ -529,6 +534,14 @@
 
     <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
   </main>
+  <div id="toggleDiv">
+      <span>☀️</span>
+      <label class="switch">
+          <input type="checkbox" checked onclick="ToggleDarkMode()">
+          <span class="slider"></span>
+      </label>
+      <span>🌙</span>
+  </div>
 </body>
 
 </html>

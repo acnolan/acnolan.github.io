@@ -14,16 +14,18 @@
     <title>About - Andrew Nolan</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <link rel="stylesheet" type="text/css" href="./styles/flipcard.css">
+    <link rel="stylesheet" type="text/css" href="./styles/toggleStyles.css">
+    <script defer src="./scripts/theming.js"></script>
 </head>
 
 <body>
     <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
     <div class="header">
         <div class="content">
-            <h1><a href="./" class="page-title desktop-only">About Andrew Nolan</a></h1>
-            <h1><a href="./" class="page-title mobile-only">About</a></h1>
+            <h1><a href="./blogs" class="page-title desktop-only">About Andrew Nolan</a></h1>
+            <h1><a href="./blogs" class="page-title mobile-only">About</a></h1>
             <div class="link-block">
-                <a href="./" aria-label="home"><img class="fa fa-home" src = "./images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a href="./blogs" aria-label="home"><img class="fa fa-home" src = "./images/iconSvgs/home.svg" alt="Home icon"/></a>
                 <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "./images/iconSvgs/github.svg" alt="Github icon"/></a>
                 <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "./images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
                 <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "./images/iconSvgs/mail.svg" alt="Email icon"/></a>
@@ -230,6 +232,14 @@
                 Me!</a>
         </div>
     </main>
+    <div id="toggleDiv">
+        <span>☀️</span>
+        <label class="switch">
+            <input type="checkbox" checked onclick="ToggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+    </div>
 </body>
 
 </html>
