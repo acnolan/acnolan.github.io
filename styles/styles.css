@@ -1,5 +1,16 @@
+:root {
+    --header-height: 52px;
+    --dark-mode-text-color: #ADADBD;
+    --dark-mode-background-color: #000000;
+    --light-mode-background-color: #FFFFFF;
+    --site-purple-color: #711ca7;
+    --site-purple-color-hover: #b597c9;
+    --button-color: #FFFFFF;
+}
+
 body {
-    color: var(--site-grey-color);
+    background-color: var(--light-mode-background-color);
+    color: var(--dark-mode-text-color);
     font-family: 'Helvetica Neue', 'Helvetica', 'Roboto',  'Arial', sans-serif;
     font-size: 1.6em;
     font-weight: 300;
@@ -7,13 +18,12 @@ body {
     line-height: 1.6;
 }
 
-body>.content {
-    margin-top: 54px;
+body.dark-mode {
+    background-color: var(--dark-mode-background-color);
 }
 
-h2 a {
-    color: inherit;
-    text-decoration: inherit;
+body>.content {
+    margin-top: 54px;
 }
 
 html {
@@ -21,21 +31,62 @@ html {
 }
 
 #email {
-    background-color: #711ca7;
+    background-color: var(--site-purple-color);
 }
 
 #email:hover {
-    background-color: #b597c9;
+    background-color: var(--site-purple-color-hover);
 }
 
 #email,
 .my-links {
     text-decoration: none;
     border-radius: 5px;
-    color: white;
+    color: var(--button-color);
     padding: 10px 35px;
     box-sizing: border-box;
 }
+
+.blogCloudItem {
+    position: absolute;
+    max-width: 250px;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+.blogCloudItem:hover {
+    opacity: 0.7;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.blogInfoBlock, .blogCloudItem {
+    text-align: center;
+    border: solid 1px var(--dark-mode-text-color);
+    border-radius: 5px;
+}
+
+.blogInfoBlock {
+    outline-style: double;
+    padding: 5px;
+    margin: 5px;
+}
+
+.blogInfoBlock h1 {
+    color: var(--dark-mode-background-color);
+}
+
+.dark-mode .blogInfoBlock h1 {
+    color: var(--light-mode-background-color);
+}
+
+.blogInfoBlock .fa {
+    margin: 5px 5px;
+}
+
 
 .centered-text {
     text-align: center;
@@ -48,6 +99,27 @@ html {
     position: relative;
 }
 
+.enterBlogsButtonLink {
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--dark-mode-background-color);
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.dark-mode .enterBlogsButtonLink {
+    color: var(--light-mode-background-color);
+}
+
+.enterBlogsButtonLink:hover {
+    outline: 1px solid var(--dark-mode-background-color);
+    text-decoration: underline;
+}
+
+.dark-mode .enterBlogsButtonLink:hover {
+    outline: 1px solid var(--light-mode-background-color);
+}
+
 .fa {
     padding: 6px;
     font-size: 20px;
@@ -57,7 +129,7 @@ html {
     margin: 5px 2px;
     border-radius: 5px;
     float: right;
-    color: white;
+    color: var(--button-color);
 }
 
 .fa-github {
@@ -98,11 +170,6 @@ html {
     margin-bottom: 60px;
 }
 
-:root {
-    --header-height: 52px;
-    --site-grey-color: #ADADBD;
-}
-
 .header {
     list-style-type: none;
     margin: 0;
@@ -119,10 +186,28 @@ html {
 }
 
 .header h1 {
-    color: white;
+    color: var(--button-color);
     margin: 0;
     padding: 0;
     display: inline-block;
+}
+
+/* To have the homepage content centered vertically */
+.homepage, .homepage body, .homepage #main {
+    height: 100%;
+    overflow: hidden;
+}
+
+.homepageButtonRow {
+    display: flex;
+    justify-content: center;
+}
+
+.introBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .justify-p p {
@@ -148,15 +233,6 @@ html {
     display: none;
 }
 
-.my-links {
-    background: linear-gradient(grey, darkgrey(37, 37, 253));
-    background-color: grey;
-}
-
-.my-links:hover {
-    background: linear-gradient(darkgrey, grey);
-}
-
 .no-top-margin {
     margin-top: 0;
 }
@@ -167,15 +243,11 @@ html {
 
 .page-title {
     text-decoration: none;
-    color: white;
+    color: var(--button-color);
 }
 
 .purple-text {
-    color: #711ca7;
-}
-
-.rounded-image {
-    border-radius: 50%;
+    color: var(--site-purple-color);
 }
 
 .skip-to-main-content-link {
@@ -183,8 +255,8 @@ html {
     left: -9999px;
     z-index: 999;
     padding: 1em;
-    background-color: #711ca7;
-    color: white;
+    background-color: var(--site-purple-color);
+    color: var(--button-color);
     opacity: 0;
   }
   
@@ -192,12 +264,6 @@ html {
     left: 50%;
     transform: translateX(-50%);
     opacity: 1;
-}
-
-
-
-.work-description {
-    margin-bottom: 54px;
 }
 
 @media (min-width: 700px) {
@@ -224,4 +290,13 @@ html {
     .purple-text {
         font-size: 24px;
     }
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
