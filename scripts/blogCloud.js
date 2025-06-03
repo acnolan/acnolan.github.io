@@ -2,12 +2,12 @@ let blogData = {};
 
 // Data for title placement
 const MIN_X = 0;
-const MAX_X = window.innerWidth - 200;
+let MAX_X = window.innerWidth - 200;
 const MIN_Y = 0;
-const MAX_Y = window.innerHeight - 200;
+let MAX_Y = window.innerHeight - 50;
 const SHADOW_COLORS = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
-const placedAreas = [];
+let placedAreas = [];
 
 // Shuffles a list using Fisher-Yates
 const shuffleList = (list) => {
@@ -97,3 +97,34 @@ fetch('https://andrewnolan.dev/blogs/blogData.json')
     });
     displayCloud();
   });
+
+const clearAndRedraw = () => {
+  const blogCloudItems = window.document.body.querySelectorAll('.blogCloudItem');
+  blogCloudItems.forEach((blog) => {
+    window.document.body.removeChild(blog);
+  });
+  MAX_X = window.innerWidth - 200;
+  MAX_Y = window.innerHeight - 50;
+  placedAreas = [];
+  const blogInfoBlock = document.getElementById('blogInfoBlock');
+  placedAreas.push({
+      x: blogInfoBlock.offsetLeft,
+      y: blogInfoBlock.offsetTop,
+      width: blogInfoBlock.offsetWidth,
+      height: blogInfoBlock.offsetHeight,
+    });
+  displayCloud();
+};
+
+// Debounce to limit how often displayCloud is called during resize
+const debounce = (func, delay) => {
+  let timeout;
+  return function () {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      func();
+    }, delay);
+  };
+};
+
+window.addEventListener('resize', debounce(clearAndRedraw, 100));

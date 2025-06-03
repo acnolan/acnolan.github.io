@@ -101,21 +101,19 @@ html {
     position: relative;
 }
 
+.dark-mode .enterBlogsButtonLink {
+    color: var(--light-mode-background-color);
+}
+
 .enterBlogsButtonLink {
-    text-decoration: none;
     border-radius: 5px;
     color: var(--dark-mode-background-color);
     padding: 5px 10px;
     box-sizing: border-box;
 }
 
-.dark-mode .enterBlogsButtonLink {
-    color: var(--light-mode-background-color);
-}
-
 .enterBlogsButtonLink:hover {
     outline: 1px solid var(--dark-mode-background-color);
-    text-decoration: underline;
 }
 
 .dark-mode .enterBlogsButtonLink:hover {
