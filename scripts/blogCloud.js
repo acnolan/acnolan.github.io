@@ -76,7 +76,7 @@ const displayCloud = () => {
     titleDiv.tabIndex = '0';
     titleDiv.style.boxShadow = `1px 1px 1px 1px ${SHADOW_COLORS[Math.floor(Math.random() * SHADOW_COLORS.length)]}`;
     titleDiv.onclick = () => {
-      window.location.href = `./blogs/${blog.Key}`;
+      window.location.href = blog.Key.includes('https') ? blog.Key : `./blogs/${blog.Key}`;
     };
     titleDiv.onkeydown = (event) => {
       if (event.key === 'Enter') {
