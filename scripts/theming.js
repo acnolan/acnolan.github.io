@@ -9,6 +9,7 @@ function ToggleDarkMode() {
   }
 }
 
+// Get user theme preference from local storage
 if (localStorage.getItem('style') === 'light') {
   window.document.body.classList.remove('dark-mode');
   window.document.body.querySelector('#toggleDiv input').checked = false;
