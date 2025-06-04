@@ -15,19 +15,21 @@
     <title>Accessible Design - Book Club: Don't Make me Think - Chapter 12</title>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+    <link rel="stylesheet" type="text/css" href="../styles/toggleStyles.css">
+    <script defer src="../scripts/theming.js"></script>
 </head>
 
-<body class="homepage">
+<body>
     <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
     <div class="header">
         <div class="content">
-            <h1><a href="../blogs" class="page-title desktop-only">Andrew Nolan's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew's Blog</a></h1>
             <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
             <div class="link-block">
                 <a href="../blogs" aria-label="home"><img class="fa fa-home" src = "../images/iconSvgs/home.svg" alt="Home icon"/></a>
                 <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "../images/iconSvgs/github.svg" alt="Github icon"/></a>
                 <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "../images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
-                <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"><img class="fa fa-twitter" src = "../images/iconSvgs/twitter.svg" alt="Twitter icon"/></a>
+                
                 <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "../images/iconSvgs/mail.svg" alt="Email icon"/></a>
             </div>
         </div>
@@ -80,6 +82,14 @@
 
         <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
     </main>
+    <div id="toggleDiv">
+        <span>☀️</span>
+        <label class="switch">
+            <input type="checkbox" checked onclick="ToggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+    </div>
 </body>
 
 </html>

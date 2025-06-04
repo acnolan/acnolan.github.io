@@ -66,12 +66,6 @@
     position: relative;
 }
 
-.blog-rss-and-search-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .blog-table {
     width: 100%;
     border-collapse: collapse;

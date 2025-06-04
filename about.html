@@ -14,26 +14,27 @@
     <title>About - Andrew Nolan</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <link rel="stylesheet" type="text/css" href="./styles/flipcard.css">
+    <link rel="stylesheet" type="text/css" href="./styles/toggleStyles.css">
+    <script defer src="./scripts/theming.js"></script>
 </head>
 
-<body class="homepage">
+<body>
     <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
     <div class="header">
         <div class="content">
-            <h1><a href="./" class="page-title desktop-only">About Andrew Nolan</a></h1>
-            <h1><a href="./" class="page-title mobile-only">About</a></h1>
+            <h1><a href="./blogs" class="page-title desktop-only">About Andrew</a></h1>
+            <h1><a href="./blogs" class="page-title mobile-only">About</a></h1>
             <div class="link-block">
-                <a href="./" aria-label="home"><img class="fa fa-home" src = "./images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a href="./blogs" aria-label="home"><img class="fa fa-home" src = "./images/iconSvgs/home.svg" alt="Home icon"/></a>
                 <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "./images/iconSvgs/github.svg" alt="Github icon"/></a>
                 <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "./images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
-                <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"><img class="fa fa-twitter" src = "./images/iconSvgs/twitter.svg" alt="Twitter icon"/></a>
                 <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "./images/iconSvgs/mail.svg" alt="Email icon"/></a>
             </div>
         </div>
     </div>
     <main id="main" class="content">
-        <h1 class="purple-text centered-text">About Me</h1>
-        <p>You can learn a lot about my technical skills and experiences from my <a href="./resume">resume</a> and <a href="./work">work history</a>. However, if you want to learn more about me as a person, here are some of my favorite things!</p>
+        <p>Andrew is an amateur banjo player, aspiring educator, hiker, novice poet, transit advocate, urbanist, board gamer, reader, embroiderer, cyclist, and pretty great at programmer. In order to earn money and afford to survive he works as a fullstack software engineer with a predisposition to educational technology.</p>
+        <p>Here are some of his favorite things!</p>
         <div class="flip-row">
             <div class="flip-card mobile-only-br" onclick="">
                 <div class="flip-card-inner">
@@ -83,7 +84,7 @@
                         <h1>Favorite Album?</h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/album.webp" alt="Random Access Memories by Daft Punk">
+                        <img src="./images/about/album.webp" alt="IX by Rent Strike">
                     </div>
                 </div>
             </div>
@@ -201,7 +202,7 @@
                         <h1>Favorite Fruit? </h1>
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/about/fruit.webp" alt="Blackberries">
+                        <img src="./images/about/fruit.webp" alt="Green grapes">
                     </div>
                 </div>
             </div>
@@ -226,11 +227,83 @@
                 </div>
             </div>
         </div>
+        <div class="flip-row">
+            <div class="flip-card mobile-only-br" onclick="">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Favorite Band?</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/about/band.webp" alt="Apes of the State">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card mobile-only-br" onclick="">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Favorite Type of Transit?</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/about/transit.webp" alt="Train (this one is the MBTA commuter rail)">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" onclick="">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Home State?</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/about/state.webp" alt="Pennsylvania">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flip-row">
+            <div class="flip-card mobile-only-br" onclick="">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Favorite Instrument?</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/about/instrument.webp" alt="Banjo">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card mobile-only-br" onclick="">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Favorite Poem?</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/about/poem.webp" alt="The Orange by Wendy Cope">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" onclick="">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Favorite Board Game?</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/about/boardgame.webp" alt="Quacks of Quedlinburg">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer-div">
             <a id="email" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!">Contact
                 Me!</a>
         </div>
     </main>
+    <div id="toggleDiv">
+        <span>☀️</span>
+        <label class="switch">
+            <input type="checkbox" checked onclick="ToggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+    </div>
 </body>
 
 </html>

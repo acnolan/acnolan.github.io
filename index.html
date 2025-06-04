@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="homepage">
 
 <head>
     <!-- Goat Counter (GDPR Friendly Analytics) -->
@@ -8,46 +8,42 @@
     <!-- my stuff -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta name="description" content="Hi, I'm Andrew Nolan. I'm a student, developer, and a pretty cool guy! Check out my website!!">
-    <meta name="keywords" content="Andrew Nolan, Andrew Nolan WPI, web dev, Computer Science, acnolan, Andrew Nolan MathWorks, Andrew Nolan Computer Science">
+    <meta name="description" content="Welcome to Andrew Nolan's personal blog!">
+    <meta name="keywords" content="Andrew Nolan, Andrew Nolan WPI, web dev, Computer Science, acnolan, Andrew Nolan MathWorks, Andrew Nolan Computer Science, Andrew Nolan blog, Andrew's Blog">
     <link rel='icon' href='./images/favicon.ico'>
-    <title>Andrew Nolan</title>
+    <title>Andrew's Blog</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="./styles/homepagemobile.css">
+    <link rel="stylesheet" type="text/css" href="./styles/toggleStyles.css">
 </head>
 
-<body class="homepage">
+<body class="dark-mode">
     <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
-    <div class="header">
-        <div class="content">
-            <h1><a href="./" class="page-title">Andrew Nolan</a></h1>
-            <div class="link-block">
-                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "./images/iconSvgs/github.svg" alt="Github icon"/></a>
-                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "./images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
-                <a target="_blank" href="https://twitter.com/AndrewsEdTech" rel="noopener noreferrer" aria-label="twitter"><img class="fa fa-twitter" src = "./images/iconSvgs/twitter.svg" alt="Twitter icon"/></a>
-                <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "./images/iconSvgs/mail.svg" alt="Email icon"/></a>
+    <main id="main">
+        <div class="introBlock">
+            <div class="blogInfoBlock" id="blogInfoBlock">
+                <h1>Andrew's Blog</h1>
+                <p>Come read some stuff I wrote!</p>
+                <a class="enterBlogsButtonLink" href="./blogs">View all blogs</a>
+                <div class="homepageButtonRow">
+                    <div class="link-block">
+                        <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "./images/iconSvgs/github.svg" alt="Github icon"/></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "./images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
+                        <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "./images/iconSvgs/mail.svg" alt="Email icon"/></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <main id="main" class="content">
-        <div class="centered-text">
-            <h1 class="purple-text no-bottom-margin">Andrew Nolan</h1>
-            <h2 class="no-top-margin">Life Long Learner, Programmer, Pretty Cool Guy</h2>
-            <img class="rounded-image" alt="A super cool picture of me" width=240 height=240 src="./images/homepage.webp">
-            <p>Passionate about making online learning effective, equitable, and accessible</p>
-        </div>
-        <div class="button-row">
-            <!-- <a class="my-links" href="resume.html">Resume</a> -->
-            <a class="my-links" href="./about">About Me</a>
-            <a class="my-links" href="./work">Work Experience</a>
-            <a class="my-links" href="./projects">Projects</a>
-            <a class="my-links" href="./blogs">Blogs</a>
-        </div>
-        <div class="footer-div">
-            <a id="email" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!">Contact
-                Me!</a>
+        <div id="toggleDiv">
+            <span>☀️</span>
+            <label class="switch">
+                <input type="checkbox" checked onclick="ToggleDarkMode()">
+                <span class="slider"></span>
+            </label>
+            <span>🌙</span>
         </div>
     </main>
+    <script defer src="./scripts/blogCloud.js"></script>
+    <script defer src="./scripts/theming.js"></script>
 </body>
 
 </html>

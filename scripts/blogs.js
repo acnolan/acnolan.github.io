@@ -205,7 +205,7 @@ function generatePosts() {
       // Add a link to the blog
       // This is more semantic and better for accessibility than a JavaScript onclick
       const blogLink = document.createElement('a');
-      blogLink.href = `./blogs/${post.Key}`;
+      blogLink.href = `./blogs/${post.Key}.html`;
       blogLink.className = 'blog-link';
       blogLink.ariaLabel = post.Title;
       blogEntry.appendChild(blogLink);
@@ -253,7 +253,7 @@ function search(e) {
 // Add the listener to the search bar form
 document.querySelector('#search-bar').addEventListener('submit', search);
 
-// Get the blog
+// Get the blogs
 fetch('https://andrewnolan.dev/blogs/blogData.json')
   .then((res) => res.json())
   .then((json) => {
