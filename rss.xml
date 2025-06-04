@@ -6,7 +6,16 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 4 Jun 2025 10:39:00 EST</lastBuildDate>
+        <lastBuildDate>Wed, 4 Jun 2025 15:21:00 EST</lastBuildDate>
+        <item>
+            <title>Crafting the Perfect Manager 1-on-1 Meeting Template</title>
+            <link>https://andrewnolan.dev/blogs/DebateSentiment.html</link>
+            <description><![CDATA[Tips and templates for preparing for a manager one-on-one meeting.]]></description>
+            <pubDate>Wed, 4 Jun 2025 15:21:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/MangerOneOnOne.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Coding</category>
+        </item>
         <item>
             <title>What Words Reveal: Sentiment Analysis of the 2024 Presidential Debate Transcript</title>
             <link>https://andrewnolan.dev/blogs/DebateSentiment.html</link>
