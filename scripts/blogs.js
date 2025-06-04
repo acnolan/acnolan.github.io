@@ -136,12 +136,12 @@ function getVisitData(post) {
   }).then((data) => {
     const viewElement = document.getElementById(`${blogEntry}-views`);
     const viewOrViews = data.count === '1' ? 'view' : 'views';
-    viewElement.innerHTML = `${data.count} ${viewOrViews}`;
+    if (data.count > 0) viewElement.innerHTML = `${data.count} ${viewOrViews}`;
     // eslint-disable-next-line no-param-reassign
     post.Views = parseInt(data.count, 10);
   }, () => {
-    const viewElement = document.getElementById(`${blogEntry}-views`);
-    viewElement.innerHTML = '0 views';
+    // Do not show anything if no views
+
     // eslint-disable-next-line no-param-reassign
     post.Views = 0;
   });
@@ -205,7 +205,7 @@ function generatePosts() {
       // Add a link to the blog
       // This is more semantic and better for accessibility than a JavaScript onclick
       const blogLink = document.createElement('a');
-      blogLink.href = `./blogs/${post.Key}.html`;
+      blogLink.href = `./blogs/${post.Key}`;
       blogLink.className = 'blog-link';
       blogLink.ariaLabel = post.Title;
       blogEntry.appendChild(blogLink);
