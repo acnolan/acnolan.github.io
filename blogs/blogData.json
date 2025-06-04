@@ -182,6 +182,13 @@
                 "Tags": ["Coding", "Politics"],
                 "Description": "Since Kamala Harris announced Tim Walz as her running mate I have been more hopeful and optimistic about politics than I have been in a long time. This feeling primarily comes from having an option I can be excited to vote for, but the data scientist inside me wanted to know if there was something more than that. Is there something in the words Harris says that makes me hopeful? Not just the context of the words and the policies they describe, but the actual word choice itself. Is there something about the way Trump speaks (besides the politics and rhetoric) that makes me upset and angry? Luckily, we can leverage the power of technology to visualize their words and understand the emotional choices of their diction.",
                 "Key": "DebateSentiment"
+            },
+            {
+                "Title": "Crafting the Perfect Manager 1-on-1 Meeting Template",
+                "Date": "2025-06-04",
+                "Tags": ["Coding"],
+                "Description": "Tips and templates for preparing for a manager one-on-one meeting.",
+                "Key": "MangerOneOnOne"
             }
         ]
 }
