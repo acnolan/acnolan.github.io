@@ -104,8 +104,12 @@
     <loc>https://andrewnolan.dev/blogs/DebateSentiment
     <lastmod>2024-09-12</lastmod>
   </url>
-    <url>
+  <url>
     <loc>https://andrewnolan.dev/blogs/ManagerOneOnOne
     <lastmod>2025-06-04</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewnolan.dev/blogs/AsyncConstructor
+    <lastmod>2025-06-05</lastmod>
   </url>
 </urlset>

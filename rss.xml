@@ -6,10 +6,19 @@
         <link>https://andrewnolan.dev</link>
         <description><![CDATA[Feed of new posts from Andrew's Blog]]></description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 4 Jun 2025 15:21:00 EST</lastBuildDate>
+        <lastBuildDate>Thu, 5 Jun 2025 11:00:00 EST</lastBuildDate>
+        <item>
+            <title>How do you handle asynchronous behavior inside a class constructor in JavaScript?</title>
+            <link>https://andrewnolan.dev/blogs/AsyncConstructor.html</link>
+            <description><![CDATA[Lessons from an interview problem I failed. How do you handle asynchronous behavior inside a class constructor in JavaScript?]]></description>
+            <pubDate>Thu, 5 Jun 2025 11:00:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/AsyncConstructor.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Coding</category>
+        </item>
         <item>
             <title>Crafting the Perfect Manager 1-on-1 Meeting Template</title>
-            <link>https://andrewnolan.dev/blogs/DebateSentiment.html</link>
+            <link>https://andrewnolan.dev/blogs/ManagerOneOnOne.html</link>
             <description><![CDATA[Tips and templates for preparing for a manager one-on-one meeting.]]></description>
             <pubDate>Wed, 4 Jun 2025 15:21:00 EST</pubDate>
             <guid>https://andrewnolan.dev/blogs/ManagerOneOnOne.html</guid>

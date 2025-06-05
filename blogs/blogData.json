@@ -189,6 +189,13 @@
                 "Tags": ["Coding"],
                 "Description": "Tips and templates for preparing for a manager one-on-one meeting.",
                 "Key": "ManagerOneOnOne"
+            },
+            {
+                "Title": "How do you handle asynchronous behavior inside a class constructor in JavaScript?",
+                "Date": "2025-06-05",
+                "Tags": ["Coding"],
+                "Description": "Lessons from an interview problem I failed. How do you handle asynchronous behavior inside a class constructor in JavaScript?",
+                "Key": "AsyncConstructor"
             }
         ]
 }

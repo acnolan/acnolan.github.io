@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
+        async src="../scripts/count.js"></script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Lessons from an interview problem I failed. How do you handle asynchronous behavior inside a class constructor in JavaScript?">
+    <meta name="keywords" content="Interview prep, interview, coding interview, asynchronous, async, constructor, class, javascript, object-oriented javascript">
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>How do you handle asynchronous behavior inside a class constructor in JavaScript?</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+    <link rel="stylesheet" type="text/css" href="../styles/toggleStyles.css">
+    <script defer src="../scripts/theming.js"></script>
+</head>
+
+<style>
+    pre {
+        background-color: #f6f6f6;
+        color: black;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home"><img class="fa fa-home" src = "../images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "../images/iconSvgs/github.svg" alt="Github icon"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "../images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
+                
+                <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "../images/iconSvgs/mail.svg" alt="Email icon"/></a>
+            </div>
+        </div>
+    </div>
+    <main id="main" class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">How do you handle asynchronous behavior inside a class constructor in JavaScript?</h1>
+        <div class="blog-by-line">Andrew Nolan</div>
+        <div class="blog-by-line">2025-06-05</div>
+
+        <h2>Short Answer</h2>
+
+        <p>You don't!</p>
+
+        <h2>Long Answer</h2>
+
+        <p>I was asked this question during a technical interview for my first full-time software engineering position. To tell you the truth, I did not know the answer but courageously stumbled into the right place. I am writing this post in hopes that it can help someone else who may end up with the same question someday. And I wanted to do the research to be confident in the answer.</p>
+
+        <p>A constructor in JavaScript returns an instance of a class. An asynchronous function returns a promise. If a constructor returns a specific class, but an asynchronous function returns a promise, a constructor in JavaScript must therefore be synchronous preventing it from using await or other asynchronous behavior.</p>
+
+        <p>Although you cannot make a constructor asynchronous there are common workarounds. The most idiomatic is to use “Factory Methods”. If you are a Java developer, you have certainly seen this pattern before. A Factory method (or function in the JS context) works as a wrapper around a constructor. This function can be asynchronous and thus handle your async and await calls. Once the asynchronous data is retrieved, it can be passed into a constructor and returned.</p>
+
+<pre>
+Class MyClass {
+    constructor (data) {
+        this.data = data;
+    }
+    // Constructor
+    Static async create () {
+        const data = await someAsyncFunction();
+        return new MyClass(data);
+    }
+}
+
+// Example usage
+async function main() {
+    const myObject = await MyClass.create();
+    // do something
+}
+main();
+</pre>
+
+        <p>If the factory method does not work for you, another common approach is the Initialization Method. This is like the Factory Method in reverse. First you create the class and then you asynchronously let it load in the data later. What this means is instead of awaiting that asynchronous call, you just call it explicitly in the end of your constructor and let it resolve when it can.</p>
+
+        <p>For example:</p>
+
+<pre>
+Class MyClass {
+	constructor () {
+		this.data = null; // Start out null
+		this.initialize();
+	}
+	async initialize () {
+		this.data = await someAsyncFunction(); // now set the data
+	}
+}
+
+// Usage
+async function main () {
+	const myObject = new MyClass();
+	// Do whatever you want!
+	// You may have to call `await myObject.initialize()` to guarantee the data is ready
+}
+</pre>
+
+        <p>The drawback to this approach is you now need to explicitly call <code>await myObject.initialize</code> to guarantee the data is ready. This means initialize may be called twice. You could add a check like this to prevent that:</p>
+
+<pre>
+async initialize () {
+    // only set data if not already set
+    if (!this.data) this.data = await someAsyncFunction(); 
+}
+</pre>
+
+        <p>This will allow you to only initialize once, so you won’t make a redundant async call, but you still need to wait. Using the factory method generally will be cleaner. But in some use cases, like lazy loading a UI component, the initialize method might work well. In a lot of cases, frameworks with state management like React or Lit Elements handle this for you.</p>
+
+        <p>I hope this helps someone faced with a similar interview question to me!</p>
+
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </main>
+    <div id="toggleDiv">
+        <span>☀️</span>
+        <label class="switch">
+            <input type="checkbox" checked onclick="ToggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+    </div>
+</body>
+
+</html>
