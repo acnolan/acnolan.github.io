@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
+        async src="../scripts/count.js"></script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Heard of JSX but not really sure what it means? Find out here!">
+    <meta name="keywords" content="">
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>Explain it like I'm 5 - JSX</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+    <link rel="stylesheet" type="text/css" href="../styles/toggleStyles.css">
+    <script defer src="../scripts/theming.js"></script>
+</head>
+
+<style>
+    pre {
+        background-color: #f6f6f6;
+        color: black;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home"><img class="fa fa-home" src = "../images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "../images/iconSvgs/github.svg" alt="Github icon"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "../images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
+                
+                <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "../images/iconSvgs/mail.svg" alt="Email icon"/></a>
+            </div>
+        </div>
+    </div>
+    <main id="main" class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">Explain it like I'm 5 - JSX</h1>
+        <div class="blog-by-line">Andrew Nolan</div>
+        <div class="blog-by-line">2025-06-06</div>
+
+        <p>JSX is <em>JavaScript XML</em>, an XML-like extension for traditional JavaScript. Originally, it was developed by the folks over at Facebook for React, but it is used in many other frameworks now too.</p>
+
+        <h3>Ok, what does this actually mean?</h3>
+
+        <p>JSX lets you put HTML right into your JavaScript. That's really it! Pretty simple. For example, in vanilla JS, to create a <code>div</code> containing three paragraphs with a custom class you would need to do something like this.</p>
+
+<pre>
+const createDivAndParagraphs = () => {
+    const div = document.createElement('div');
+    div.classList.add('customClass');
+    const p1 = document.createElement('p');
+    p1.innerText = 'Paragraph 1';
+    const p2 = document.createElement('p');
+    p2.innerText = 'Paragraph 2';
+    const p3 = document.createElement('p');
+    p3.innerText = 'Paragraph 3';
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(p3);
+}
+</pre>
+
+        <p>11 lines of code and it's not very pretty to look at. You can imagine as this gets more complicated the code gets even harder to write, maintain, and read. This is where and why JSX comes in. What are we trying to create? Some HTML. So why don't we just write that. With JSX we can, like this:</p>
+
+<pre>
+const createDivAndParagraphs = () => {
+    return(
+        &lt;div className="customClass"&gt;
+            &lt;p&gt;Paragraph 1&lt;/p&gt;
+            &lt;p&gt;Paragraph 2&lt;/p&gt;
+            &lt;p&gt;Paragraph 3&lt;/p&gt;
+        &lt;/div&gt;
+    );
+}
+</pre>
+
+        <p>Half the lines, much easier to read, that is why we have JSX. Now we can have our markup in the same file as the code. It makes code easier to write and manage.</p>
+
+        <h3>How does it work?</h3>
+
+        <p>We have covered everything you really need to know about JSX up to this point. But it does beg the question, how does it work? JSX does not run natively in the browser, browsers are designed for JavaScript. So we need a transpiler to convert the code to traditional JavaScript. This is handled by libraries like React.</p>
+
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </main>
+    <div id="toggleDiv">
+        <span>☀️</span>
+        <label class="switch">
+            <input type="checkbox" checked onclick="ToggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+    </div>
+</body>
+
+</html>

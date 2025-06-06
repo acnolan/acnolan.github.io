@@ -97,19 +97,23 @@
     <lastmod>2023-11-21</lastmod>
   </url>
   <url>
-    <loc>https://andrewnolan.dev/blogs/2023BlogReview
+    <loc>https://andrewnolan.dev/blogs/2023BlogReview</loc>
     <lastmod>2024-01-15</lastmod>
   </url>
   <url>
-    <loc>https://andrewnolan.dev/blogs/DebateSentiment
+    <loc>https://andrewnolan.dev/blogs/DebateSentiment</loc>
     <lastmod>2024-09-12</lastmod>
   </url>
   <url>
-    <loc>https://andrewnolan.dev/blogs/ManagerOneOnOne
+    <loc>https://andrewnolan.dev/blogs/ManagerOneOnOne</loc>
     <lastmod>2025-06-04</lastmod>
   </url>
   <url>
-    <loc>https://andrewnolan.dev/blogs/AsyncConstructor
+    <loc>https://andrewnolan.dev/blogs/AsyncConstructor</loc>
     <lastmod>2025-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewnolan.dev/blogs/eli5JSX</loc>
+    <lastmod>2025-06-06</lastmod>
   </url>
 </urlset>

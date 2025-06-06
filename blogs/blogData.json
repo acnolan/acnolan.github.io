@@ -196,6 +196,13 @@
                 "Tags": ["Coding"],
                 "Description": "Lessons from an interview problem I failed. How do you handle asynchronous behavior inside a class constructor in JavaScript?",
                 "Key": "AsyncConstructor"
+            },
+            {
+                "Title": "Explain it like I'm 5 - JSX",
+                "Date": "2025-06-06",
+                "Tags": ["Coding"],
+                "Description": "Heard of JSX but not really sure what it means? Find out here!",
+                "Key": "eli5JSX"
             }
         ]
 }
