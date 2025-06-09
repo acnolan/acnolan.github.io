@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
+        async src="../scripts/count.js"></script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Why are we calling these things hooks in React?">
+    <meta name="keywords" content="React, Hooks, React Hooks, What are React Hooks, eli5, eli5 React Hooks">
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>Explain it like I'm 5 - React Hooks</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+    <link rel="stylesheet" type="text/css" href="../styles/toggleStyles.css">
+    <script defer src="../scripts/theming.js"></script>
+</head>
+
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home"><img class="fa fa-home" src = "../images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "../images/iconSvgs/github.svg" alt="Github icon"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "../images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
+                
+                <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "../images/iconSvgs/mail.svg" alt="Email icon"/></a>
+            </div>
+        </div>
+    </div>
+    <main id="main" class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">Explain it like I'm 5 - React Hooks</h1>
+        <div class="blog-by-line">Andrew Nolan</div>
+        <div class="blog-by-line">2025-06-05</div>
+
+        <p>If you spend time around React code you will hear about Hooks. But what are these coding paradigms?</p>
+
+        <h3>Short Answer</h3>
+
+        <p>They are functions.</p>
+
+        <h3>Long Answer</h3>
+
+        <p>React Hooks are functions that let you "hook into" React internal features like state and lifecycle properties.</p>
+
+        <p>There are a few rules for React hooks:</p>
+
+        <ul>
+            <li>Hooks should only be called at the top level. Not inside loops or conditions.</li>
+            <li>Only use hooks in React functions, not classes.</li>
+            <li>All hooks start with the word "use"</li>
+        </ul>
+
+        <p>That's it! They are just a special name for a certain set of functions in React.</p>
+
+        <p>You can build your own hooks. There are also several built-in hooks like:</p>
+
+        <ul>
+            <li>useState - Adds start to React components</li>
+            <li>useEffect - Perform a side effect, like fetching data from an external source</li>
+            <li>useContext - Access React Context</li>
+            <li>useRef - Creates a variable that persists between rerenders</li>
+        </ul>
+
+        <p>Now you know what a hook is in case anyone asks! Happy coding.</p>
+
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </main>
+    <div id="toggleDiv">
+        <span>☀️</span>
+        <label class="switch">
+            <input type="checkbox" checked onclick="ToggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+    </div>
+</body>
+
+</html>

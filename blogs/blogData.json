@@ -203,6 +203,13 @@
                 "Tags": ["Coding"],
                 "Description": "Heard of JSX but not really sure what it means? Find out here!",
                 "Key": "eli5JSX"
+            },
+            {
+                "Title": "Explain it like I'm 5 - React Hooks",
+                "Date": "2025-06-09",
+                "Tags": ["Coding"],
+                "Description": "Why are we calling these things hooks in React?",
+                "Key": "eli5ReactHooks"
             }
         ]
 }
