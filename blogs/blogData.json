@@ -11,14 +11,14 @@
             {
                 "Title": "Promoting Social Inclusion for Persons with Intellectual Disability and other Neurological or Developmental Disorders in Albania",
                 "Date": "2019-12-11",
-                "Tags": ["Misc"],
+                "Tags": ["Research", "Misc"],
                 "Description": "Working with the United Nation’s Leave No One Behind Programme in Albania, this project documented and assessed the current state of social inclusion for persons with intellectual disabilities and other neurological or developmental disorders. The team conducted 31 interviews with persons with disabilities, their parents, service providers, and government officials in Tirana, Albania. The project analyzed the qualitative data gained from our conversations to uncover themes of discrimination, insufficient services, and mistreatment towards people with disabilities. From these findings, the team suggested areas of future research, information sessions, and community interventions which aim to improve the social inclusion of persons with disabilities in Tirana, Albania.",
                 "Key": "https://web.cs.wpi.edu/~rek/Projects/UNDP_B19.pdf"
             },
             {
                 "Title": "BrainEx: Interactive Visual Exploration and Discovery of Sequence Similarity in Brain Signals",
                 "Date": "2022-06-17",
-                "Tags": ["Coding", "AI"],
+                "Tags": ["Coding", "AI", "Research"],
                 "Description": "We developed BrainEx to support interactive exploration and discovery within brain signals datasets. BrainEx takes advantage of algorithms that enable fast exploration of complex, large collections of time series data, while being easy to use and learn. This system enables researchers to perform similarity search, explore feature data and natural clustering, and select sequences of interest for future searches and exploration, while also maintaining the usability of a visual tool. In addition to describing the distributed architecture and visual design for BrainEx, this paper reports on a benchmark experiment showing that it outperforms other existing systems for similarity search. Additionally, we report on a preliminary user study in which domain experts used the visual exploration interface and affirmed that it meets the requirements. Finally, it presents a case study using BrainEx to explore real-world, domain-relevant data.",
                 "Key": "https://dl.acm.org/doi/abs/10.1145/3534516"
             },

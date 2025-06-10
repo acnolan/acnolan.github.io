@@ -48,6 +48,9 @@ function getViableTags() {
   if (document.getElementById('politics').checked) {
     viableTags.push('Politics');
   }
+  if (document.getElementById('research').checked) {
+    viableTags.push('Research');
+  }
   if (document.getElementById('misc').checked) {
     viableTags.push('Misc');
   }
