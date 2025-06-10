@@ -210,6 +210,13 @@
                 "Tags": ["Coding"],
                 "Description": "Why are we calling these things hooks in React?",
                 "Key": "eli5ReactHooks"
+            },
+            {
+                "Title": "Explain it like I'm 5 - JavaScript Closures",
+                "Date": "2025-06-10",
+                "Tags": ["Coding"],
+                "Description": "Someone please explain to me what a closure is!",
+                "Key": "eli5Closure"
             }
         ]
 }

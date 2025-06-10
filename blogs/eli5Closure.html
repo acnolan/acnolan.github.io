@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Goat Counter (GDPR Friendly Analytics) -->
+    <script data-goatcounter="https://andrewnolan.goatcounter.com/count"
+        async src="../scripts/count.js"></script>
+    <!-- my stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Someone please explain to me what a closure is!">
+    <meta name="keywords" content="eli5, eli5 closures, eli5 javascript closures, closures, javascript closure, explain like i'm five">
+    <link rel='icon' href='../images/favicon.ico'>
+    <title>Explain it like I'm 5 - JavaScript Closures</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blogs.css">
+    <link rel="stylesheet" type="text/css" href="../styles/toggleStyles.css">
+    <script defer src="../scripts/theming.js"></script>
+</head>
+
+<body>
+    <a href="#main" class="skip-to-main-content-link">Skip to main content</a>
+    <div class="header">
+        <div class="content">
+            <h1><a href="../blogs" class="page-title desktop-only">Andrew's Blog</a></h1>
+            <h1><a href="../blogs" class="page-title mobile-only">Andrew's Blog</a></h1>
+            <div class="link-block">
+                <a href="../blogs" aria-label="home"><img class="fa fa-home" src = "../images/iconSvgs/home.svg" alt="Home icon"/></a>
+                <a target="_blank" href="https://github.com/acnolan" rel="noopener noreferrer" aria-label="github"><img class="fa fa-github" src = "../images/iconSvgs/github.svg" alt="Github icon"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/acnolan/" rel="noopener noreferrer" aria-label="linkedin"><img class="fa fa-linkedin" src = "../images/iconSvgs/linkedin.svg" alt="LinkedIn icon"/></a>
+                
+                <a name="Email to me" aria-label="Email to me" href="mailto:andrewnolanjr@gmail.com?Subject=Hello%20Andrew!&amp;body=You%20are%20super%20cool!"><img class="fa fa-envelope" src = "../images/iconSvgs/mail.svg" alt="Email icon"/></a>
+            </div>
+        </div>
+    </div>
+    <main id="main" class="content justify-p">
+        <a href="../blogs" class="desktop-only" id="back-button">&lt; More Blogs</a>
+        <h1 id="blog-title" class="purple-text">Explain it like I'm 5 - JavaScript Closures</h1>
+        <div class="blog-by-line">Andrew Nolan</div>
+        <div class="blog-by-line">2025-06-05</div>
+
+        <p>If you write JavaScript for a while you will inevitably hear about closures. You can get really far without knowing what a closure actually is. In fact, if you write your code well, you never <em>really</em> need to know how a closure works...</p>
+
+        <p>That said, it is a key concept to how JavaScript actually operates. And it is almost definitely an entry level interview or college question. So, what is a closure?</p>
+
+        <h3>What is a closure?</h3>
+
+        <p>A closure is a function and the variables it can access from its <em>lexical scope</em>. A lexical scope is the variables defined around around a function when it is created, consider the following example:</p>
+
+<pre>
+function outer() {
+    let count = 0;
+    return function inner() {
+        count++;
+        console.log(count);
+    };
+}
+
+const counter = outer();
+counter(); // prints 1
+counter(); // prints 2
+</pre>
+
+        <p>This is a simple example of a closure, even though count is not defined in <code>inner</code>, since <code>inner</code> is part of <code>outer</code> it encloses the space and has access to the <code>count</code> variable as well, even after the <code>outer</code> function has finished executing.</p>
+
+        <p>Woohoo! Closures!!</p>
+
+        <h3>A note on variables</h3>
+
+        <p>Before modern JS (pre-ES6) JavaScript variables were declared with <code>var</code>. A <code>var</code> is either global scoped or function scoped. This makes it tricky if you try to declare a variable in a condition, for example:</p>
+
+<pre>
+if (someCondition) {
+    var x = true;
+} else {
+    var x = false;
+}
+console.log(x); // x still exists in this enclosure
+</pre>
+
+        <p>With ES6, you can declare variables with <code>let</code> and <code>const</code>. These declarations use block scoping which includes conditionals and loops. This is similar to other languages like C and Java and makes the closures easier to manage.</p>
+
+<pre>
+let y; // must declare in outer scope
+if (someCondition) {
+    const x = true;
+    y = true;
+} else {
+    const x = false;
+    y = false;
+}
+console.log(x); // x only exists in the conditional closure
+console.log(y); // y exists because it was defined in the same scope
+</pre>
+
+        <p>I hope this helped you understand closures!</p>
+
+        <p class="rss-subscribe">Enjoyed this article? Subscribe to the <a href="../rss.xml">RSS Feed</a>!</p>
+    </main>
+    <div id="toggleDiv">
+        <span>☀️</span>
+        <label class="switch">
+            <input type="checkbox" checked onclick="ToggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <span>🌙</span>
+    </div>
+</body>
+
+</html>

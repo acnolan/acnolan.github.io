@@ -116,8 +116,12 @@
     <loc>https://andrewnolan.dev/blogs/eli5JSX</loc>
     <lastmod>2025-06-06</lastmod>
   </url>
-    <url>
+  <url>
     <loc>https://andrewnolan.dev/blogs/eli5ReactHooks</loc>
     <lastmod>2025-06-09</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewnolan.dev/blogs/eli5Closure</loc>
+    <lastmod>2025-06-10</lastmod>
   </url>
 </urlset>
