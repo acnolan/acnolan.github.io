@@ -8,6 +8,15 @@
         <language>en-us</language>
         <lastBuildDate>Tue, 10 Jun 2025 15:34:00 EST</lastBuildDate>
         <item>
+            <title>The Flâneuring Adventure Begins</title>
+            <link>https://andrewnolan.dev/blogs/Flaneur.html</link>
+            <description><![CDATA[Flâneuring with the best of them]]></description>
+            <pubDate>Sat, 24 Jan 2026 16:36:00 EST</pubDate>
+            <guid>https://andrewnolan.dev/blogs/Flaneur.html</guid>
+            <author>Andrew Nolan</author>
+            <category>Urbanism</category>
+        </item>
+        <item>
             <title>Explain it like I'm 5 - JavaScript Closures</title>
             <link>https://andrewnolan.dev/blogs/eli5Closure.html</link>
             <description><![CDATA[Someone please explain to me what a closure is!]]></description>

@@ -217,6 +217,13 @@
                 "Tags": ["Coding"],
                 "Description": "Someone please explain to me what a closure is!",
                 "Key": "eli5Closure"
+            },
+            {
+                "Title": "The Flâneuring Adventure Begins",
+                "Date": "2025-01-24",
+                "Tags": ["Urbanism"],
+                "Description": "Flâneuring with the best of them",
+                "Key": "Flaneur"
             }
         ]
 }
