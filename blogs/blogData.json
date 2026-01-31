@@ -224,6 +224,13 @@
                 "Tags": ["Urbanism"],
                 "Description": "Flâneuring with the best of them",
                 "Key": "Flaneur"
+            },
+            {
+                "Title": "Flâneur Club - January - Creature Feature",
+                "Date": "2026-01-30",
+                "Tags": ["Urbanism"],
+                "Description": "January's prompt - Creature Feature: Go to a building that has some sort of grotesque/gargoyle/other animal depiction. Tell us about the building, any fun facts about the animals",
+                "Key": "Flaneur1"
             }
         ]
 }
