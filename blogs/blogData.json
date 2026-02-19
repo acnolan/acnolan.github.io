@@ -231,6 +231,13 @@
                 "Tags": ["Urbanism"],
                 "Description": "January's prompt - Creature Feature: Go to a building that has some sort of grotesque/gargoyle/other animal depiction. Tell us about the building, any fun facts about the animals",
                 "Key": "Flaneur1"
+            },
+            {
+                "Title": "Flâneur Club - February - Historic Hotel",
+                "Date": "2026-02-18",
+                "Tags": ["Urbanism"],
+                "Description": "February's prompt - Historic Hotel: This months theme is historic hotel! Either you can find a local hotel on this historic hotel registry or you can find another hotel around town that you are curious about. It doesn't even have to be a hotel currently if it was a hotel in the past.",
+                "Key": "Flaneur2"
             }
         ]
 }
