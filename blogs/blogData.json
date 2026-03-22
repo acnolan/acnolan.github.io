@@ -238,6 +238,13 @@
                 "Tags": ["Urbanism"],
                 "Description": "February's prompt - Historic Hotel: This months theme is historic hotel! Either you can find a local hotel on this historic hotel registry or you can find another hotel around town that you are curious about. It doesn't even have to be a hotel currently if it was a hotel in the past.",
                 "Key": "Flaneur2"
+            },
+            {
+                "Title": "Flâneur Club - March - Palimpsest",
+                "Date": "2026-03-22",
+                "Tags": ["Urbanism"],
+                "Description": "March's prompt -  Palimpsest! The idea is seeing the history of what was before underneath what is now. In the context of Flaneur club - the goal for this month is to look at google maps of your location until you find a question - then go answer that question.",
+                "Key": "Flaneur3"
             }
         ]
 }
