@@ -245,6 +245,13 @@
                 "Tags": ["Urbanism"],
                 "Description": "March's prompt -  Palimpsest! The idea is seeing the history of what was before underneath what is now. In the context of Flaneur club - the goal for this month is to look at google maps of your location until you find a question - then go answer that question.",
                 "Key": "Flaneur3"
+            },
+            {
+                "Title": "Flâneur Club - April - Touch Grass",
+                "Date": "2026-04-28",
+                "Tags": ["Urbanism"],
+                "Description": "April's prompt -  New Park! Go to a park you haven't been to before, spend 15 minutes on a bench and really take it in. Then go to some local cafe or something and get a snack. Learn about why the park is there, what kinds of things the local community does, really just have a nice sunny afternoon and write about it. But be sure to learn some facts!",
+                "Key": "Flaneur4"
             }
         ]
 }
