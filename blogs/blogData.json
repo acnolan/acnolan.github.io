@@ -252,6 +252,13 @@
                 "Tags": ["Urbanism"],
                 "Description": "April's prompt -  New Park! Go to a park you haven't been to before, spend 15 minutes on a bench and really take it in. Then go to some local cafe or something and get a snack. Learn about why the park is there, what kinds of things the local community does, really just have a nice sunny afternoon and write about it. But be sure to learn some facts!",
                 "Key": "Flaneur4"
+            },
+            {
+                "Title": "Flâneur Club - May - Getting Around Town",
+                "Date": "2026-05-28",
+                "Tags": ["Urbanism"],
+                "Description": "May's prompt - Getting around town - people are the life blood of a city and transportation is the artery that pumps them through it. Find some transportation infrastructure near you: an old train station, a highway that cuts through neighborhoods, modern light rail stops, a hidden bike path, whatever seems fun! Find out why it was built. Is it still serving that same purpose today?",
+                "Key": "Flaneur5"
             }
         ]
 }
