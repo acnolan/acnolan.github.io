@@ -260,5 +260,13 @@
                 "Description": "May's prompt - Getting around town - people are the life blood of a city and transportation is the artery that pumps them through it. Find some transportation infrastructure near you: an old train station, a highway that cuts through neighborhoods, modern light rail stops, a hidden bike path, whatever seems fun! Find out why it was built. Is it still serving that same purpose today?",
                 "Key": "Flaneur5"
             }
+            ,
+            {
+                "Title": "Flâneur Club - June - Architect Highlight",
+                "Date": "2026-07-14",
+                "Tags": ["Urbanism"],
+                "Description": "June's prompt - Architect Highlight - Find a prolific architect from your area and go look at the different buildings they did.",
+                "Key": "Flaneur6"
+            }
         ]
 }
